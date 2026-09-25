@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" width="900" height="400" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#94a3b8"/>
+    </marker>
+    <marker id="arr-retry" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#F7DF1E"/>
+    </marker>
+  </defs>
+  <rect width="900" height="400" fill="#0f172a"/>
+  <text x="450" y="36" text-anchor="middle" fill="#f1f5f9" font-size="20" font-weight="700">Qué hace Playwright en un click()</text>
+
+  <!-- Paso 1 -->
+  <rect x="40" y="90" width="160" height="70" rx="8" fill="#1e293b" stroke="#2EAD33" stroke-width="2"/>
+  <text x="120" y="120" text-anchor="middle" fill="#86efac" font-size="14" font-weight="700">1. Buscar</text>
+  <text x="120" y="140" text-anchor="middle" fill="#94a3b8" font-size="11">resuelve el locator</text>
+
+  <!-- Paso 2 -->
+  <rect x="250" y="70" width="300" height="110" rx="8" fill="#1e293b"/>
+  <text x="400" y="96" text-anchor="middle" fill="#f1f5f9" font-size="14" font-weight="700">2. ¿Está listo?</text>
+  <text x="280" y="122" fill="#cbd5e1" font-size="12">✓ visible</text>
+  <text x="410" y="122" fill="#cbd5e1" font-size="12">✓ estable</text>
+  <text x="280" y="146" fill="#cbd5e1" font-size="12">✓ habilitado</text>
+  <text x="410" y="146" fill="#cbd5e1" font-size="12">✓ nada encima</text>
+  <text x="400" y="170" text-anchor="middle" fill="#94a3b8" font-size="11">y hay exactamente un elemento</text>
+
+  <!-- Paso 3 -->
+  <rect x="600" y="90" width="120" height="70" rx="8" fill="#1e293b" stroke="#2EAD33" stroke-width="2"/>
+  <text x="660" y="120" text-anchor="middle" fill="#86efac" font-size="14" font-weight="700">3. Clic</text>
+  <text x="660" y="140" text-anchor="middle" fill="#94a3b8" font-size="11">como una persona</text>
+
+  <line x1="202" y1="125" x2="246" y2="125" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="552" y1="125" x2="596" y2="125" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="574" y="114" text-anchor="middle" fill="#86efac" font-size="11">sí</text>
+
+  <!-- Reintento -->
+  <path d="M 400 182 L 400 230 L 120 230 L 120 164" fill="none" stroke="#F7DF1E" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arr-retry)"/>
+  <text x="260" y="222" text-anchor="middle" fill="#fde68a" font-size="12">no: vuelve a buscar y a comprobar</text>
+
+  <!-- Tiempo agotado -->
+  <line x1="552" y1="170" x2="596" y2="206" stroke="#ef4444" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="600" y="190" width="270" height="50" rx="8" fill="#450a0a" stroke="#ef4444" stroke-width="2"/>
+  <text x="735" y="212" text-anchor="middle" fill="#fca5a5" font-size="14" font-weight="700">✗ Error</text>
+  <text x="735" y="230" text-anchor="middle" fill="#fca5a5" font-size="11">si se agota el tiempo del test sin estar listo</text>
+
+  <!-- Aserciones -->
+  <rect x="40" y="270" width="830" height="100" rx="8" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+  <text x="60" y="298" fill="#f1f5f9" font-size="14" font-weight="700">Las aserciones web-first hacen lo mismo</text>
+  <text x="60" y="324" fill="#86efac" font-size="13" font-family="ui-monospace, 'Cascadia Code', monospace">✓ await expect(list).toContainText('Guernica')</text>
+  <text x="520" y="324" fill="#94a3b8" font-size="12">reintenta hasta 5 s</text>
+  <text x="60" y="352" fill="#fca5a5" font-size="13" font-family="ui-monospace, 'Cascadia Code', monospace">✗ expect(await item.isVisible()).toBe(true)</text>
+  <text x="520" y="352" fill="#94a3b8" font-size="12">mira una sola vez: falla si la respuesta tarda</text>
+</svg>

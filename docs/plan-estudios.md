@@ -102,6 +102,7 @@ Frontend y backend tienen su propio umbral y **ambos** deben cumplir el piso de 
 - **Teoría**: locators accesibles, auto-waiting, flakiness y cómo evitarla, preparar datos por API antes del test, un objeto de página sencillo.
 - **Receta**: Playwright contra front y API levantados con la BD en Docker.
 - **Reto**: los 3 flujos críticos del proyecto cubiertos por E2E.
+- **Hallazgos preparados en la referencia**: un doble clic en **Guardar** registra la pieza dos veces, y una pieza guardada mientras la lista carga desaparece de la pantalla. Solo aparecen con un navegador real y una red lenta, que la receta simula con `page.route`.
 
 ## Semana 8 — CI completo y calidad de la suite
 
@@ -128,5 +129,5 @@ Frontend y backend tienen su propio umbral y **ambos** deben cumplir el piso de 
 
 | Sem | Estado |
 |:---:|---|
-| 1–6 | ✅ Publicada |
-| 7–10 | ⏳ Pendiente |
+| 1–7 | ✅ Publicada |
+| 8–10 | ⏳ Pendiente |

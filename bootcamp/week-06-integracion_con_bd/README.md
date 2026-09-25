@@ -74,4 +74,4 @@ Todas las recetas funcionan con PostgreSQL y con MySQL. La capa Front hace la re
 
 | ← Anterior | Inicio | Siguiente → |
 |---|---|---|
-| [Semana 5 — Dobles de prueba](../week-05-dobles_de_prueba/README.md) | [README del bootcamp](../../README.md) | Semana 7 — Playwright a fondo *(pendiente)* |
+| [Semana 5 — Dobles de prueba](../week-05-dobles_de_prueba/README.md) | [README del bootcamp](../../README.md) | [Semana 7 — Playwright a fondo](../week-07-playwright_a_fondo/README.md) |

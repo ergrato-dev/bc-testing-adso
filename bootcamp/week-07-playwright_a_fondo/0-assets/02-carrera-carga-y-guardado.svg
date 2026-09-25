@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 440" width="900" height="440" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#94a3b8"/>
+    </marker>
+    <marker id="arr-get" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#61DAFB"/>
+    </marker>
+    <marker id="arr-post" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#22c55e"/>
+    </marker>
+    <marker id="arr-bad" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#ef4444"/>
+    </marker>
+  </defs>
+  <rect width="900" height="440" fill="#0f172a"/>
+  <text x="450" y="36" text-anchor="middle" fill="#f1f5f9" font-size="20" font-weight="700">Guardar mientras la lista carga: la respuesta vieja gana</text>
+
+  <!-- Carriles -->
+  <text x="40" y="84" fill="#f1f5f9" font-size="14" font-weight="700">Navegador</text>
+  <line x1="150" y1="80" x2="860" y2="80" stroke="#334155" stroke-width="2"/>
+  <text x="40" y="264" fill="#f1f5f9" font-size="14" font-weight="700">Servidor + BD</text>
+  <line x1="150" y1="260" x2="860" y2="260" stroke="#334155" stroke-width="2"/>
+
+  <!-- 1 GET sale y se calcula -->
+  <line x1="190" y1="86" x2="250" y2="252" stroke="#61DAFB" stroke-width="2" marker-end="url(#arr-get)"/>
+  <circle cx="190" cy="80" r="11" fill="#1e293b" stroke="#61DAFB" stroke-width="2"/>
+  <text x="190" y="85" text-anchor="middle" fill="#61DAFB" font-size="12" font-weight="700">1</text>
+  <text x="200" y="118" fill="#61DAFB" font-size="12">GET /api/pieces</text>
+  <rect x="210" y="274" width="170" height="44" rx="6" fill="#1e293b" stroke="#61DAFB" stroke-width="1"/>
+  <text x="295" y="293" text-anchor="middle" fill="#bae6fd" font-size="12">lista calculada:</text>
+  <text x="295" y="310" text-anchor="middle" fill="#bae6fd" font-size="12">sin la pieza nueva</text>
+
+  <!-- 2 POST ida y vuelta -->
+  <circle cx="420" cy="80" r="11" fill="#1e293b" stroke="#22c55e" stroke-width="2"/>
+  <text x="420" y="85" text-anchor="middle" fill="#86efac" font-size="12" font-weight="700">2</text>
+  <line x1="420" y1="92" x2="460" y2="252" stroke="#22c55e" stroke-width="2" marker-end="url(#arr-post)"/>
+  <line x1="480" y1="252" x2="520" y2="94" stroke="#22c55e" stroke-width="2" marker-end="url(#arr-post)"/>
+  <text x="398" y="152" text-anchor="end" fill="#86efac" font-size="12">POST (Guardar)</text>
+  <rect x="410" y="274" width="140" height="44" rx="6" fill="#1e293b" stroke="#22c55e" stroke-width="1"/>
+  <text x="480" y="293" text-anchor="middle" fill="#86efac" font-size="12">pieza guardada</text>
+  <text x="480" y="310" text-anchor="middle" fill="#86efac" font-size="12">en la BD ✓</text>
+  <rect x="470" y="44" width="150" height="24" rx="5" fill="#14532d"/>
+  <text x="545" y="61" text-anchor="middle" fill="#86efac" font-size="12">la lista la muestra ✓</text>
+
+  <!-- 3 Respuesta vieja del GET llega tarde -->
+  <line x1="260" y1="252" x2="700" y2="94" stroke="#ef4444" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#arr-bad)"/>
+  <circle cx="712" cy="80" r="11" fill="#1e293b" stroke="#ef4444" stroke-width="2"/>
+  <text x="712" y="85" text-anchor="middle" fill="#fca5a5" font-size="12" font-weight="700">3</text>
+  <text x="600" y="198" fill="#fca5a5" font-size="12">respuesta del GET, tarde</text>
+  <rect x="690" y="100" width="180" height="44" rx="6" fill="#450a0a" stroke="#ef4444" stroke-width="1"/>
+  <text x="780" y="119" text-anchor="middle" fill="#fca5a5" font-size="12">setPieces(lista vieja)</text>
+  <text x="780" y="136" text-anchor="middle" fill="#fca5a5" font-size="12">✗ la pieza desaparece</text>
+
+  <!-- Tiempo -->
+  <line x1="150" y1="350" x2="860" y2="350" stroke="#475569" stroke-width="1" marker-end="url(#arr)"/>
+  <text x="860" y="370" text-anchor="end" fill="#94a3b8" font-size="12">tiempo</text>
+
+  <text x="450" y="410" text-anchor="middle" fill="#cbd5e1" font-size="13">Con el backend local, la respuesta del GET llega en milisegundos y casi nunca se ve. Con red lenta, sí.</text>
+</svg>

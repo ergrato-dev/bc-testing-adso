@@ -59,7 +59,7 @@ Al finalizar, cada integrante del grupo, **no solo el grupo**, es capaz de:
 | 4 | [Pruebas de API: estados, validación y errores](bootcamp/week-04-pruebas_de_api/README.md) | FastAPI · Express · Spring Boot |
 | 5 | [Dobles de prueba: mocks y stubs](bootcamp/week-05-dobles_de_prueba/README.md) | React · FastAPI · Express · Spring Boot |
 | 6 | [Integración con BD real (Docker Compose)](bootcamp/week-06-integracion_con_bd/README.md) | PostgreSQL · MySQL × 3 backends |
-| 7 | Playwright a fondo: flujos críticos y datos de prueba | Playwright |
+| 7 | [Playwright a fondo: flujos críticos y datos de prueba](bootcamp/week-07-playwright_a_fondo/README.md) | Playwright |
 | 8 | CI completo (BD, integración y E2E) y calidad de la suite | Todos |
 | 9 | **Integrador**: suite completa y sustentación | — |
 | 10 | *(Opcional)* TDD sobre una historia de usuario nueva | Todos |
