@@ -9,6 +9,7 @@ Esta guía resuelve el problema clásico del proyecto en grupo: los integrantes 
 3. Pide a cada grupo que copie en su repo:
    - [`plantillas/matriz-rotacion.md`](../plantillas/matriz-rotacion.md) como `docs/matriz-rotacion.md`
    - [`plantillas/pull_request_template.md`](../plantillas/pull_request_template.md) como `.github/pull_request_template.md`
+   - [`plantillas/estrategia-pruebas.md`](../plantillas/estrategia-pruebas.md) como `docs/estrategia-pruebas.md` (se llena en la semana 9)
 
 ## Mecanismo 1: rotación de capas
 

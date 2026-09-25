@@ -72,4 +72,4 @@ El modelo verificado es el CI de este repo: [`.github/workflows/referencia.yml`]
 
 | ← Anterior | Inicio | Siguiente → |
 |---|---|---|
-| [Semana 7 — Playwright a fondo](../week-07-playwright_a_fondo/README.md) | [README del bootcamp](../../README.md) | Semana 9 — Integrador *(pendiente)* |
+| [Semana 7 — Playwright a fondo](../week-07-playwright_a_fondo/README.md) | [README del bootcamp](../../README.md) | [Semana 9 — Integrador](../week-09-integrador/README.md) |

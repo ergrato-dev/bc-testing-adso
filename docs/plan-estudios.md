@@ -116,6 +116,7 @@ Frontend y backend tienen su propio umbral y **ambos** deben cumplir el piso de 
 
 - **Objetivo**: consolidar y sustentar.
 - **Actividad**: suite completa en verde en CI con cobertura ≥ 80% (condición para sustentar), informe breve de la estrategia de pruebas (qué se prueba en cada capa y por qué) y sustentación con vocero aleatorio: cada integrante responde por cualquier capa.
+- **Material**: plantilla [`plantillas/estrategia-pruebas.md`](../plantillas/estrategia-pruebas.md) y ejemplo terminado sobre la app de referencia en [`referencia/ESTRATEGIA.md`](../referencia/ESTRATEGIA.md).
 
 ## Semana 10 (opcional) — TDD
 
@@ -130,5 +131,5 @@ Frontend y backend tienen su propio umbral y **ambos** deben cumplir el piso de 
 
 | Sem | Estado |
 |:---:|---|
-| 1–8 | ✅ Publicada |
-| 9–10 | ⏳ Pendiente |
+| 1–9 | ✅ Publicada |
+| 10 | ⏳ Pendiente |

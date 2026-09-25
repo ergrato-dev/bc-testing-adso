@@ -35,6 +35,10 @@ Controlador / rutas  ──>  Servicio (reglas)  ──>  Repositorio  ──>  
 - El **repositorio** tiene dos versiones: la real (BD) y una **en memoria** para tests sin Docker (Express y FastAPI). En Spring Boot el servicio se reemplaza con `@MockitoBean`.
 - La **app** recibe sus dependencias: `createApp(repository)` en Express, `app.dependency_overrides` en FastAPI y `@WebMvcTest` en Spring Boot.
 
+## Estrategia de pruebas
+
+[`ESTRATEGIA.md`](ESTRATEGIA.md) resume qué prueba cada capa de esta app, qué queda fuera y los defectos conocidos. Es el ejemplo del informe que cada grupo entrega en la semana 9.
+
 ## Huecos a propósito
 
 La referencia deja algunos defectos y comportamientos sin probar **a propósito**, para que las recetas los descubran. Por ejemplo, ante un JSON mal formado ninguno de los tres backends responde con el formato del contrato (semana 4), y contra la BD real un `name` de 256 caracteres responde `500` en los tres (semana 6). En el frontend, un doble clic en **Guardar** registra la pieza dos veces, y una pieza guardada mientras la lista carga desaparece de la pantalla (semana 7). No los corrijas aquí: la receta de cada semana muestra cómo encontrarlos y arreglarlos.

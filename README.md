@@ -65,7 +65,7 @@ Al finalizar, cada integrante del grupo, **no solo el grupo**, es capaz de:
 | 6 | [Integración con BD real (Docker Compose)](bootcamp/week-06-integracion_con_bd/README.md) | PostgreSQL · MySQL × 3 backends |
 | 7 | [Playwright a fondo: flujos críticos y datos de prueba](bootcamp/week-07-playwright_a_fondo/README.md) | Playwright |
 | 8 | [CI completo (BD, integración y E2E) y calidad de la suite](bootcamp/week-08-ci_completo/README.md) | Todos |
-| 9 | **Integrador**: suite completa y sustentación | — |
+| 9 | [**Integrador**: suite completa y sustentación](bootcamp/week-09-integrador/README.md) | — |
 | 10 | *(Opcional)* TDD sobre una historia de usuario nueva | Todos |
 
 Detalle en [docs/plan-estudios.md](docs/plan-estudios.md).
@@ -92,7 +92,7 @@ Guía completa para instructores: [docs/guia-instructor.md](docs/guia-instructor
 ```
 bc-testing-adso/
 ├── docs/          # Plan de estudios y guía del instructor
-├── plantillas/    # Matriz de rotación, plantilla de PR, rúbrica grupal
+├── plantillas/    # Matriz de rotación, plantilla de PR, rúbrica grupal, informe de estrategia
 ├── referencia/    # App de referencia mínima (React + 3 APIs + docker-compose)
 └── bootcamp/
     └── week-XX-slug/

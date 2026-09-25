@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" width="900" height="420" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
+  <rect width="900" height="420" fill="#0f172a"/>
+  <text x="450" y="36" text-anchor="middle" fill="#f1f5f9" font-size="20" font-weight="700">La suite de la referencia, capa por capa (backend Express)</text>
+
+  <!-- Pirámide: cada franja más angosta hacia arriba -->
+  <!-- E2E -->
+  <polygon points="370,70 530,70 560,125 340,125" fill="#14532d" stroke="#2EAD33" stroke-width="1.5"/>
+  <text x="450" y="103" text-anchor="middle" fill="#86efac" font-size="14" font-weight="700">E2E · 2</text>
+
+  <!-- Integración -->
+  <polygon points="340,131 560,131 590,186 310,186" fill="#172554" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="450" y="164" text-anchor="middle" fill="#93c5fd" font-size="14" font-weight="700">Integración · receta S6</text>
+
+  <!-- API -->
+  <polygon points="310,192 590,192 620,247 280,247" fill="#2e1065" stroke="#a78bfa" stroke-width="1.5"/>
+  <text x="450" y="225" text-anchor="middle" fill="#c4b5fd" font-size="14" font-weight="700">API · 7</text>
+
+  <!-- Componentes -->
+  <polygon points="280,253 620,253 650,308 250,308" fill="#083344" stroke="#61DAFB" stroke-width="1.5"/>
+  <text x="450" y="286" text-anchor="middle" fill="#a5f3fc" font-size="14" font-weight="700">Componentes React · 7</text>
+
+  <!-- Unitarias -->
+  <polygon points="250,314 650,314 680,369 220,369" fill="#422006" stroke="#F7DF1E" stroke-width="1.5"/>
+  <text x="450" y="347" text-anchor="middle" fill="#fde68a" font-size="14" font-weight="700">Unitarias del servicio · 7</text>
+
+  <!-- Qué protege cada capa (izquierda) -->
+  <text x="40" y="103" fill="#94a3b8" font-size="12">el flujo que justifica la app</text>
+  <text x="40" y="164" fill="#94a3b8" font-size="12">lo que el fake no ve</text>
+  <text x="40" y="225" fill="#94a3b8" font-size="12">el contrato con el front</text>
+  <text x="40" y="286" fill="#94a3b8" font-size="12">lo que ve la persona</text>
+  <text x="40" y="347" fill="#94a3b8" font-size="12">reglas y sus límites</text>
+
+  <!-- Hallazgos (derecha) -->
+  <text x="700" y="103" fill="#fca5a5" font-size="12">✗ doble clic (S7)</text>
+  <text x="700" y="164" fill="#fca5a5" font-size="12">✗ name largo: 500 (S6)</text>
+  <text x="700" y="225" fill="#fca5a5" font-size="12">✗ JSON mal formado (S4)</text>
+
+  <text x="450" y="400" text-anchor="middle" fill="#cbd5e1" font-size="13">Izquierda: qué protege cada capa. Derecha: un defecto que solo esa capa encontró.</text>
+</svg>
