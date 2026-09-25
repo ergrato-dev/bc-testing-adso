@@ -35,7 +35,7 @@ bootcamp/week-XX-slug/
 
 ## App de referencia (`referencia/`)
 
-- Dominio genérico **Museo**, recurso `piezas` (`/api/piezas`): CRUD mínimo idéntico en los 3 backends.
+- Dominio genérico **Museo**, recurso `pieces` (`/api/pieces`, puerto 8000): CRUD mínimo idéntico en los 3 backends.
 - `frontend-react/` (Vite + React), `api-fastapi/`, `api-express/`, `api-springboot/`, `docker-compose.yml` (postgres y mysql de prueba).
 - Todo su código debe ejecutarse y sus tests deben pasar. Es el código que usan las recetas.
 
@@ -58,7 +58,7 @@ bootcamp/week-XX-slug/
 |---|---|---|
 | React | Vitest, React Testing Library, `@testing-library/user-event`, jsdom, MSW | pnpm |
 | Express | Vitest, supertest | pnpm |
-| FastAPI | pytest, `fastapi.testclient.TestClient` (httpx), pytest-mock, pytest-cov | uv |
+| FastAPI | pytest, `fastapi.testclient.TestClient` (httpx2), pytest-mock, pytest-cov | uv |
 | Spring Boot | JUnit 5, AssertJ, Mockito, MockMvc, JaCoCo (vía `spring-boot-starter-test`) | Maven Wrapper (`./mvnw`) |
 | E2E | Playwright (`@playwright/test`) | pnpm |
 | BD | PostgreSQL y MySQL con Docker Compose | docker compose |

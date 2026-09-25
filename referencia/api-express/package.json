@@ -1,0 +1,24 @@
+{
+  "name": "museo-api-express",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@12.6.0",
+  "engines": { "node": ">=22.0.0" },
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "dependencies": {
+    "express": "5.2.1",
+    "knex": "3.3.0",
+    "mysql2": "3.24.4",
+    "pg": "8.23.0"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "5.0.1",
+    "supertest": "7.3.0",
+    "vitest": "5.0.1"
+  }
+}
