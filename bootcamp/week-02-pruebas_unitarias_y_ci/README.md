@@ -74,4 +74,6 @@ Cada integrante hace la receta de **su capa de esta semana** (ver la matriz de r
 
 | ← Anterior | Inicio | Siguiente → |
 |---|---|---|
-| [Semana 1 — Por qué probar y primer E2E](../week-01-por_que_probar_y_primer_e2e/README.md) | [README del bootcamp](../../README.md) | [Semana 3 — Componentes React](../week-03-componentes_react/README.md) |
+| [Semana 1 — Por qué probar y primer E2E con Playwright](../week-01-por_que_probar_y_primer_e2e/README.md) | [README del bootcamp](../../README.md) | [La unidad bajo prueba y los principios FIRST](1-teoria/01-unidad-y-first.md) |
+
+Siguiente semana: [Semana 3 — Componentes React con React Testing Library](../week-03-componentes_react/README.md)

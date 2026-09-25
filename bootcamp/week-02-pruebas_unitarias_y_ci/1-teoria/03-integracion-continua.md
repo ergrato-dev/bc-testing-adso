@@ -85,3 +85,11 @@ Así el umbral sube con PR, queda registrado en el historial de Git y nunca baja
 - **Funciona en mi máquina, falla en CI**: la máquina del CI está limpia. Falta una dependencia en el `package.json` o el `pyproject.toml`, o el test depende de un archivo local o de una variable de entorno que no existe en el CI.
 - **`working-directory` equivocado**: el job no encuentra el `package.json`. Revisa la ruta relativa a la raíz del repo.
 - **`mvnw: Permission denied`**: el wrapper perdió el permiso de ejecución. Corre `git update-index --chmod=+x mvnw` y haz commit.
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Diseño de casos: particiones, valores límite y tests parametrizados](02-diseno-de-casos.md) | [Semana 2](../README.md) | [Receta — Lógica pura del frontend React con Vitest](../2-recetas/react/README.md) |

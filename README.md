@@ -123,3 +123,11 @@ Solo necesitas el runtime del backend de tu grupo, además de Node.js para React
 ## 📄 Licencia
 
 [CC BY-NC-SA 4.0](LICENSE) © 2026 ergrato-dev
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| — | README del bootcamp | [Semana 1 — Por qué probar y primer E2E con Playwright](bootcamp/week-01-por_que_probar_y_primer_e2e/README.md) · [Plan de estudios — Bootcamp Testing ADSO](docs/plan-estudios.md) |

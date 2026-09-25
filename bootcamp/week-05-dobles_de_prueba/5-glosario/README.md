@@ -35,3 +35,11 @@
 **Verificación de estado**: comprobar el resultado o lo que quedó guardado después de la acción.
 
 **`vi.spyOn`**: función de Vitest que espía un método existente y, opcionalmente, reemplaza su implementación.
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Webgrafía — Semana 5](../4-recursos/webgrafia/README.md) | [Semana 5](../README.md) | [Rúbrica de evaluación — Semana 5](../rubrica-evaluacion.md) |

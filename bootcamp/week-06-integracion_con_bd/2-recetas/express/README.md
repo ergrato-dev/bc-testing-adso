@@ -257,3 +257,11 @@ Haz cada una en `src/knex-repository.js`, corre los tests con PostgreSQL y con M
 - [ ] Probé las reglas nuevas con tests unitarios en su valor límite
 - [ ] Corrí la suite dos veces seguidas sin reiniciar la BD
 - [ ] Hice las tres mutaciones y expliqué por qué la tercera depende del motor
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Receta — Integración en FastAPI con SQLAlchemy y rollback](../fastapi/README.md) | [Semana 6](../../README.md) | [Receta — Integración en Spring Boot con `@DataJpaTest` y `@SpringBootTest`](../springboot/README.md) |

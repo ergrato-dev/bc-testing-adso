@@ -57,3 +57,11 @@ El instructor escoge a alguien al azar y le pide, sobre un endpoint que **no** p
 - Explicar qué código de estado responde en cada escenario y por qué.
 - Mostrar cómo el test aísla la base de datos.
 - Enviar en vivo una petición mal formada (con el test o con `curl`) y explicar la respuesta.
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Receta — Pruebas de API en Spring Boot con MockMvc](../2-recetas/springboot/README.md) | [Semana 4](../README.md) | [Ebooks gratuitos — Semana 4](../4-recursos/ebooks-free/README.md) |

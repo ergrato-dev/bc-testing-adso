@@ -123,3 +123,11 @@ afterAll(() => server.close());
 ```
 
 Dentro de un test, `server.use(...)` cambia la respuesta solo para ese test, por ejemplo para simular un `500`. Lo practicas en la receta de React.
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Los cinco dobles de prueba](01-tipos-de-dobles.md) | [Semana 5](../README.md) | [Cuándo un doble ayuda y cuándo estorba](03-cuando-usar-dobles.md) |

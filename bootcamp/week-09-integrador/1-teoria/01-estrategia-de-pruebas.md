@@ -59,3 +59,11 @@ Cada grupo tiene los suyos en los PR del trimestre. Búsquenlos y llévenlos al 
 ## Dos páginas, no veinte
 
 El informe se lee en la sustentación. Si no cabe en dos páginas, sobra detalle: las tablas de la plantilla ya son el resumen. Todo lo que el informe afirme debe poder comprobarse en el repo: un número de tests, un porcentaje, un enlace a un run del CI.
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Semana 9 — Integrador](../README.md) | [Semana 9](../README.md) | [La sustentación: responder por todas las capas](02-sustentacion.md) |

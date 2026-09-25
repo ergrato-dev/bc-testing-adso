@@ -20,3 +20,11 @@
 
 - [`<label>` en MDN (en español)](https://developer.mozilla.org/es/docs/Web/HTML/Element/label): cómo asociar etiquetas a campos
 - [Roles ARIA en MDN](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Roles): los roles que usa `getByRole`
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Videografía — Semana 3](../videografia/README.md) | [Semana 3](../../README.md) | [Glosario — Semana 3](../../5-glosario/README.md) |

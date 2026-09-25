@@ -106,3 +106,11 @@ En `PiecesControllerTest` el servicio completo es un `@MockitoBean`, así que ah
 - [ ] Verifiqué con `verifyNoInteractions` que no se guarda ni se notifica una pieza inválida
 - [ ] Probé con `doThrow` que la pieza se crea igual cuando el notificador falla
 - [ ] Hice las tres mutaciones y entendí por qué la tercera se escapa
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Receta — Dobles en Express con `vi.fn` y `vi.spyOn`](../express/README.md) | [Semana 5](../../README.md) | [Reto — Las dependencias del proyecto formativo desde cuatro ángulos](../../3-reto/README.md) |

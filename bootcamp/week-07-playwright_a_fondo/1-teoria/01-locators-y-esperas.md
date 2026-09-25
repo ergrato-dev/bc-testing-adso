@@ -85,3 +85,11 @@ El auto-waiting mira **la página**, no tu backend ni tu BD. Si el test necesita
 | `page.locator('div > ul > li:nth-child(2)')` | Se rompe al cambiar el HTML | `getByRole('listitem').filter({ hasText })` |
 | `page.locator('#root .card button')` | No dice qué hace el botón | `getByRole('button', { name: '...' })` |
 | `{ force: true }` en un clic | Salta las comprobaciones y esconde defectos reales | Averigua qué tapa o deshabilita el elemento |
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Semana 7 — Playwright a fondo](../README.md) | [Semana 7](../README.md) | [Flaky o defecto: los tiempos importan](02-flakiness.md) |

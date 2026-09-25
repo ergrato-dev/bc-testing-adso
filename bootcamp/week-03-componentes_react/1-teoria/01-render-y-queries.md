@@ -99,3 +99,11 @@ expect(within(list).getAllByRole('listitem')).toHaveLength(2);
 ## Accesibilidad y testabilidad son lo mismo
 
 Si un `<input>` no tiene `<label>` asociado, `getByLabelText` no lo encuentra y **un lector de pantalla tampoco**. Cuando una query accesible no funciona, el problema suele estar en el componente, no en el test. Corregirlo mejora ambas cosas a la vez.
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Semana 3 — Componentes React con React Testing Library](../README.md) | [Semana 3](../README.md) | [Interacción y asincronía](02-interaccion-y-asincronia.md) |

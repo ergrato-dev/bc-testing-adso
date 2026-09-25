@@ -63,3 +63,11 @@ La historia termina cuando la lista está completa y la suite está en verde. An
 1. Corre la suite completa con el umbral de cobertura.
 2. Haz una mutación a mano sobre el código nuevo (semana 2). Con TDD, debería fallar algún test.
 3. Revisa la lista: los casos que quedaron sin resolver van al PR como incidencias.
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [El ciclo Red-Green-Refactor](01-ciclo-tdd.md) | [Semana 10 (opcional)](../README.md) | [Receta — TDD en Express con Vitest](../2-recetas/express/README.md) |

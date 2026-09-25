@@ -17,3 +17,11 @@
 
 - [Error Handling Cheat Sheet — OWASP](https://cheatsheetseries.owasp.org/cheatsheets/Error_Handling_Cheat_Sheet.html) (en inglés): cómo responder errores sin exponer información interna, con ejemplos para Java y otros stacks
 - [Improper Error Handling — OWASP](https://owasp.org/www-community/Improper_Error_Handling) (en inglés): por qué un stack trace en una respuesta es una vulnerabilidad
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Videografía — Semana 4](../videografia/README.md) | [Semana 4](../../README.md) | [Glosario — Semana 4](../../5-glosario/README.md) |

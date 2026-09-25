@@ -122,3 +122,11 @@ Agrega una aserción de `Content-Type` a un test de error:
 - [ ] Descubrí el formato de error de un JSON mal formado y lo corregí
 - [ ] Hice la mutación del manejador y vi fallar el test
 - [ ] Decidí con mi grupo el formato de los errores de tipo y lo fijé con un test
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Endpoints protegidos: autenticación y roles](../../1-teoria/03-autenticacion-en-tests.md) | [Semana 4](../../README.md) | [Receta — Pruebas de API en Express con supertest](../express/README.md) |

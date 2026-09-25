@@ -200,3 +200,11 @@ Corre `./mvnw verify`: 20 tests en verde y la regla de cobertura de JaCoCo cumpl
 - [ ] Falsifiqué el controlador en el ciclo 1 y el ciclo 5 me obligó a leer el parámetro
 - [ ] Refactoricé el código y los tests con la suite en verde
 - [ ] Hice las dos mutaciones y vi qué tests las detectan
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Receta — TDD en FastAPI con pytest](../fastapi/README.md) | [Semana 10 (opcional)](../../README.md) | [Reto — Una historia de usuario del proyecto formativo, guiada por pruebas](../../3-reto/README.md) |

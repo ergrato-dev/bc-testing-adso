@@ -70,4 +70,6 @@ Al finalizar esta semana serás capaz de:
 
 | ← Anterior | Inicio | Siguiente → |
 |---|---|---|
-| [Semana 6 — Integración con BD real](../week-06-integracion_con_bd/README.md) | [README del bootcamp](../../README.md) | [Semana 8 — CI completo y calidad de la suite](../week-08-ci_completo/README.md) |
+| [Semana 6 — Integración con BD real](../week-06-integracion_con_bd/README.md) | [README del bootcamp](../../README.md) | [Locators y esperas: cómo piensa Playwright](1-teoria/01-locators-y-esperas.md) |
+
+Siguiente semana: [Semana 8 — CI completo y calidad de la suite](../week-08-ci_completo/README.md)

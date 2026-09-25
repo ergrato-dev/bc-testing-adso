@@ -70,4 +70,6 @@ Agrupa la ficha en mesas por backend. Todos los integrantes de un grupo hacen la
 
 | ← Anterior | Inicio | Siguiente → |
 |---|---|---|
-| [Semana 3 — Componentes React](../week-03-componentes_react/README.md) | [README del bootcamp](../../README.md) | [Semana 5 — Dobles de prueba](../week-05-dobles_de_prueba/README.md) |
+| [Semana 3 — Componentes React con React Testing Library](../week-03-componentes_react/README.md) | [README del bootcamp](../../README.md) | [El contrato HTTP](1-teoria/01-contrato-http.md) |
+
+Siguiente semana: [Semana 5 — Dobles de prueba](../week-05-dobles_de_prueba/README.md)

@@ -54,3 +54,11 @@ El instructor escoge a alguien al azar y le pide, sobre una parte que **no** esc
 - Mostrar en el historial un ciclo completo y decir por qué falló el Red.
 - Explicar un Green: ¿era el cambio mínimo? ¿Qué test pidió cada línea?
 - Proponer el siguiente caso de la lista y escribir su Red en vivo.
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Receta — TDD en Spring Boot con JUnit 5](../2-recetas/springboot/README.md) | [Semana 10 (opcional)](../README.md) | [Ebooks gratuitos — Semana 10](../4-recursos/ebooks-free/README.md) |

@@ -192,3 +192,11 @@ FastAPI toma `artist` de la URL porque no es parte de la ruta. Corre `uv run pyt
 - [ ] Cada Green fue el cambio mínimo
 - [ ] Refactoricé el código y los tests con la suite en verde
 - [ ] Hice las dos mutaciones y vi qué tests las detectan
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Receta — TDD en Express con Vitest](../express/README.md) | [Semana 10 (opcional)](../../README.md) | [Receta — TDD en Spring Boot con JUnit 5](../springboot/README.md) |

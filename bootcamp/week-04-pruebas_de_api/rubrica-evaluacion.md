@@ -60,3 +60,11 @@ Aplica la [rúbrica base](../../plantillas/rubrica-grupal.md) con estos criterio
 - **Bajo (0–20)**: CI en rojo, umbral por debajo del 50% o respuestas con stack traces sin corregir.
 
 > Si el vocero obtiene **Bajo** en Conocimiento, el Producto del grupo se limita a **Medio** esta semana.
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Glosario — Semana 4](5-glosario/README.md) | [Semana 4](README.md) | [Semana 5 — Dobles de prueba](../week-05-dobles_de_prueba/README.md) |

@@ -45,3 +45,11 @@
 **Umbral de cobertura**: porcentaje mínimo configurado en la herramienta. Si la cobertura queda por debajo, el comando de test falla.
 
 **webServer**: opción de `playwright.config.js` que levanta la app antes de correr los tests.
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Webgrafía — Semana 1](../4-recursos/webgrafia/README.md) | [Semana 1](../README.md) | [Rúbrica de evaluación — Semana 1](../rubrica-evaluacion.md) |

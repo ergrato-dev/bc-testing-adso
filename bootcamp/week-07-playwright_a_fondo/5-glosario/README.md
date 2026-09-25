@@ -35,3 +35,11 @@
 **Traza (trace)**: grabación de un test con cada acción, capturas, consola y red. Se abre desde el reporte HTML.
 
 **Worker**: proceso que ejecuta tests. Playwright usa varios en paralelo.
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Webgrafía — Semana 7](../4-recursos/webgrafia/README.md) | [Semana 7](../README.md) | [Rúbrica de evaluación — Semana 7](../rubrica-evaluacion.md) |

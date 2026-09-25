@@ -66,4 +66,6 @@ Al finalizar esta semana serás capaz de:
 
 | ← Anterior | Inicio | Siguiente → |
 |---|---|---|
-| [Semana 2 — Pruebas unitarias y CI](../week-02-pruebas_unitarias_y_ci/README.md) | [README del bootcamp](../../README.md) | [Semana 4 — Pruebas de API](../week-04-pruebas_de_api/README.md) |
+| [Semana 2 — Pruebas unitarias con AAA y umbral en CI](../week-02-pruebas_unitarias_y_ci/README.md) | [README del bootcamp](../../README.md) | [Probar como la persona usuaria: render y queries](1-teoria/01-render-y-queries.md) |
+
+Siguiente semana: [Semana 4 — Pruebas de API](../week-04-pruebas_de_api/README.md)

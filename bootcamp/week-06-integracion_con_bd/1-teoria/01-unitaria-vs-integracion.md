@@ -79,3 +79,11 @@ Son más lentas y necesitan Docker, así que no dupliques en integración lo que
 4. Uno o dos endpoints completos, de la petición HTTP a la fila en la BD.
 
 Las reglas de negocio con todos sus casos borde siguen en las unitarias.
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Semana 6 — Integración con BD real](../README.md) | [Semana 6](../README.md) | [Una BD de pruebas desechable](02-bd-de-pruebas.md) |

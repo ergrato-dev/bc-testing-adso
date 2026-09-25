@@ -83,3 +83,11 @@ Existen herramientas que lo automatizan: generan cientos de mutantes y reportan 
 | Java | [PIT](https://pitest.org/) |
 
 Son lentas para correr en cada PR, pero una corrida semanal sobre las reglas de negocio muestra qué tests son de adorno. En este bootcamp seguimos con mutaciones a mano en cada PR: son pocas, elegidas, y cada integrante sabe explicar por qué su test las mata.
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Semana 8 — CI completo y calidad de la suite](../README.md) | [Semana 8](../README.md) | [El CI completo: servicios, E2E, caché y artefactos](02-ci-completo.md) |

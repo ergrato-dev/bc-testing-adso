@@ -64,3 +64,11 @@ Un commit con un test en rojo rompe el CI si lo subes solo. Trabaja en una rama 
 | Cambiar código que otros usan (el test fija el contrato) | Prototipos que vas a tirar |
 
 Aunque no hagas TDD siempre, hay una costumbre que vale para todo el bootcamp: **ante un defecto, primero el test que lo reproduce**. Es lo que hiciste en las semanas 4, 6 y 7.
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Semana 10 (opcional) — TDD](../README.md) | [Semana 10 (opcional)](../README.md) | [La lista de pruebas y los pasos pequeños](02-pasos-pequenos.md) |

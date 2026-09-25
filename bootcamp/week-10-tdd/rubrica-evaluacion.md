@@ -60,3 +60,11 @@ Aplica la [rúbrica base](../../plantillas/rubrica-grupal.md) con estos criterio
 - **Bajo (0–20)**: historia sin terminar o CI en rojo.
 
 > Si el vocero obtiene **Bajo** en Conocimiento, el Producto del grupo se limita a **Medio** esta semana.
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Glosario — Semana 10](5-glosario/README.md) | [Semana 10 (opcional)](README.md) | — |

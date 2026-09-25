@@ -127,3 +127,11 @@ Revisa `app.js` en el reporte. ¿Queda alguna rama del manejador de errores sin 
 - [ ] Descubrí la respuesta HTML ante un JSON mal formado y la corregí
 - [ ] Hice la mutación del manejador y vi fallar el test
 - [ ] Fijé con un test el comportamiento ante tipos incorrectos
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Receta — Pruebas de API en FastAPI con `TestClient`](../fastapi/README.md) | [Semana 4](../../README.md) | [Receta — Pruebas de API en Spring Boot con MockMvc](../springboot/README.md) |

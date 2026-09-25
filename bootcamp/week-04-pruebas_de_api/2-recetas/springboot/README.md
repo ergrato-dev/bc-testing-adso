@@ -126,3 +126,11 @@ Agrega a un test de error:
 - [ ] Descubrí la respuesta sin `detail` ante un JSON mal formado y la corregí
 - [ ] Hice la mutación del manejador y vi fallar el test
 - [ ] Fijé con un test el comportamiento ante tipos incorrectos
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Receta — Pruebas de API en Express con supertest](../express/README.md) | [Semana 4](../../README.md) | [Reto — El API del proyecto formativo desde cuatro ángulos](../../3-reto/README.md) |

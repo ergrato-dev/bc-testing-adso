@@ -23,3 +23,11 @@
 **Sustentación**: presentación final en la que el grupo explica su suite y cada integrante responde por cualquier capa.
 
 **Trofeo de pruebas (testing trophy)**: forma de suite propuesta por Kent C. Dodds que da el mayor peso a las pruebas de integración.
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Webgrafía — Semana 9](../4-recursos/webgrafia/README.md) | [Semana 9](../README.md) | [Rúbrica de evaluación — Semana 9 (integrador)](../rubrica-evaluacion.md) |

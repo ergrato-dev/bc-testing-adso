@@ -95,3 +95,11 @@ Ajusta los nombres (`AuthContext`, sus valores) a los de tu proyecto. La idea es
 4. **Componentes con lógica condicional**: botones que se deshabilitan, secciones que solo ve un rol.
 
 Deja para el final los componentes puramente visuales (encabezados, tarjetas sin lógica): aportan poco.
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Interacción y asincronía](02-interaccion-y-asincronia.md) | [Semana 3](../README.md) | [Receta — React Testing Library contra la app de referencia](../2-recetas/react/README.md) |

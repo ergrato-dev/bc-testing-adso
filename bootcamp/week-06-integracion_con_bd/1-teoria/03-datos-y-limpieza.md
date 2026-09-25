@@ -96,3 +96,11 @@ Si falla en alguna, un test depende de datos que no preparó o deja datos que no
 | Tests que se encadenan (el 2 usa lo que creó el 1) | Si el 1 falla, fallan todos; no se pueden correr solos | Cada test hace su propio Arrange |
 | Limpiar solo al final | Un test que falla deja basura para el siguiente | Limpia en el `beforeEach` |
 | `sleep` para esperar a la BD | Lento y aun así falla en equipos lentos | `docker compose up --wait` y el healthcheck |
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Una BD de pruebas desechable](02-bd-de-pruebas.md) | [Semana 6](../README.md) | [Receta — Integración en FastAPI con SQLAlchemy y rollback](../2-recetas/fastapi/README.md) |

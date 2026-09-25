@@ -76,4 +76,6 @@ Al finalizar esta semana serás capaz de:
 
 | ← Anterior | Inicio | Siguiente → |
 |---|---|---|
-| — | [README del bootcamp](../../README.md) | [Semana 2 — Pruebas unitarias y CI](../week-02-pruebas_unitarias_y_ci/README.md) |
+| [README del bootcamp](../../README.md) | [README del bootcamp](../../README.md) | [Por qué probar](1-teoria/01-por-que-probar.md) |
+
+Siguiente semana: [Semana 2 — Pruebas unitarias con AAA y umbral en CI](../week-02-pruebas_unitarias_y_ci/README.md)

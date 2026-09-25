@@ -75,4 +75,6 @@ La capa E2E hace la receta de su backend y además la parte de `page.route` del 
 
 | ← Anterior | Inicio | Siguiente → |
 |---|---|---|
-| [Semana 4 — Pruebas de API](../week-04-pruebas_de_api/README.md) | [README del bootcamp](../../README.md) | [Semana 6 — Integración con BD real](../week-06-integracion_con_bd/README.md) |
+| [Semana 4 — Pruebas de API](../week-04-pruebas_de_api/README.md) | [README del bootcamp](../../README.md) | [Los cinco dobles de prueba](1-teoria/01-tipos-de-dobles.md) |
+
+Siguiente semana: [Semana 6 — Integración con BD real](../week-06-integracion_con_bd/README.md)

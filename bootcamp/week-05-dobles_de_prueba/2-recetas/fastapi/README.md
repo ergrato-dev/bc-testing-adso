@@ -123,3 +123,11 @@ mocker.patch("app.main.LogNotifier")
 - [ ] Verifiqué que no se notifica cuando la pieza es inválida
 - [ ] Probé con un stub que falla que la pieza se crea igual, desde el servicio y desde el API
 - [ ] Hice las tres mutaciones y vi qué test detecta cada una
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Receta — MSW para el cliente HTTP del frontend](../react/README.md) | [Semana 5](../../README.md) | [Receta — Dobles en Express con `vi.fn` y `vi.spyOn`](../express/README.md) |

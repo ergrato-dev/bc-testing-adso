@@ -67,3 +67,11 @@ En la revisión, el instructor escoge a una persona al azar y le pide explicar *
 - ¿Qué cambio en la app haría fallar ese test?
 
 Antes de la revisión, explíquense los tests entre ustedes. Cualquiera puede ser el vocero.
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Receta — Medir la cobertura desde el día 1](../2-recetas/cobertura/README.md) | [Semana 1](../README.md) | [Ebooks gratuitos — Semana 1](../4-recursos/ebooks-free/README.md) |

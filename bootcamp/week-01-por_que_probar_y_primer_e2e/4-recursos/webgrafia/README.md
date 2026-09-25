@@ -17,3 +17,11 @@
 ## Accesibilidad y locators
 
 - [Testing Library: prioridad de queries](https://testing-library.com/docs/queries/about/): el mismo criterio de Playwright, que usarás con React en la semana 3
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Videografía — Semana 1](../videografia/README.md) | [Semana 1](../../README.md) | [Glosario — Semana 1](../../5-glosario/README.md) |

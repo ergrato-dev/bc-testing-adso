@@ -35,3 +35,11 @@
 **Trinquete (umbral)**: regla según la cual el umbral de cobertura solo puede subir, nunca bajar.
 
 **Workflow**: archivo YAML en `.github/workflows/` que define cuándo y qué jobs corre GitHub Actions.
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Webgrafía — Semana 8](../4-recursos/webgrafia/README.md) | [Semana 8](../README.md) | [Rúbrica de evaluación — Semana 8](../rubrica-evaluacion.md) |

@@ -72,3 +72,11 @@ Si tu CI pasa de 10 minutos, busca primero dependencias sin caché, E2E que prep
 - [ ] Umbral de cobertura del 80% en frontend y backend
 - [ ] Artefactos para diagnosticar sin reproducir en local
 - [ ] Los *flaky* se investigan; no se reintenta hasta que pasen
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [El CI completo: servicios, E2E, caché y artefactos](02-ci-completo.md) | [Semana 8](../README.md) | [Receta — GitHub Actions: BD como servicio, integración, E2E, caché y artefactos](../2-recetas/ci/README.md) |

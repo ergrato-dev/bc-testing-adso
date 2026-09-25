@@ -25,3 +25,11 @@
 **TDD (Test-Driven Development)**: práctica de escribir el test antes del código, en ciclos cortos de Red, Green y Refactor.
 
 **Triangular**: escribir un segundo ejemplo con otro dato antes de generalizar, cuando la regla general no es obvia.
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Webgrafía — Semana 10](../4-recursos/webgrafia/README.md) | [Semana 10 (opcional)](../README.md) | [Rúbrica de evaluación — Semana 10 (opcional)](../rubrica-evaluacion.md) |

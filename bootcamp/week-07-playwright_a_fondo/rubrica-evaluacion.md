@@ -61,3 +61,11 @@ Aplica la [rúbrica base](../../plantillas/rubrica-grupal.md) con estos criterio
 - **Bajo (0–20)**: CI en rojo, umbral por debajo del 75% o menos de 2 flujos críticos cubiertos.
 
 > Si el vocero obtiene **Bajo** en Conocimiento, el Producto del grupo se limita a **Medio** esta semana.
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Glosario — Semana 7](5-glosario/README.md) | [Semana 7](README.md) | [Semana 8 — CI completo y calidad de la suite](../week-08-ci_completo/README.md) |

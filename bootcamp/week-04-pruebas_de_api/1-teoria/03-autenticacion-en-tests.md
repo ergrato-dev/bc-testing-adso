@@ -113,3 +113,11 @@ El `401` del segundo test supone que tu API responde así a peticiones anónimas
 - ❌ Desactivar la seguridad en los tests para que "pasen": ya no estás probando lo que corre en producción.
 - ❌ Usar la clave o las credenciales reales en los tests. La clave de prueba vive en la configuración de test y la real en variables de entorno del servidor.
 - ❌ Probar solo el caso autorizado.
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Pruebas de API en cada stack](02-pruebas-de-api-por-stack.md) | [Semana 4](../README.md) | [Receta — Pruebas de API en FastAPI con `TestClient`](../2-recetas/fastapi/README.md) |

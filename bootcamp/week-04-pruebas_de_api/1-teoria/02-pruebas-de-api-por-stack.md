@@ -127,3 +127,11 @@ it('should respond 404 when getting a piece after deleting it', async () => {
 | Aísla la BD con | `app.dependency_overrides` | `createApp(fakeRepository)` | `@WebMvcTest` + `@MockitoBean` |
 | Qué reemplaza | El repositorio | El repositorio | El servicio completo |
 | Comando | `uv run pytest` | `pnpm test` | `./mvnw verify` |
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [El contrato HTTP](01-contrato-http.md) | [Semana 4](../README.md) | [Endpoints protegidos: autenticación y roles](03-autenticacion-en-tests.md) |

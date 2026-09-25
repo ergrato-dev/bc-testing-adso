@@ -107,3 +107,11 @@ pnpm report                             # abre el reporte HTML; cada test fallid
 ```
 
 En la traza busca el primer paso en rojo y abre su pestaña **Network**: casi siempre la causa está en una petición que respondió distinto de lo que esperabas.
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Flaky o defecto: los tiempos importan](02-flakiness.md) | [Semana 7](../README.md) | [Receta — Playwright: flujos estables y dos defectos que solo ve el navegador](../2-recetas/playwright/README.md) |

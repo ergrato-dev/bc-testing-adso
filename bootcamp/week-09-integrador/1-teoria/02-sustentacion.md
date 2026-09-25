@@ -52,3 +52,11 @@ Si alguien no logra responder por una capa, el grupo tiene un problema, no esa p
 | Leer el test en voz alta sin explicarlo | Explicar es decir qué comportamiento protege |
 | Correr la suite completa para ver qué falla | Primero predice qué test falla, después córrelo para confirmarlo |
 | Mostrar el porcentaje de cobertura como prueba de calidad | La semana 8 mostró por qué no basta: muestra los hallazgos |
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [La estrategia de pruebas de tu proyecto](01-estrategia-de-pruebas.md) | [Semana 9](../README.md) | [Receta — Del repo al informe: reunir la evidencia](../2-recetas/evidencia/README.md) |

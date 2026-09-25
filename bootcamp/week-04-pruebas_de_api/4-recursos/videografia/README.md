@@ -7,3 +7,11 @@
 > ```bash
 > curl -i -X POST http://localhost:8000/api/<recurso> -H 'Content-Type: application/json' -d '{"name":'
 > ```
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Ebooks gratuitos — Semana 4](../ebooks-free/README.md) | [Semana 4](../../README.md) | [Webgrafía — Semana 4](../webgrafia/README.md) |

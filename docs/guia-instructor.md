@@ -85,3 +85,11 @@ Detalle y niveles en [`plantillas/rubrica-grupal.md`](../plantillas/rubrica-grup
 - La teoría es común: dala a toda la ficha a la vez.
 - En las recetas, agrupa a los aprendices por backend (mesas FastAPI, Express y Spring Boot) para que se ayuden entre grupos.
 - React y Playwright son comunes a todos: en las semanas 3 y 7 la ficha trabaja junta.
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Plan de estudios — Bootcamp Testing ADSO](plan-estudios.md) | [README del bootcamp](../README.md) | [Rúbrica base semanal](../plantillas/rubrica-grupal.md) |

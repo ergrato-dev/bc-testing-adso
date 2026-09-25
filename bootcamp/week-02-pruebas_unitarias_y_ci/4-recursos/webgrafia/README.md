@@ -18,3 +18,11 @@
 ## Integración continua
 
 - [Continuous Integration — Martin Fowler](https://martinfowler.com/articles/continuousIntegration.html) (en inglés): el artículo de referencia sobre la práctica
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Videografía — Semana 2](../videografia/README.md) | [Semana 2](../../README.md) | [Glosario — Semana 2](../../5-glosario/README.md) |

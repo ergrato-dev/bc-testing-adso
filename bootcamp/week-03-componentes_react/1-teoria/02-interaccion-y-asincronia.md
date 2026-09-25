@@ -103,3 +103,11 @@ Así pruebas en milisegundos los tres caminos: datos, lista vacía y error. En l
 | `Unable to find an element` con un elemento asíncrono | Usaste `getBy` para algo que aparece después | Cambia a `await findBy…` |
 | La acción no tiene efecto | Olvidaste el `await` delante de `user.click` | Todas las acciones de `user-event` son asíncronas |
 | El test pasa solo, falla con los demás | Estado compartido entre tests, por ejemplo mocks sin reiniciar | `vi.resetAllMocks()` en un `beforeEach` |
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Probar como la persona usuaria: render y queries](01-render-y-queries.md) | [Semana 3](../README.md) | [Qué probar en un componente (y qué no)](03-que-probar.md) |

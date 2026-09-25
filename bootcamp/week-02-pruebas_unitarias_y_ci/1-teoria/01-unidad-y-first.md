@@ -104,3 +104,11 @@ void shouldReturnTrimmedPieceWhenRequestIsValid() {
 
 - **El resultado** que devuelve la unidad, o **el error** que lanza.
 - **No** los detalles internos: variables privadas, cuántas veces se llamó a un método auxiliar. Si refactorizas sin cambiar el comportamiento, los tests deben seguir pasando.
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Semana 2 — Pruebas unitarias con AAA y umbral en CI](../README.md) | [Semana 2](../README.md) | [Diseño de casos: particiones, valores límite y tests parametrizados](02-diseno-de-casos.md) |

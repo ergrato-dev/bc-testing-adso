@@ -11,3 +11,11 @@
 
 - [`git shortlog`](https://git-scm.com/docs/git-shortlog) (en inglés): el comando de la evidencia individual
 - [Ejemplo de informe sobre la app de referencia](../../../../referencia/ESTRATEGIA.md) · [Plantilla del informe](../../../../plantillas/estrategia-pruebas.md)
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Videografía — Semana 9](../videografia/README.md) | [Semana 9](../../README.md) | [Glosario — Semana 9](../../5-glosario/README.md) |

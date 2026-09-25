@@ -89,3 +89,11 @@ Sube el umbral a 99, corre el comando y confirma que **falla**. Devuélvelo a tu
 - [ ] Las exclusiones tienen un comentario que explica por qué
 - [ ] La línea base quedó en `docs/matriz-rotacion.md` y como umbral en la configuración
 - [ ] Comprobé que el umbral hace fallar el comando cuando no se cumple
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Receta — Playwright contra la app de referencia](../playwright/README.md) | [Semana 1](../../README.md) | [Reto — Primer E2E de tu proyecto formativo](../../3-reto/README.md) |

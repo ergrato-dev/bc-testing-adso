@@ -15,3 +15,11 @@
 | Artefactos | [Store and share data with workflow artifacts](https://docs.github.com/en/actions/tutorials/store-and-share-data) · [`upload-artifact`](https://github.com/actions/upload-artifact) |
 | Checks obligatorios | [Available rules for rulesets](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/available-rules-for-rulesets) |
 | Playwright en el CI | [Continuous Integration](https://playwright.dev/docs/ci) |
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Videografía — Semana 8](../videografia/README.md) | [Semana 8](../../README.md) | [Glosario — Semana 8](../../5-glosario/README.md) |

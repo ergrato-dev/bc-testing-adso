@@ -119,3 +119,11 @@ Playwright levanta el frontend por su cuenta (`webServer` en `playwright.config.
 > Cada comando de test mide la cobertura y **falla si baja del 80%** (umbral en `vitest.config.js`, `vite.config.js`, `pyproject.toml` y `pom.xml`). El CI de este repo ([`.github/workflows/referencia.yml`](../.github/workflows/referencia.yml)) lo exige en cada PR.
 
 > Los tests unitarios y de API **no necesitan Docker**. La BD real solo se usa al correr la app y en los tests de integración de la semana 6.
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Rúbrica base semanal](../plantillas/rubrica-grupal.md) | [README del bootcamp](../README.md) | [Estrategia de pruebas — App de referencia Museo](ESTRATEGIA.md) |

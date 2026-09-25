@@ -65,3 +65,11 @@ La semana 2 resolvió la fecha recibiéndola por parámetro. Cuando no es posibl
 En la semana 4, `GET /api/pieces/abc` responde `404` con el repositorio falso. Contra PostgreSQL real, la misma petición en Express responde **500 con la consulta SQL**. Ningún doble lo habría detectado, porque el fake no se comporta como la base de datos en ese caso.
 
 Por eso los dobles son la base de la pirámide, pero no la reemplazan: la semana 6 prueba contra la BD real y la 7 prueba el sistema completo.
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Dobles en cada stack](02-dobles-por-stack.md) | [Semana 5](../README.md) | [Receta — MSW para el cliente HTTP del frontend](../2-recetas/react/README.md) |

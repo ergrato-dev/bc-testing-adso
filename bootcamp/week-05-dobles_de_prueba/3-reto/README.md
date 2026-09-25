@@ -60,3 +60,11 @@ El instructor escoge a alguien al azar y le pide, sobre un test que **no** escri
 - Decir qué tipo de doble usa y qué pasaría si se usara la dependencia real.
 - Explicar la diferencia entre verificar estado y comportamiento con ese test.
 - Proponer una mutación que el test **no** detectaría.
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Receta — Dobles en Spring Boot con Mockito](../2-recetas/springboot/README.md) | [Semana 5](../README.md) | [Ebooks gratuitos — Semana 5](../4-recursos/ebooks-free/README.md) |

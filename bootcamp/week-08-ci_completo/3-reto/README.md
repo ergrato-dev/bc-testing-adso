@@ -67,3 +67,11 @@ El instructor escoge a alguien al azar y le pide, sobre un job que **no** escrib
 - Explicar cómo llega la BD a ese job y cómo sabe el job que ya puede usarla.
 - Mostrar en el reporte de cobertura una rama sin cubrir y decir qué comportamiento queda sin probar.
 - Decir qué pasaría si se borrara `DATABASE_URL` del job, y por qué el CI seguiría en verde.
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Receta — GitHub Actions: BD como servicio, integración, E2E, caché y artefactos](../2-recetas/ci/README.md) | [Semana 8](../README.md) | [Ebooks gratuitos — Semana 8](../4-recursos/ebooks-free/README.md) |

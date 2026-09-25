@@ -109,3 +109,11 @@ Cambia la fecha por el inicio de la semana 1 y ajusta las rutas a tu repo. Cruza
 - [ ] Tengo el enlace al último run en verde de `main` y la lista de checks obligatorios
 - [ ] Listé los hallazgos del trimestre con su estado
 - [ ] Crucé `git shortlog` con la matriz de rotación
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [La sustentación: responder por todas las capas](../../1-teoria/02-sustentacion.md) | [Semana 9](../../README.md) | [Reto — Cierre y sustentación del proyecto formativo](../../3-reto/README.md) |

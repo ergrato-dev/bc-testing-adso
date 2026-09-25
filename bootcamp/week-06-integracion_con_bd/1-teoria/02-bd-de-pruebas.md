@@ -107,3 +107,11 @@ Si tu proyecto usa migraciones, córrelas contra la BD de pruebas antes de los t
 ## Una alternativa: Testcontainers
 
 [Testcontainers](https://testcontainers.com/) levanta el contenedor desde el propio test y lo apaga al terminar, sin `docker compose`. Existe para Java, Node.js y Python. Es cómodo, pero agrega una dependencia y oculta la BD; en este bootcamp usamos Docker Compose porque es la misma herramienta que ya usas para desarrollar y porque puedes conectarte a la BD de pruebas para ver qué dejó un test.
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Lo que los dobles no ven](01-unitaria-vs-integracion.md) | [Semana 6](../README.md) | [Datos semilla y limpieza entre tests](03-datos-y-limpieza.md) |

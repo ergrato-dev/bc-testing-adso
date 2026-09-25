@@ -176,3 +176,11 @@ Agrega `screen.logTestingPlaygroundURL();` al final de cualquier test, córrelo 
 - [ ] Escribí los tests de los estados de carga, vacío y con datos
 - [ ] Escribí el test del formulario que se limpia y vi cómo detecta el defecto
 - [ ] Vi fallar los tests por una etiqueta desasociada y los arreglé cambiando solo el componente
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Qué probar en un componente (y qué no)](../../1-teoria/03-que-probar.md) | [Semana 3](../../README.md) | [Reto — Tests de componentes del proyecto formativo](../../3-reto/README.md) |

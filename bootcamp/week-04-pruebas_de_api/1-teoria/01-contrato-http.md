@@ -85,3 +85,11 @@ FastAPI y Spring Boot no devuelven HTML, pero tampoco respetan el formato `{"det
 - Las reglas de negocio en detalle: ya las cubren las pruebas unitarias. Aquí basta un caso por regla para verificar que el error se traduce al código correcto.
 - El framework en sí: no pruebes que FastAPI convierte JSON en diccionarios. Prueba **tu** contrato.
 - La base de datos: las consultas reales se prueban con integración en la semana 6.
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Semana 4 — Pruebas de API](../README.md) | [Semana 4](../README.md) | [Pruebas de API en cada stack](02-pruebas-de-api-por-stack.md) |

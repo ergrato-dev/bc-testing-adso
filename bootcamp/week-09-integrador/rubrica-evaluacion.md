@@ -64,3 +64,11 @@ En la sustentación, sobre una capa que el instructor escoge y que la persona **
 - **Bajo (0–20)**: condición para sustentar incumplida.
 
 > Si el vocero obtiene **Bajo** en Conocimiento, el Producto del grupo se limita a **Medio**.
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Glosario — Semana 9](5-glosario/README.md) | [Semana 9](README.md) | [Semana 10 (opcional) — TDD](../week-10-tdd/README.md) |

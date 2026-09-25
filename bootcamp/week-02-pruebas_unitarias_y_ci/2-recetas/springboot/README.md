@@ -109,3 +109,11 @@ Abre `target/site/jacoco/index.html` en el navegador y entra a `PiecesService`. 
 - [ ] Escribí el test del valor límite y vi cómo lo mata
 - [ ] Agregué un caso al test parametrizado
 - [ ] Hice mi propia mutación y, si sobrevivió, escribí el test que la detecta
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Receta — Pruebas unitarias en Express con Vitest](../express/README.md) | [Semana 2](../../README.md) | [Receta — CI con GitHub Actions en tu proyecto](../ci/README.md) |

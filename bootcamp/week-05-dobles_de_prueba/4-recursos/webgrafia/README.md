@@ -14,3 +14,11 @@
 | Python | [`unittest.mock` (en español)](https://docs.python.org/es/3/library/unittest.mock.html) · [Dónde aplicar `patch`](https://docs.python.org/3/library/unittest.mock.html#where-to-patch) · [pytest-mock](https://pytest-mock.readthedocs.io/en/latest/) |
 | Mockito | [Sitio oficial](https://site.mockito.org/) · [Javadoc con ejemplos de cada función](https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html) |
 | Playwright | [Simular APIs con `page.route`](https://playwright.dev/docs/mock) |
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Videografía — Semana 5](../videografia/README.md) | [Semana 5](../../README.md) | [Glosario — Semana 5](../../5-glosario/README.md) |

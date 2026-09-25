@@ -75,3 +75,11 @@ En este bootcamp **todo el grupo** aprende a probar **todas las capas** del proy
 2. ¿Qué flujo de tu proyecto, si falla el día de la sustentación, sería el más grave?
 
 Esa segunda respuesta es el candidato para tu primer test E2E.
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Semana 1 — Por qué probar y primer E2E con Playwright](../README.md) | [Semana 1](../README.md) | [La pirámide de pruebas y el patrón AAA](02-piramide-y-aaa.md) |

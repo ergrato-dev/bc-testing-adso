@@ -141,3 +141,11 @@ Desde ahora, el botón de merge queda deshabilitado mientras un check esté en r
 - [ ] El workflow está en verde en un PR
 - [ ] Comprobé que un umbral incumplido pone el job en rojo
 - [ ] La regla de rama bloquea el merge en rojo (o el grupo acordó la regla manual si el repo es privado)
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Receta — Pruebas unitarias en Spring Boot con JUnit 5](../springboot/README.md) | [Semana 2](../../README.md) | [Reto — Tests unitarios del proyecto formativo y CI con umbral](../../3-reto/README.md) |

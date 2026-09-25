@@ -66,3 +66,11 @@ El instructor escoge a alguien al azar y le pide, sobre una capa que **no** trab
 - Explicar qué regla verifica un test unitario del grupo y cuál es su valor límite.
 - Hacer una mutación en vivo y mostrar qué test la detecta.
 - Mostrar en la pestaña Actions el último run y explicar qué pasaría si baja la cobertura.
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Receta — CI con GitHub Actions en tu proyecto](../2-recetas/ci/README.md) | [Semana 2](../README.md) | [Ebooks gratuitos — Semana 2](../4-recursos/ebooks-free/README.md) |

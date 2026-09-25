@@ -82,3 +82,11 @@ En la app, no en el test:
 | Lista que borra la pieza | Al recibir la lista, combinarla con las piezas creadas mientras cargaba, en lugar de reemplazarla |
 
 > ⚠️ Nunca "arregles" un defecto de tiempos agregando `waitForTimeout` al test para que la app termine de cargar antes del clic. El test queda en verde y la persona usuaria sigue perdiendo su pieza.
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Locators y esperas: cómo piensa Playwright](01-locators-y-esperas.md) | [Semana 7](../README.md) | [Datos por API y objeto de página](03-datos-y-objeto-de-pagina.md) |

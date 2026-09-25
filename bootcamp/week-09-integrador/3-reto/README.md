@@ -53,3 +53,11 @@ Sigan el ensayo de la [teoría 2](../1-teoria/02-sustentacion.md):
 ## Después del bootcamp
 
 La semana 10 (opcional) trata TDD sobre una historia de usuario nueva del proyecto. Si la ficha no llega, el cierre está completo: la suite y el CI quedan como parte del proyecto formativo, y cada PR futuro los mantiene en verde.
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Receta — Del repo al informe: reunir la evidencia](../2-recetas/evidencia/README.md) | [Semana 9](../README.md) | [Ebooks gratuitos — Semana 9](../4-recursos/ebooks-free/README.md) |

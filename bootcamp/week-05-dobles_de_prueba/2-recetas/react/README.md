@@ -165,3 +165,11 @@ Actualiza también el comentario. Corre `pnpm test` y revisa `api.js` en el repo
 - [ ] Probé el caso feliz, un `500` y un `422` con `server.use`
 - [ ] Descubrí el mensaje de error ilegible ante una respuesta HTML y lo corregí
 - [ ] Quité `api.js` de la exclusión de cobertura y cubrí la línea que faltaba
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Cuándo un doble ayuda y cuándo estorba](../../1-teoria/03-cuando-usar-dobles.md) | [Semana 5](../../README.md) | [Receta — Dobles en FastAPI con pytest-mock](../fastapi/README.md) |

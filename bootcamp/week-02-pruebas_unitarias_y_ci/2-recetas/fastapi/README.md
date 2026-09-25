@@ -104,3 +104,11 @@ Abre `htmlcov/index.html` en el navegador y entra a `app/service.py`. Las línea
 - [ ] Escribí el test del valor límite y vi cómo lo mata
 - [ ] Agregué un caso al test parametrizado
 - [ ] Hice mi propia mutación y, si sobrevivió, escribí el test que la detecta
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Receta — Lógica pura del frontend React con Vitest](../react/README.md) | [Semana 2](../../README.md) | [Receta — Pruebas unitarias en Express con Vitest](../express/README.md) |

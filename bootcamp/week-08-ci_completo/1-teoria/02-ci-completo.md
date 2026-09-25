@@ -120,3 +120,11 @@ Cuando un job falla, la máquina desaparece. Un **artefacto** guarda archivos de
 | Reporte de Playwright (con trazas) | `if: failure()` | Abrir la traza del test que falló, igual que en tu equipo |
 | Log del backend | `if: failure()` | Ver el error del servidor que el navegador solo mostró como un `500` |
 | Reporte de cobertura | `if: always()` | Revisar las ramas sin cubrir sin correr nada en local |
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Qué mide la cobertura (y qué no)](01-que-mide-la-cobertura.md) | [Semana 8](../README.md) | [Un CI que no miente](03-un-ci-que-no-miente.md) |

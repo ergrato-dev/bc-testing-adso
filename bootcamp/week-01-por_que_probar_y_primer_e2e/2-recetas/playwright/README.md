@@ -162,3 +162,11 @@ Corre `pnpm test`: deben pasar 3 tests. Después haz el Paso 5 con este test nue
 - [ ] Hice fallar un test a propósito y leí el reporte
 - [ ] Grabé un flujo con codegen y lo convertí en un test con aserción
 - [ ] Mi test nuevo pasa, y falla cuando rompo la aserción
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Anatomía de un test E2E con Playwright](../../1-teoria/03-anatomia-e2e-playwright.md) | [Semana 1](../../README.md) | [Receta — Medir la cobertura desde el día 1](../cobertura/README.md) |

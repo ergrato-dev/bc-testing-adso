@@ -74,3 +74,11 @@ Hay tres preguntas que un doble responde y el código real no:
 | 4 | Repositorio en memoria | Fake |
 | 4 | `@MockitoBean PiecesService` | Mock |
 | 4 | `dependency_overrides` | Mecanismo de FastAPI para inyectar cualquier doble |
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Semana 5 — Dobles de prueba](../README.md) | [Semana 5](../README.md) | [Dobles en cada stack](02-dobles-por-stack.md) |

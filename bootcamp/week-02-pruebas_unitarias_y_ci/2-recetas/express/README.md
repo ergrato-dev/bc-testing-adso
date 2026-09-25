@@ -103,3 +103,11 @@ Abre `coverage/index.html` en el navegador y entra a `pieces-service.js`. Las l�
 - [ ] Escribí el test del valor límite y vi cómo lo mata
 - [ ] Agregué un caso al test parametrizado
 - [ ] Hice mi propia mutación y, si sobrevivió, escribí el test que la detecta
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Receta — Pruebas unitarias en FastAPI con pytest](../fastapi/README.md) | [Semana 2](../../README.md) | [Receta — Pruebas unitarias en Spring Boot con JUnit 5](../springboot/README.md) |

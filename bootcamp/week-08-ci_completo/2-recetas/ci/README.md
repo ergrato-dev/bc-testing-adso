@@ -232,3 +232,11 @@ Sube el umbral de frontend y backend a **80** (o a la cobertura real si es mayor
 - [ ] Los reportes de cobertura y de Playwright quedan como artefactos
 - [ ] Provoqué un rojo en mi job y lo documenté
 - [ ] Los jobs nuevos son obligatorios en el ruleset y el umbral está en 80%
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Un CI que no miente](../../1-teoria/03-un-ci-que-no-miente.md) | [Semana 8](../../README.md) | [Reto — El CI completo del proyecto formativo desde cuatro ángulos](../../3-reto/README.md) |

@@ -70,3 +70,11 @@ El instructor escoge a alguien al azar y le pide, sobre un test de integración 
 - Decir qué defecto encontraría ese test que un test con el repositorio falso no encuentra.
 - Explicar cómo se limpia la BD antes o después de ese test, y qué pasaría si se quitara la limpieza.
 - Mostrar de dónde saca el test la conexión a la BD y por qué no es la BD de desarrollo.
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Receta — Integración en Spring Boot con `@DataJpaTest` y `@SpringBootTest`](../2-recetas/springboot/README.md) | [Semana 6](../README.md) | [Ebooks gratuitos — Semana 6](../4-recursos/ebooks-free/README.md) |

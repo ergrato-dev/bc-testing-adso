@@ -45,3 +45,11 @@ Coverage is measured from week 1. From week 2 on, GitHub Actions rejects any PR 
 Teams of 3–5 tend to split roles, leaving some members without key skills. Four mechanisms prevent that: **layer rotation**, **per-person commit evidence**, a **random spokesperson** at each weekly review, and **cross-layer PR review**. See [docs/guia-instructor.md](docs/guia-instructor.md) (Spanish).
 
 Course content is in Spanish. License: [CC BY-NC-SA 4.0](LICENSE).
+
+---
+
+## Navigation
+
+| ← Previous | Home | Next → |
+|---|---|---|
+| — | ADSO Testing Bootcamp | [Week 1 (Spanish)](bootcamp/week-01-por_que_probar_y_primer_e2e/README.md) · [Study plan (Spanish)](docs/plan-estudios.md) |

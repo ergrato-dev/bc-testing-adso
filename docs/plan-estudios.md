@@ -133,3 +133,11 @@ Frontend y backend tienen su propio umbral y **ambos** deben cumplir el piso de 
 | Sem | Estado |
 |:---:|---|
 | 1–10 | ✅ Publicada |
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [README del bootcamp](../README.md) | [README del bootcamp](../README.md) | [Guía del instructor](guia-instructor.md) |

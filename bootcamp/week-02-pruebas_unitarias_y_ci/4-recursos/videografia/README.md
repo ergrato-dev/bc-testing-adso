@@ -3,3 +3,11 @@
 - [Canal oficial de GitHub en YouTube](https://www.youtube.com/@GitHub) (en inglés): busca "GitHub Actions" para ver introducciones a workflows y CI. Puedes activar los subtítulos automáticos en español.
 
 > 💡 Mejor que cualquier video: abre la pestaña **Actions** del repositorio del bootcamp y recorre el log de un run del workflow `referencia`, paso por paso.
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Ebooks gratuitos — Semana 2](../ebooks-free/README.md) | [Semana 2](../../README.md) | [Webgrafía — Semana 2](../webgrafia/README.md) |

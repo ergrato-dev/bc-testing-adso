@@ -18,3 +18,11 @@
 | Login reutilizable | [Authentication](https://playwright.dev/docs/auth) |
 | Diagnóstico | [Trace viewer](https://playwright.dev/docs/trace-viewer-intro) · [Retries y tests flaky](https://playwright.dev/docs/test-retries) |
 | Fechas y horas | [Clock](https://playwright.dev/docs/clock) |
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Videografía — Semana 7](../videografia/README.md) | [Semana 7](../../README.md) | [Glosario — Semana 7](../../5-glosario/README.md) |

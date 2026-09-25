@@ -33,3 +33,11 @@
 **`vi.fn()`**: función simulada de Vitest que registra sus llamadas. Se usa para callbacks como `onSubmit`.
 
 **`within`**: función que limita las queries a una parte de la pantalla, por ejemplo una lista o una fila.
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Webgrafía — Semana 3](../4-recursos/webgrafia/README.md) | [Semana 3](../README.md) | [Rúbrica de evaluación — Semana 3](../rubrica-evaluacion.md) |

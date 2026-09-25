@@ -19,3 +19,11 @@
 | Express | [`truncate` en Knex](https://knexjs.org/guide/query-builder.html#truncate) · [`fileParallelism` en Vitest](https://vitest.dev/config/fileparallelism) |
 | FastAPI | [Unir una sesión a una transacción externa (para suites de test)](https://docs.sqlalchemy.org/en/21/orm/session_transaction.html#joining-a-session-into-an-external-transaction-such-as-for-test-suites) · [Saltar tests con `skipif`](https://docs.pytest.org/en/stable/how-to/skipping.html) |
 | Spring Boot | [`@DataJpaTest`](https://docs.spring.io/spring-boot/reference/testing/spring-boot-applications.html#testing.spring-boot-applications.autoconfigured-spring-data-jpa) · [`@SpringBootTest` con MockMvc](https://docs.spring.io/spring-boot/reference/testing/spring-boot-applications.html#testing.spring-boot-applications.with-mock-environment) · [Ejecución condicional por variable de entorno en JUnit](https://docs.junit.org/current/writing-tests/conditional-test-execution.html#environment-variables) |
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Videografía — Semana 6](../videografia/README.md) | [Semana 6](../../README.md) | [Glosario — Semana 6](../../5-glosario/README.md) |

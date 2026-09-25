@@ -31,3 +31,11 @@
 **Valor límite**: valor en el borde entre dos particiones, por ejemplo el año actual en la regla "el año no puede ser futuro". Es donde se esconden los defectos de `>` frente a `>=`.
 
 **Workflow**: archivo YAML en `.github/workflows/` que define cuándo y cómo se ejecutan los jobs de CI.
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Webgrafía — Semana 2](../4-recursos/webgrafia/README.md) | [Semana 2](../README.md) | [Rúbrica de evaluación — Semana 2](../rubrica-evaluacion.md) |

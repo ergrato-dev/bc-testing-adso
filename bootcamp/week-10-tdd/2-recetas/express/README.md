@@ -209,3 +209,11 @@ Con TDD, cada línea nueva existe porque un test la pidió. Compruébalo:
 - [ ] Refactoricé el código y los tests con la suite en verde
 - [ ] Anoté el caso del parámetro repetido y lo resolví con otro ciclo
 - [ ] Hice las dos mutaciones y vi qué tests las detectan
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [La lista de pruebas y los pasos pequeños](../../1-teoria/02-pasos-pequenos.md) | [Semana 10 (opcional)](../../README.md) | [Receta — TDD en FastAPI con pytest](../fastapi/README.md) |

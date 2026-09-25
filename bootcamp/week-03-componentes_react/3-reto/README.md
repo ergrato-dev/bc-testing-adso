@@ -55,3 +55,11 @@ El instructor escoge a alguien al azar y le pide, sobre el componente de **otro*
 - Explicar qué query usa cada test y por qué esa y no otra.
 - Explicar por qué un elemento se busca con `findBy` y otro con `queryBy`.
 - Romper el componente en vivo y mostrar qué test falla.
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Receta — React Testing Library contra la app de referencia](../2-recetas/react/README.md) | [Semana 3](../README.md) | [Ebooks gratuitos — Semana 3](../4-recursos/ebooks-free/README.md) |

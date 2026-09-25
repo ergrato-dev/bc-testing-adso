@@ -33,3 +33,11 @@
 **`403 Forbidden`**: la petición está autenticada, pero el usuario no tiene permiso para esa acción.
 
 **`422 Unprocessable Content`**: el JSON es válido, pero sus datos no cumplen las reglas.
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Webgrafía — Semana 4](../4-recursos/webgrafia/README.md) | [Semana 4](../README.md) | [Rúbrica de evaluación — Semana 4](../rubrica-evaluacion.md) |

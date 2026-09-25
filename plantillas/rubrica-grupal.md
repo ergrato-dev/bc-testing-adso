@@ -37,3 +37,11 @@ Se evalúa en la revisión con vocero aleatorio y con preguntas cortas de la teo
 - Mínimo 70% en cada evidencia.
 - Desde la semana 2, el umbral de cobertura de la semana es **obligatorio**: sin él, el Producto es Bajo. En las semanas 8 y 9 el umbral es 80%.
 - Evidencia individual verificable con `git shortlog` (ver [guía del instructor](../docs/guia-instructor.md)).
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Guía del instructor](../docs/guia-instructor.md) | [README del bootcamp](../README.md) | [App de referencia — Museo](../referencia/README.md) |

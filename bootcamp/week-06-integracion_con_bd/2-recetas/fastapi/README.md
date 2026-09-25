@@ -257,3 +257,11 @@ Haz cada una en `app/repository.py`, corre los tests con PostgreSQL y con MySQL,
 - [ ] Probé las reglas nuevas con tests unitarios en su valor límite
 - [ ] Corrí la suite dos veces seguidas y verifiqué que la tabla quedó vacía
 - [ ] Hice las tres mutaciones y expliqué por qué la tercera depende del motor
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Datos semilla y limpieza entre tests](../../1-teoria/03-datos-y-limpieza.md) | [Semana 6](../../README.md) | [Receta — Integración en Express con Knex y truncado](../express/README.md) |

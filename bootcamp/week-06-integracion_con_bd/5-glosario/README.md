@@ -37,3 +37,11 @@
 **Truncado (`TRUNCATE`)**: vaciar una tabla completa de una sola vez. Como estrategia de limpieza, se hace antes de cada test.
 
 **`VARCHAR(n)`**: tipo de columna de texto con longitud máxima `n`. La BD rechaza un valor más largo; un repositorio falso no.
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Webgrafía — Semana 6](../4-recursos/webgrafia/README.md) | [Semana 6](../README.md) | [Rúbrica de evaluación — Semana 6](../rubrica-evaluacion.md) |

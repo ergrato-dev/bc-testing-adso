@@ -125,3 +125,11 @@ El nombre de un test dice qué comportamiento se espera y en qué condición:
 - ❌ `test1`, `shouldWork`, `testForm`
 
 Cuando el test falle, su nombre te dirá qué regla se rompió sin tener que leer el código.
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Por qué probar](01-por-que-probar.md) | [Semana 1](../README.md) | [Anatomía de un test E2E con Playwright](03-anatomia-e2e-playwright.md) |

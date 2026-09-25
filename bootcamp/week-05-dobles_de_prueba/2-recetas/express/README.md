@@ -128,3 +128,11 @@ El test del Paso 2 usa un **fake** (el repositorio en memoria) y un **spy** (el 
 - [ ] Verifiqué que no se notifica cuando la pieza es inválida
 - [ ] Probé con un stub que falla que la pieza se crea igual, desde el servicio y desde el API
 - [ ] Hice las tres mutaciones y vi qué test detecta cada una
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Receta — Dobles en FastAPI con pytest-mock](../fastapi/README.md) | [Semana 5](../../README.md) | [Receta — Dobles en Spring Boot con Mockito](../springboot/README.md) |

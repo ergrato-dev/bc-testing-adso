@@ -74,3 +74,11 @@ El instructor escoge a alguien al azar y le pide, sobre un E2E que **no** escrib
 - Explicar qué espera Playwright antes de cada acción y aserción de ese test.
 - Cambiar una aserción web-first por una lectura única (`expect(await ...)`) y explicar cuándo fallaría.
 - Decir cómo prepara el test sus datos y qué pasaría si corriera dos veces en paralelo.
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Receta — Playwright: flujos estables y dos defectos que solo ve el navegador](../2-recetas/playwright/README.md) | [Semana 7](../README.md) | [Ebooks gratuitos — Semana 7](../4-recursos/ebooks-free/README.md) |

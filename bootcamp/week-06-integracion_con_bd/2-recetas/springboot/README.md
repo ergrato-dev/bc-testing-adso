@@ -263,3 +263,11 @@ Haz cada una, corre los tests y deshazla:
 - [ ] Probé la regla nueva con tests unitarios en su valor límite
 - [ ] Corrí la suite dos veces seguidas y verifiqué que la tabla quedó vacía
 - [ ] Hice las tres mutaciones y expliqué qué detecta cada una
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Receta — Integración en Express con Knex y truncado](../express/README.md) | [Semana 6](../../README.md) | [Reto — La base de datos del proyecto formativo desde cuatro ángulos](../../3-reto/README.md) |

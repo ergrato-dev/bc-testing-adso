@@ -13,3 +13,11 @@
 | Vitest | [Modo observador](https://vitest.dev/guide/cli) · [`test.each`](https://vitest.dev/api/#test-each) |
 | pytest | [Parametrizar tests](https://docs.pytest.org/en/stable/how-to/parametrize.html) |
 | JUnit 5 | [Tests parametrizados](https://docs.junit.org/current/writing-tests/parameterized-classes-and-tests.html) |
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Videografía — Semana 10](../videografia/README.md) | [Semana 10 (opcional)](../../README.md) | [Glosario — Semana 10](../../5-glosario/README.md) |

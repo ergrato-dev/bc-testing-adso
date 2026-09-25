@@ -284,3 +284,11 @@ Haz cada una, corre `pnpm test` en `e2e/` y deshazla:
 - [ ] Reproduje el doble envío y la pieza que desaparece con una red lenta simulada, y los corregí en la app
 - [ ] Leí la traza de un test fallido
 - [ ] Hice las tres mutaciones y expliqué por qué la tercera pasa con el defecto presente
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Datos por API y objeto de página](../../1-teoria/03-datos-y-objeto-de-pagina.md) | [Semana 7](../../README.md) | [Reto — Los flujos críticos del proyecto formativo en E2E](../../3-reto/README.md) |

@@ -95,3 +95,11 @@ El backend y la base de datos los levantas tú antes de correr los tests. En la 
 | `pnpm exec playwright test --headed` | Corre mostrando el navegador |
 | `pnpm exec playwright test --ui` | Modo interactivo: paso a paso, con línea de tiempo |
 | `pnpm exec playwright show-report` | Abre el reporte HTML de la última ejecución |
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [La pirámide de pruebas y el patrón AAA](02-piramide-y-aaa.md) | [Semana 1](../README.md) | [Receta — Playwright contra la app de referencia](../2-recetas/playwright/README.md) |

@@ -118,3 +118,11 @@ Abre `coverage/index.html` y entra a `validate-piece-form.js`. Comprueba que tu 
 - [ ] Vi un mutante que los tests del componente no detectan y el test unitario sí
 - [ ] Agregué una regla con valores límite y su test
 - [ ] Identifiqué lógica en los componentes de mi proyecto que puedo extraer
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Integración continua con GitHub Actions](../../1-teoria/03-integracion-continua.md) | [Semana 2](../../README.md) | [Receta — Pruebas unitarias en FastAPI con pytest](../fastapi/README.md) |

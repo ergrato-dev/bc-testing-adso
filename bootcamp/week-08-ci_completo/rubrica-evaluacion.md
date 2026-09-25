@@ -63,3 +63,11 @@ Aplica la [rúbrica base](../../plantillas/rubrica-grupal.md) con estos criterio
 > Si el vocero obtiene **Bajo** en Conocimiento, el Producto del grupo se limita a **Medio** esta semana.
 >
 > El 80% en CI es condición para sustentar en la semana 9.
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Glosario — Semana 8](5-glosario/README.md) | [Semana 8](README.md) | [Semana 9 — Integrador](../week-09-integrador/README.md) |

@@ -107,3 +107,11 @@ El experimento del inicio tiene nombre: **prueba de mutación**. Consiste en int
 4. Escribe el caso que lo mata y deshaz la mutación.
 
 Hazlo con cada regla de negocio que pruebes. En la revisión de esta semana, el vocero puede tener que hacerlo en vivo.
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [La unidad bajo prueba y los principios FIRST](01-unidad-y-first.md) | [Semana 2](../README.md) | [Integración continua con GitHub Actions](03-integracion-continua.md) |

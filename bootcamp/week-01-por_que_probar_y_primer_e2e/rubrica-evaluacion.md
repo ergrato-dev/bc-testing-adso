@@ -64,3 +64,11 @@ Se evalúa con el vocero aleatorio y con preguntas cortas.
 - **Bajo (0–20)**: Playwright no está configurado o la suite no corre.
 
 > Si el vocero obtiene **Bajo** en Conocimiento, el Producto del grupo se limita a **Medio** esta semana.
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [Glosario — Semana 1](5-glosario/README.md) | [Semana 1](README.md) | [Semana 2 — Pruebas unitarias con AAA y umbral en CI](../week-02-pruebas_unitarias_y_ci/README.md) |

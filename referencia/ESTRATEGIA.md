@@ -66,3 +66,11 @@ La referencia deja defectos **a propósito** para que las recetas los descubran.
 | Una pieza guardada mientras la lista carga desaparece de la pantalla | E2E | 7 |
 
 Todos viven en código con cobertura: la cobertura del frontend es 100% y aun así contiene los dos últimos.
+
+---
+
+## Navegación
+
+| ← Anterior | Inicio | Siguiente → |
+|---|---|---|
+| [App de referencia — Museo](README.md) | [README del bootcamp](../README.md) | — |
