@@ -2,7 +2,7 @@ import pytest
 from fastapi.testclient import TestClient
 
 from app.main import app, get_repository
-from app.repository import MemoryRepository
+from tests.fakes import MemoryRepository
 
 
 @pytest.fixture

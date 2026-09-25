@@ -77,7 +77,7 @@ DATABASE_URL=postgresql+psycopg://museo:museo@localhost:5433/museo_test uv run u
 
 ```bash
 cd api-springboot
-./mvnw test
+./mvnw verify
 DATABASE_URL=jdbc:postgresql://localhost:5433/museo_test ./mvnw spring-boot:run
 # MySQL: DATABASE_URL=jdbc:mysql://localhost:3307/museo_test ./mvnw spring-boot:run
 ```
@@ -107,5 +107,7 @@ pnpm test
 ```
 
 Playwright levanta el frontend por su cuenta (`webServer` en `playwright.config.js`). Si el puerto 5173 está ocupado, usa `FRONT_PORT=5199 pnpm test`.
+
+> Cada comando de test mide la cobertura y **falla si baja del 80%** (umbral en `vitest.config.js`, `vite.config.js`, `pyproject.toml` y `pom.xml`). El CI de este repo ([`.github/workflows/referencia.yml`](../.github/workflows/referencia.yml)) lo exige en cada PR.
 
 > Los tests unitarios y de API **no necesitan Docker**. La BD real solo se usa al correr la app y en los tests de integración de la semana 6.

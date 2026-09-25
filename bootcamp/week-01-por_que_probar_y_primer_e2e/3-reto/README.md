@@ -6,7 +6,7 @@
 
 Ya viste Playwright funcionando con la app de referencia. Ahora lo llevas a **tu proyecto formativo**: el mismo frontend React y el backend que escogió tu grupo.
 
-## Parte 1: Preparar el repo del grupo (una persona, 20 min)
+## Parte 1: Preparar el repo del grupo (dos personas, 40 min)
 
 1. Crea una rama `test/semana-01`.
 2. Copia estas plantillas del bootcamp a tu repo:
@@ -16,6 +16,7 @@ Ya viste Playwright funcionando con la app de referencia. Ahora lo llevas a **tu
    - `package.json` con `@playwright/test` en versión exacta y `"packageManager"` de pnpm.
    - `playwright.config.js` con la `baseURL` y el `webServer` que levanta **tu** frontend.
 4. Llena la matriz: esta semana la columna **S1** dice **E2E** para todos.
+5. Configura la cobertura en el frontend y en el backend y registra la **línea base** siguiendo la [receta de cobertura](../2-recetas/cobertura/README.md). La línea base queda como umbral en la configuración: desde hoy no puede bajar.
 
 > ⚠️ **No reutilices la BD de desarrollo para los tests** si tiene datos que te importan. Si puedes, crea una BD aparte para pruebas. En la semana 6 la montarás en Docker.
 
@@ -54,6 +55,7 @@ Para cada test:
 - [ ] Cada test con al menos una aserción y estructura AAA
 - [ ] `docs/matriz-rotacion.md` con la columna S1 llena
 - [ ] `.github/pull_request_template.md` en el repo
+- [ ] Cobertura configurada en frontend y backend, con la línea base anotada en la matriz y fijada como umbral
 - [ ] Al menos un commit de test por integrante (se verifica con `git shortlog`)
 
 ## Preparación para el vocero aleatorio

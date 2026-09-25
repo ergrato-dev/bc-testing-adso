@@ -10,5 +10,13 @@ export default defineConfig({
   test: {
     environment: 'jsdom',
     setupFiles: ['./tests/setup.js'],
+    coverage: {
+      // Se mide la lógica de la interfaz. Quedan fuera el arranque (main.jsx) y el
+      // cliente HTTP (api.js), que se prueba con MSW en la semana 5.
+      include: ['src/**'],
+      exclude: ['src/main.jsx', 'src/api.js'],
+      // Umbral mínimo: si la cobertura baja de aquí, "pnpm test" falla
+      thresholds: { lines: 80, branches: 80, functions: 80, statements: 80 },
+    },
   },
 });

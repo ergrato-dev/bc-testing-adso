@@ -45,7 +45,7 @@ Al finalizar, cada integrante del grupo, **no solo el grupo**, es capaz de:
 - ✅ Probar los endpoints de su API: estados HTTP, validación y errores
 - ✅ Aislar dependencias con dobles de prueba
 - ✅ Ejecutar pruebas de integración contra PostgreSQL o MySQL reales en Docker
-- ✅ Correr la suite completa en GitHub Actions con reporte de cobertura
+- ✅ Mantener una cobertura mínima del 80% en la lógica de negocio, exigida por CI en cada pull request
 
 ---
 
@@ -54,17 +54,19 @@ Al finalizar, cada integrante del grupo, **no solo el grupo**, es capaz de:
 | Sem | Tema | Recetas |
 |:---:|---|---|
 | 1 | [Por qué probar + **primer E2E con Playwright** sobre tu proyecto](bootcamp/week-01-por_que_probar_y_primer_e2e/README.md) | Playwright |
-| 2 | Pruebas unitarias con AAA | React · FastAPI · Express · Spring Boot |
+| 2 | Pruebas unitarias con AAA + **umbral de cobertura en CI** | React · FastAPI · Express · Spring Boot |
 | 3 | Componentes React con React Testing Library | React |
 | 4 | Pruebas de API: estados, validación y errores | FastAPI · Express · Spring Boot |
 | 5 | Dobles de prueba: mocks y stubs | React · FastAPI · Express · Spring Boot |
 | 6 | Integración con BD real (Docker Compose) | PostgreSQL · MySQL × 3 backends |
 | 7 | Playwright a fondo: flujos críticos y datos de prueba | Playwright |
-| 8 | Cobertura y CI con GitHub Actions | Todos |
+| 8 | CI completo (BD, integración y E2E) y calidad de la suite | Todos |
 | 9 | **Integrador**: suite completa y sustentación | — |
 | 10 | *(Opcional)* TDD sobre una historia de usuario nueva | Todos |
 
 Detalle en [docs/plan-estudios.md](docs/plan-estudios.md).
+
+> 📏 **La calidad es una exigencia.** La cobertura se mide desde la semana 1 y, desde la semana 2, GitHub Actions rechaza cualquier PR que no cumpla el umbral. El umbral sube cada semana hasta el **80%** y nunca baja. Ver [umbral de cobertura](docs/plan-estudios.md#umbral-de-cobertura).
 
 ---
 

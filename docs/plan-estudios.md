@@ -17,7 +17,27 @@
 2. **El producto es el proyecto formativo.** El reto semanal no tiene starter: se resuelve en el repo del grupo y la evidencia sirve para el proyecto SENA.
 3. **Todos aprenden todo.** La rotación de capas y el vocero aleatorio garantizan que cada aprendiz pase por front, API, BD y E2E (ver [guia-instructor.md](guia-instructor.md)).
 4. **Resultado visible desde el día 1.** Playwright abre la semana 1: ver el navegador llenando un formulario solo engancha a la ficha antes de entrar en la teoría.
-5. **Si la ficha llega solo a la semana 9, el cierre está completo.** La semana 10 es extensión.
+5. **La calidad es una exigencia, no una opción.** La cobertura se mide desde la semana 1 y, desde la semana 2, un umbral en CI bloquea cualquier PR que la haga bajar. El umbral sube cada semana hasta el **80%** (ver [Umbral de cobertura](#umbral-de-cobertura)).
+6. **Si la ficha llega solo a la semana 9, el cierre está completo.** La semana 10 es extensión.
+
+## Umbral de cobertura
+
+La cobertura se mide sobre la **lógica de negocio**: servicios, validaciones, rutas o controladores y componentes React. Quedan fuera el arranque (`main`, `server`, `*Application`), la configuración y los adaptadores de BD o HTTP, que se prueban con integración en las semanas 5 y 6.
+
+Frontend y backend tienen su propio umbral y **ambos** deben cumplir el piso de la semana:
+
+| Semana | Piso mínimo | Cómo se exige |
+|:---:|:---:|---|
+| 1 | Línea base | Se configura la herramienta y se registra la cobertura inicial |
+| 2 | 30% | Umbral en el archivo de configuración + CI que bloquea el PR |
+| 3 | 40% | CI |
+| 4 | 50% | CI |
+| 5 | 60% | CI |
+| 6 | 70% | CI |
+| 7 | 75% | CI |
+| 8–9 | **80%** | CI; condición para sustentar |
+
+**Regla de trinquete**: el umbral configurado es el mayor entre el piso de la semana y la cobertura real de la semana anterior (redondeada hacia abajo). Nunca baja. Si un grupo ya está en 65% en la semana 3, su umbral es 65%, no 40%.
 
 ## Distribución semanal (8 h)
 
@@ -35,7 +55,8 @@
 - **Objetivo**: entender para qué sirve una prueba automatizada y ver una funcionando contra el proyecto propio.
 - **Teoría**: qué es un defecto y cuánto cuesta encontrarlo tarde; la pirámide de pruebas (unitaria, integración, E2E); patrón AAA.
 - **Receta**: instalar Playwright, grabar un flujo con `playwright codegen` y convertirlo en un test legible con aserciones.
-- **Reto**: un test E2E de un flujo del proyecto (login, registro o creación de un recurso) que pase en local. Se crean la matriz de rotación y la carpeta de tests del repo del grupo.
+- **Receta de cobertura**: configurar Vitest coverage, pytest-cov o JaCoCo en el proyecto y leer el reporte.
+- **Reto**: un test E2E de un flujo del proyecto (login, registro o creación de un recurso) que pase en local. Se crean la matriz de rotación y la carpeta de tests del repo del grupo, y se registra la **línea base de cobertura** de frontend y backend.
 - **Capa en rotación**: E2E para todos (es la semana de arranque).
 
 ## Semana 2 — Pruebas unitarias con AAA
@@ -43,7 +64,8 @@
 - **Objetivo**: probar lógica de negocio aislada, rápida y repetible.
 - **Teoría**: unidad bajo prueba, principios FIRST, nombres que documentan el comportamiento, casos borde.
 - **Recetas**: Vitest (utilidades de React y servicios de Express), pytest (servicios de FastAPI), JUnit 5 + AssertJ (servicios de Spring Boot).
-- **Reto**: al menos 3 tests unitarios por integrante sobre reglas de negocio reales del proyecto.
+- **Receta de CI**: workflow mínimo de GitHub Actions que corre los tests de frontend y backend con su umbral (modelo: [`.github/workflows/referencia.yml`](../.github/workflows/referencia.yml)).
+- **Reto**: al menos 3 tests unitarios por integrante sobre reglas de negocio reales del proyecto, umbral del 30% configurado y CI en verde bloqueando PR.
 
 ## Semana 3 — Componentes React
 
@@ -80,17 +102,17 @@
 - **Receta**: Playwright contra front y API levantados con la BD en Docker.
 - **Reto**: los 3 flujos críticos del proyecto cubiertos por E2E.
 
-## Semana 8 — Cobertura y CI
+## Semana 8 — CI completo y calidad de la suite
 
-- **Objetivo**: que la suite corra sola en cada push.
-- **Teoría**: qué mide y qué no mide la cobertura; GitHub Actions: jobs, servicios (`postgres`/`mysql`), caché y artefactos.
-- **Recetas**: cobertura con Vitest (`@vitest/coverage-v8`), pytest-cov y JaCoCo; workflow de ejemplo por stack.
-- **Reto**: workflow del proyecto en verde con tests de front, backend y E2E.
+- **Objetivo**: que toda la suite (unitarias, integración y E2E) corra sola en cada PR, con el umbral final del 80%.
+- **Teoría**: qué mide y qué **no** mide la cobertura (100% no significa sin defectos); cobertura de ramas frente a líneas; GitHub Actions con servicios (`postgres`/`mysql`), caché y artefactos (reportes de cobertura y de Playwright).
+- **Recetas**: ampliar el workflow de la semana 2 con la BD como servicio, los tests de integración y los E2E.
+- **Reto**: workflow del proyecto en verde con tests de front, backend, integración y E2E, y cobertura ≥ 80% en frontend y backend.
 
 ## Semana 9 — Integrador
 
 - **Objetivo**: consolidar y sustentar.
-- **Actividad**: suite completa en verde en CI, informe breve de la estrategia de pruebas (qué se prueba en cada capa y por qué) y sustentación con vocero aleatorio: cada integrante responde por cualquier capa.
+- **Actividad**: suite completa en verde en CI con cobertura ≥ 80% (condición para sustentar), informe breve de la estrategia de pruebas (qué se prueba en cada capa y por qué) y sustentación con vocero aleatorio: cada integrante responde por cualquier capa.
 
 ## Semana 10 (opcional) — TDD
 

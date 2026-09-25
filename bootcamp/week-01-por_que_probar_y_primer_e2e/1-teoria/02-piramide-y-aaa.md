@@ -96,6 +96,26 @@ Un test que siempre pasa no protege nada. Por eso, cada vez que escribas un test
 
 Si el test no falla en el paso 2, no está verificando lo que crees. Este hábito es parte de la checklist de todos tus PR.
 
+## Cobertura: la calidad se mide desde el día 1
+
+La **cobertura** es el porcentaje de tu código que se ejecuta cuando corren los tests. Las herramientas la miden por líneas, por ramas (cada `if` tiene dos caminos) y por funciones:
+
+| Stack | Herramienta |
+|---|---|
+| React y Express | Vitest con `@vitest/coverage-v8` |
+| FastAPI | pytest-cov |
+| Spring Boot | JaCoCo |
+
+En este bootcamp la cobertura es una **exigencia**:
+
+- Se mide sobre la **lógica de negocio**: servicios, validaciones, rutas o controladores y componentes. El arranque y la configuración no cuentan.
+- Hoy registras tu **línea base**. Desde la semana 2, GitHub Actions rechaza cualquier PR que no cumpla el umbral de la semana.
+- El umbral sube cada semana hasta el **80%** y **nunca baja** ([tabla completa](../../../docs/plan-estudios.md#umbral-de-cobertura)).
+
+> ⚠️ La cobertura dice qué código **se ejecutó**, no qué código **se verificó**. Un test sin aserciones sube el porcentaje y no protege nada. Por eso el umbral va siempre junto con la regla anterior: un test debe poder fallar.
+
+Los tests E2E de esta semana no suman a esa cobertura: prueban el sistema desde afuera. La cobertura empieza a subir en la semana 2, con las pruebas unitarias.
+
 ## Nombres que documentan
 
 El nombre de un test dice qué comportamiento se espera y en qué condición:

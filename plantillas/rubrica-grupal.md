@@ -28,11 +28,12 @@ Se evalúa en la revisión con vocero aleatorio y con preguntas cortas de la teo
 
 ## Producto 📦 (30%, grupal)
 
-- **Alto (27–30)**: reto de la semana completo en el repo del grupo, suite en verde, matriz de rotación al día.
-- **Medio (21–26)**: reto parcial o tests en verde solo en algunas capas.
-- **Bajo (0–20)**: reto sin entregar o suite en rojo.
+- **Alto (27–30)**: reto de la semana completo en el repo del grupo, CI en verde, umbral de cobertura de la semana cumplido en frontend y backend, matriz de rotación al día.
+- **Medio (21–26)**: reto parcial, o tests en verde solo en algunas capas.
+- **Bajo (0–20)**: reto sin entregar, suite en rojo o umbral de cobertura incumplido.
 
 ## Criterios de aprobación
 
 - Mínimo 70% en cada evidencia.
+- Desde la semana 2, el umbral de cobertura de la semana es **obligatorio**: sin él, el Producto es Bajo. En las semanas 8 y 9 el umbral es 80%.
 - Evidencia individual verificable con `git shortlog` (ver [guía del instructor](../docs/guia-instructor.md)).

@@ -15,6 +15,7 @@ Al finalizar esta semana serás capaz de:
 3. Reconocer el patrón AAA (Arrange, Act, Assert) en cualquier test.
 4. Grabar un flujo con `playwright codegen` y convertirlo en un test legible.
 5. Ejecutar un test E2E contra tu proyecto y leer su resultado.
+6. Medir la cobertura de tu proyecto y fijar la línea base que, desde hoy, nunca puede bajar.
 
 ---
 
@@ -23,9 +24,9 @@ Al finalizar esta semana serás capaz de:
 | Actividad | Contenido | Tiempo |
 |---|---|---|
 | Demo de apertura | El instructor corre el E2E de la referencia con `--headed` | 0.5 h |
-| Teoría | Por qué probar, pirámide, AAA y anatomía de un test Playwright | 1.5 h |
-| Receta | Playwright contra la app de referencia | 2 h |
-| Reto | Primer E2E del proyecto formativo + matriz de rotación | 3 h |
+| Teoría | Por qué probar, pirámide, AAA, cobertura y anatomía de un test Playwright | 1.5 h |
+| Recetas | Playwright contra la app de referencia + medir la cobertura | 2 h |
+| Reto | Primer E2E del proyecto formativo, matriz de rotación y línea base de cobertura | 3 h |
 | Revisión | Vocero aleatorio y retro | 1 h |
 
 ---
@@ -38,11 +39,10 @@ Al finalizar esta semana serás capaz de:
 2. [La pirámide de pruebas y el patrón AAA](1-teoria/02-piramide-y-aaa.md)
 3. [Anatomía de un test E2E con Playwright](1-teoria/03-anatomia-e2e-playwright.md)
 
-### Receta
+### Recetas
 
-- [Playwright contra la app de referencia](2-recetas/playwright/README.md)
-
-Esta semana hay una sola receta, común a toda la ficha: Playwright prueba lo que ve la persona usuaria, sin importar si el backend es FastAPI, Express o Spring Boot.
+- [Playwright contra la app de referencia](2-recetas/playwright/README.md) (1.5 h): común a toda la ficha. Playwright prueba lo que ve la persona usuaria, sin importar si el backend es FastAPI, Express o Spring Boot.
+- [Medir la cobertura desde el día 1](2-recetas/cobertura/README.md) (30 min): cada grupo en su stack.
 
 ### Reto
 

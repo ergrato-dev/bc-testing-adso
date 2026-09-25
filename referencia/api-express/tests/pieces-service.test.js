@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
-import { validatePiece, ValidationError } from '../src/pieces-service.js';
+import { createPiecesService, NotFoundError, validatePiece, ValidationError } from '../src/pieces-service.js';
+import { createMemoryRepository } from './memory-repository.js';
 
 describe('validatePiece', () => {
   it('should return trimmed data when piece is valid', () => {
@@ -13,9 +14,26 @@ describe('validatePiece', () => {
     expect(piece).toEqual({ name: 'Guernica', artist: 'Picasso', year: 1937 });
   });
 
-  it('should throw ValidationError when year is in the future', () => {
-    const data = { name: 'Future', artist: 'Nobody', year: 2027 };
+  it.each([
+    [{ artist: 'Picasso', year: 1937 }, 'name is required'],
+    [{ name: 'Guernica', artist: '  ', year: 1937 }, 'artist is required'],
+    [{ name: 'Guernica', artist: 'Picasso', year: '1937' }, 'year must be an integer'],
+    [{ name: 'Future', artist: 'Nobody', year: 2027 }, 'year cannot be in the future'],
+  ])('should throw ValidationError when data is %o', (data, message) => {
+    expect(() => validatePiece(data, 2026)).toThrow(new ValidationError(message));
+  });
+});
 
-    expect(() => validatePiece(data, 2026)).toThrow(ValidationError);
+describe('createPiecesService', () => {
+  it('should throw NotFoundError when getting a missing piece', async () => {
+    const service = createPiecesService(createMemoryRepository());
+
+    await expect(service.get(99)).rejects.toThrow(NotFoundError);
+  });
+
+  it('should throw NotFoundError when removing a missing piece', async () => {
+    const service = createPiecesService(createMemoryRepository());
+
+    await expect(service.remove(99)).rejects.toThrow(NotFoundError);
   });
 });

@@ -84,6 +84,14 @@ bootcamp/week-XX-slug/
 - Credenciales por variables de entorno; nunca en archivos de test.
 - E2E: locators accesibles, sin `waitForTimeout` fijo, datos preparados por API.
 
+## Cobertura (exigencia desde el día 1)
+
+- Umbral progresivo hasta el **80%** (tabla en `docs/plan-estudios.md`), exigido por CI desde la semana 2.
+- Se mide la lógica de negocio. Se excluyen el arranque, la configuración y los adaptadores de BD o HTTP, siempre con un comentario que explique por qué.
+- El comando de test habitual ya aplica el umbral: `pnpm test` (`vitest run --coverage` con `thresholds`), `uv run pytest` (`--cov` en `addopts` + `fail_under`) y `./mvnw verify` (regla `check` de JaCoCo).
+- Toda la app de referencia cumple el 80%, y su CI está en `.github/workflows/referencia.yml`.
+- Los fakes en memoria viven en `tests/`, no en `src/` ni en `app/`.
+
 ## Límites de respuesta
 
 - Genera una semana por partes (README y rúbrica → teoría → recetas → reto y recursos) y espera confirmación entre partes.
@@ -94,6 +102,7 @@ bootcamp/week-XX-slug/
 - [ ] Rúbrica sobre la base de `plantillas/rubrica-grupal.md`
 - [ ] Teoría común con stack indicado en cada bloque de código
 - [ ] Recetas que corren contra `referencia/` (comandos verificados)
+- [ ] Referencia con cobertura ≥ 80% tras los cambios de la semana
 - [ ] Reto sobre el proyecto formativo, con la regla de grupo
 - [ ] Recursos y glosario A–Z
 - [ ] Tuteo, versiones exactas, pnpm/uv/mvnw

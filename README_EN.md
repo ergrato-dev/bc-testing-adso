@@ -22,15 +22,19 @@ Each week covers **one shared topic** with **recipes per stack**, so every team 
 | Wk | Topic |
 |:---:|---|
 | 1 | Why test + **first Playwright E2E** on your project |
-| 2 | Unit tests with AAA |
+| 2 | Unit tests with AAA + **coverage threshold in CI** |
 | 3 | React components with React Testing Library |
 | 4 | API tests: status codes, validation, errors |
 | 5 | Test doubles: mocks and stubs |
 | 6 | Integration with a real DB (Docker Compose) |
 | 7 | Playwright in depth: critical flows and test data |
-| 8 | Coverage and CI with GitHub Actions |
+| 8 | Full CI (DB, integration, E2E) and suite quality |
 | 9 | **Capstone**: full suite and oral defense |
 | 10 | *(Optional)* TDD on a new user story |
+
+## Quality is mandatory
+
+Coverage is measured from week 1. From week 2 on, GitHub Actions rejects any PR below the weekly threshold, which rises to **80%** of business logic and never goes down.
 
 ## Team learning
 

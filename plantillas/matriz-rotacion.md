@@ -20,6 +20,14 @@ Reglas:
 | @integrante-4 | E2E | | | | | | | | |
 | @integrante-5 | E2E | | | | | | | | |
 
+## Cobertura semanal
+
+Anota la cobertura real al cerrar cada semana. El umbral de la semana siguiente es el mayor entre el piso del plan y este valor, redondeado hacia abajo.
+
+| Semana | Frontend (%) | Backend (%) | Umbral configurado para la semana siguiente |
+|---|---|---|---|
+| S1 (línea base) | | | |
+
 ## Registro de vocero aleatorio
 
 | Semana | Vocero | Capa preguntada | Resultado (Alto / Medio / Bajo) |

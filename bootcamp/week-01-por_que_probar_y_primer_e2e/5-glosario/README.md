@@ -8,6 +8,8 @@
 
 **baseURL**: dirección base de la app en `playwright.config.js`. Permite escribir `page.goto('/')` en lugar de la URL completa.
 
+**Cobertura (coverage)**: porcentaje del código que se ejecuta al correr los tests, medido por líneas, ramas y funciones. Indica qué se ejecutó, no qué se verificó.
+
 **Codegen**: herramienta de Playwright (`playwright codegen`) que genera código mientras usas la app. Produce un borrador al que le faltan aserciones.
 
 **Cono de helado**: antipatrón en el que casi todo se prueba a mano o con E2E, y casi nada con pruebas unitarias.
@@ -26,6 +28,8 @@
 
 **Locator**: forma de encontrar un elemento en la página. Se prefieren `getByRole` y `getByLabel`.
 
+**Línea base**: cobertura medida al empezar. Desde ese momento el umbral solo puede subir.
+
 **Pirámide de pruebas**: modelo que recomienda muchas pruebas unitarias, algunas de integración y pocas E2E.
 
 **Playwright**: herramienta de Microsoft para automatizar navegadores (Chromium, Firefox, WebKit) y escribir pruebas E2E.
@@ -37,5 +41,7 @@
 **Reporte HTML**: informe de Playwright con el resultado de cada test, capturas y trazas. Se abre con `playwright show-report`.
 
 **Suite**: conjunto de tests de un proyecto o módulo.
+
+**Umbral de cobertura**: porcentaje mínimo configurado en la herramienta. Si la cobertura queda por debajo, el comando de test falla.
 
 **webServer**: opción de `playwright.config.js` que levanta la app antes de correr los tests.

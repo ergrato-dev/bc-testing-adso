@@ -21,3 +21,14 @@ dev = [
 [tool.pytest]
 pythonpath = ["."]
 testpaths = ["tests"]
+# Cada "uv run pytest" mide la cobertura y falla si baja del umbral
+addopts = ["--cov", "--cov-report=term-missing"]
+
+[tool.coverage.run]
+source = ["app"]
+# Se mide la lógica de negocio. El adaptador de BD se prueba con
+# integración contra la BD real (semana 6).
+omit = ["app/repository.py"]
+
+[tool.coverage.report]
+fail_under = 80

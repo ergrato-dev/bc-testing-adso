@@ -6,9 +6,8 @@
   "engines": { "node": ">=22.0.0" },
   "scripts": {
     "start": "node src/server.js",
-    "test": "vitest run",
-    "test:watch": "vitest",
-    "test:coverage": "vitest run --coverage"
+    "test": "vitest run --coverage",
+    "test:watch": "vitest"
   },
   "dependencies": {
     "express": "5.2.1",

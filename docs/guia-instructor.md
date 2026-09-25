@@ -53,13 +53,28 @@ Efecto buscado: al grupo le conviene enseñarse entre sí, porque cualquiera pue
 - La plantilla de PR obliga a indicar la capa del autor y la del revisor.
 - No hace falta que revises los PR: basta con abrir uno al azar en la revisión semanal.
 
+## Umbral de cobertura: la calidad no se negocia
+
+El umbral se exige desde la semana 2 y sube cada semana según la tabla del [plan de estudios](plan-estudios.md#umbral-de-cobertura), hasta el 80%.
+
+- **Semana 1**: cada grupo configura la herramienta de cobertura y anota su **línea base** de frontend y backend en `docs/matriz-rotacion.md`.
+- **Desde la semana 2**: el umbral vive en el archivo de configuración del proyecto (`vite.config.js` o `vitest.config.js`, `pyproject.toml`, `pom.xml`) y el CI de GitHub Actions lo exige en cada PR. Un PR que no lo cumple **no se fusiona**.
+- **Cada semana**: el grupo sube el número en la configuración con un PR. El nuevo valor es el mayor entre el piso de la semana y la cobertura real de la semana anterior, redondeada hacia abajo. **Nunca baja.**
+
+Verificación en la revisión semanal (menos de un minuto):
+
+1. Abre la pestaña **Actions** del repo del grupo: el último workflow de `main` debe estar en verde.
+2. Abre el archivo de configuración: el umbral debe ser al menos el piso de la semana.
+
+> ⚠️ Cuidado con los atajos para inflar el número: tests sin aserciones, o `exclude` de archivos con lógica de negocio. Pídele al vocero que muestre qué falla si rompes el código cubierto. Si nada falla, esa cobertura no cuenta.
+
 ## Evaluación semanal
 
 | Evidencia | Peso | Tipo | Cómo se verifica |
 |---|---:|---|---|
 | Conocimiento | 30% | Individual | Vocero aleatorio + preguntas cortas de la teoría |
 | Desempeño | 40% | Individual | Commits de test propios + capa cumplida en la matriz |
-| Producto | 30% | Grupal | Reto de la semana en el repo del grupo, tests en verde |
+| Producto | 30% | Grupal | Reto de la semana en el repo del grupo, CI en verde y umbral de cobertura de la semana |
 
 Detalle y niveles en [`plantillas/rubrica-grupal.md`](../plantillas/rubrica-grupal.md). Cada semana trae además su `rubrica-evaluacion.md` con los criterios del tema.
 

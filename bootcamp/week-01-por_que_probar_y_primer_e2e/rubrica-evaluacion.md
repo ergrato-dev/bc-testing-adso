@@ -6,7 +6,7 @@ Aplica la [rúbrica base](../../plantillas/rubrica-grupal.md) con estos criterio
 |---|---:|---|---|
 | Conocimiento 🧠 | 30% | Individual | Pirámide de pruebas, AAA y anatomía de un test Playwright |
 | Desempeño 💪 | 40% | Individual | Test E2E propio sobre un flujo del proyecto formativo |
-| Producto 📦 | 30% | Grupal | Playwright configurado en el repo del grupo, suite en verde y matriz iniciada |
+| Producto 📦 | 30% | Grupal | Playwright configurado, suite en verde, matriz iniciada y línea base de cobertura fijada |
 
 ---
 
@@ -20,10 +20,11 @@ Se evalúa con el vocero aleatorio y con preguntas cortas.
 2. Ubica pruebas unitarias, de integración y E2E en la pirámide y explica por qué hay pocas E2E.
 3. Señala Arrange, Act y Assert en el test de **otro** integrante.
 4. Explica por qué se prefieren `getByRole` y `getByLabel` y por qué se evita `waitForTimeout`.
+5. Explica qué mide la cobertura, qué **no** mide, y cuál es la línea base de su proyecto.
 
 ### Niveles
 
-- **Alto (27–30)**: responde los cuatro criterios con ejemplos del proyecto propio.
+- **Alto (27–30)**: responde los cinco criterios con ejemplos del proyecto propio.
 - **Medio (21–26)**: responde con apoyo o con imprecisiones menores.
 - **Bajo (0–20)**: no logra explicar el test de otro integrante.
 
@@ -54,11 +55,12 @@ Se evalúa con el vocero aleatorio y con preguntas cortas.
 2. Suite completa en verde en el equipo de al menos dos integrantes.
 3. `docs/matriz-rotacion.md` y `.github/pull_request_template.md` en el repo.
 4. PR revisado por un integrante distinto al autor.
+5. Cobertura configurada en frontend y backend, línea base registrada en la matriz y fijada como umbral.
 
 ### Niveles
 
-- **Alto (27–30)**: cumple los cuatro criterios.
-- **Medio (21–26)**: suite parcial o falta alguna plantilla.
+- **Alto (27–30)**: cumple los cinco criterios.
+- **Medio (21–26)**: suite parcial, falta alguna plantilla o la cobertura solo está configurada en una capa.
 - **Bajo (0–20)**: Playwright no está configurado o la suite no corre.
 
 > Si el vocero obtiene **Bajo** en Conocimiento, el Producto del grupo se limita a **Medio** esta semana.

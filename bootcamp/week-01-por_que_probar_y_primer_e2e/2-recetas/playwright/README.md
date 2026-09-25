@@ -1,6 +1,6 @@
 # Receta — Playwright contra la app de referencia
 
-> Común a toda la ficha · Tiempo estimado: 2 h
+> Común a toda la ficha · Tiempo estimado: 1.5 h
 
 Vas a correr los tests E2E de la app de referencia Museo, grabar un flujo nuevo con `codegen` y convertirlo en un test limpio. Lo que aprendas aquí lo repites en el [reto](../../3-reto/README.md) sobre tu proyecto.
 
