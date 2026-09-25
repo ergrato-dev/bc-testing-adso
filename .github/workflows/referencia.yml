@@ -1,5 +1,6 @@
 # Corre los tests de la app de referencia y exige el umbral de cobertura (80%)
-# en cada push y pull request. Es el modelo del CI que montas en la semana 2.
+# en cada push y pull request. Es el modelo del CI que montas en la semana 2
+# y completas en la semana 8 (BD como servicio, E2E, caché y artefactos).
 name: referencia
 
 on:
@@ -28,8 +29,19 @@ jobs:
       - uses: actions/setup-node@v7.0.0
         with:
           node-version-file: .nvmrc
+          # Caché del almacén de pnpm. Este repo no versiona lockfiles (fija versiones
+          # exactas en package.json), así que la clave se calcula con package.json
+          cache: pnpm
+          cache-dependency-path: referencia/${{ matrix.app }}/package.json
       - run: pnpm install
       - run: pnpm test
+      # El reporte de cobertura queda descargable desde la pestaña Actions
+      - uses: actions/upload-artifact@v7.0.1
+        if: always()
+        with:
+          name: coverage-${{ matrix.app }}
+          path: referencia/${{ matrix.app }}/coverage/
+          retention-days: 7
 
   api-fastapi:
     runs-on: ubuntu-latest
@@ -39,6 +51,9 @@ jobs:
     steps:
       - uses: actions/checkout@v7.0.1
       - uses: astral-sh/setup-uv@v10.2.0
+        with:
+          enable-cache: true
+          cache-dependency-glob: referencia/api-fastapi/pyproject.toml
       - run: uv sync
       - run: uv run pytest
 
@@ -53,4 +68,104 @@ jobs:
         with:
           distribution: temurin
           java-version: "21"
+          cache: maven
       - run: ./mvnw -B verify
+
+  # E2E: el mismo frontend y los mismos tests de Playwright contra cada backend,
+  # con PostgreSQL como servicio del job (la BD de pruebas de la semana 6, en el CI)
+  e2e:
+    name: e2e (${{ matrix.backend }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        backend: [api-express, api-fastapi, api-springboot]
+    services:
+      postgres:
+        image: postgres:18-alpine
+        env:
+          POSTGRES_USER: museo
+          POSTGRES_PASSWORD: museo
+          POSTGRES_DB: museo_test
+        ports:
+          - "5433:5432"
+        options: >-
+          --health-cmd "pg_isready -U museo -d museo_test"
+          --health-interval 2s
+          --health-retries 15
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: pnpm/action-setup@v6.1.0
+        with:
+          package_json_file: referencia/e2e/package.json
+      - uses: actions/setup-node@v7.0.0
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+          cache-dependency-path: |
+            referencia/e2e/package.json
+            referencia/frontend-react/package.json
+            referencia/api-express/package.json
+
+      # Arranca el backend en segundo plano: sigue vivo en los pasos siguientes
+      - name: Start api-express
+        if: matrix.backend == 'api-express'
+        working-directory: referencia/api-express
+        env:
+          DATABASE_URL: postgres://museo:museo@localhost:5433/museo_test
+        run: |
+          pnpm install
+          pnpm start > api.log 2>&1 &
+      - uses: astral-sh/setup-uv@v10.2.0
+        if: matrix.backend == 'api-fastapi'
+        with:
+          enable-cache: true
+          cache-dependency-glob: referencia/api-fastapi/pyproject.toml
+      - name: Start api-fastapi
+        if: matrix.backend == 'api-fastapi'
+        working-directory: referencia/api-fastapi
+        env:
+          DATABASE_URL: postgresql+psycopg://museo:museo@localhost:5433/museo_test
+        run: |
+          uv sync
+          uv run uvicorn app.main:app --port 8000 > api.log 2>&1 &
+      - uses: actions/setup-java@v6.0.1
+        if: matrix.backend == 'api-springboot'
+        with:
+          distribution: temurin
+          java-version: "21"
+          cache: maven
+      - name: Start api-springboot
+        if: matrix.backend == 'api-springboot'
+        working-directory: referencia/api-springboot
+        env:
+          DATABASE_URL: jdbc:postgresql://localhost:5433/museo_test
+        run: |
+          ./mvnw -B -q package -DskipTests
+          java -jar target/api-springboot-0.0.1-SNAPSHOT.jar > api.log 2>&1 &
+
+      # Playwright levanta el frontend con vite: necesita sus dependencias
+      - run: pnpm install
+        working-directory: referencia/frontend-react
+      - run: pnpm install
+        working-directory: referencia/e2e
+      - run: pnpm exec playwright install --with-deps chromium
+        working-directory: referencia/e2e
+
+      # Espera a que el API responda (máximo 60 s), sin sleeps fijos
+      - name: Wait for the API
+        run: curl --silent --fail --retry 30 --retry-delay 2 --retry-all-errors http://localhost:8000/api/pieces
+
+      - run: pnpm test
+        working-directory: referencia/e2e
+
+      # Si algo falla, el reporte HTML (con trazas) y el log del backend quedan descargables
+      - uses: actions/upload-artifact@v7.0.1
+        if: failure()
+        with:
+          name: e2e-${{ matrix.backend }}
+          path: |
+            referencia/e2e/playwright-report/
+            referencia/${{ matrix.backend }}/api.log
+          retention-days: 7
+

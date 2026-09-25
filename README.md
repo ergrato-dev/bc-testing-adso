@@ -64,7 +64,7 @@ Al finalizar, cada integrante del grupo, **no solo el grupo**, es capaz de:
 | 5 | [Dobles de prueba: mocks y stubs](bootcamp/week-05-dobles_de_prueba/README.md) | React · FastAPI · Express · Spring Boot |
 | 6 | [Integración con BD real (Docker Compose)](bootcamp/week-06-integracion_con_bd/README.md) | PostgreSQL · MySQL × 3 backends |
 | 7 | [Playwright a fondo: flujos críticos y datos de prueba](bootcamp/week-07-playwright_a_fondo/README.md) | Playwright |
-| 8 | CI completo (BD, integración y E2E) y calidad de la suite | Todos |
+| 8 | [CI completo (BD, integración y E2E) y calidad de la suite](bootcamp/week-08-ci_completo/README.md) | Todos |
 | 9 | **Integrador**: suite completa y sustentación | — |
 | 10 | *(Opcional)* TDD sobre una historia de usuario nueva | Todos |
 

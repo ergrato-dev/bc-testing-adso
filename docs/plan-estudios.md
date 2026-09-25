@@ -110,6 +110,7 @@ Frontend y backend tienen su propio umbral y **ambos** deben cumplir el piso de 
 - **Teoría**: qué mide y qué **no** mide la cobertura (100% no significa sin defectos); cobertura de ramas frente a líneas; GitHub Actions con servicios (`postgres`/`mysql`), caché y artefactos (reportes de cobertura y de Playwright).
 - **Recetas**: ampliar el workflow de la semana 2 con la BD como servicio, los tests de integración y los E2E.
 - **Reto**: workflow del proyecto en verde con tests de front, backend, integración y E2E, y cobertura ≥ 80% en frontend y backend.
+- **Evidencia en la referencia**: los jobs de frontend y backend quedan en verde con los tests de integración saltados; con la BD como servicio y los E2E en el CI, los defectos de las semanas 6 y 7 salen en rojo. El frontend tiene 100% de cobertura con esos dos defectos dentro.
 
 ## Semana 9 — Integrador
 
@@ -129,5 +130,5 @@ Frontend y backend tienen su propio umbral y **ambos** deben cumplir el piso de 
 
 | Sem | Estado |
 |:---:|---|
-| 1–7 | ✅ Publicada |
-| 8–10 | ⏳ Pendiente |
+| 1–8 | ✅ Publicada |
+| 9–10 | ⏳ Pendiente |

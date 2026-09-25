@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" width="900" height="400" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
+  <rect width="900" height="400" fill="#0f172a"/>
+  <text x="450" y="36" text-anchor="middle" fill="#f1f5f9" font-size="20" font-weight="700">Frontend de la referencia: 100% cubierto, no 100% verificado</text>
+
+  <!-- Barra de cobertura -->
+  <text x="40" y="86" fill="#f1f5f9" font-size="14" font-weight="700">Lo que mide la cobertura: ¿se ejecutó cada línea y cada rama?</text>
+  <rect x="40" y="100" width="820" height="40" rx="6" fill="#14532d" stroke="#22c55e" stroke-width="2"/>
+  <text x="450" y="126" text-anchor="middle" fill="#86efac" font-size="15" font-weight="700">✓ líneas 100% · ramas 100% · funciones 100%</text>
+
+  <!-- Comportamientos -->
+  <text x="40" y="186" fill="#f1f5f9" font-size="14" font-weight="700">Lo que importa: ¿se verificó cada comportamiento?</text>
+
+  <rect x="40" y="200" width="196" height="80" rx="8" fill="#1e293b" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="138" y="228" text-anchor="middle" fill="#86efac" font-size="14" font-weight="700">✓ Guardar</text>
+  <text x="138" y="250" text-anchor="middle" fill="#94a3b8" font-size="12">un clic, red rápida</text>
+
+  <rect x="248" y="200" width="196" height="80" rx="8" fill="#1e293b" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="346" y="228" text-anchor="middle" fill="#86efac" font-size="14" font-weight="700">✓ Validación</text>
+  <text x="346" y="250" text-anchor="middle" fill="#94a3b8" font-size="12">nombre y artista vacíos</text>
+
+  <rect x="456" y="200" width="196" height="80" rx="8" fill="#450a0a" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="554" y="228" text-anchor="middle" fill="#fca5a5" font-size="14" font-weight="700">✗ Doble clic</text>
+  <text x="554" y="250" text-anchor="middle" fill="#fca5a5" font-size="12">guarda dos veces</text>
+
+  <rect x="664" y="200" width="196" height="80" rx="8" fill="#450a0a" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="762" y="228" text-anchor="middle" fill="#fca5a5" font-size="14" font-weight="700">✗ Red lenta</text>
+  <text x="762" y="250" text-anchor="middle" fill="#fca5a5" font-size="12">la pieza desaparece</text>
+
+  <text x="554" y="300" text-anchor="middle" fill="#94a3b8" font-size="12">mismas líneas, otro momento</text>
+  <text x="762" y="300" text-anchor="middle" fill="#94a3b8" font-size="12">mismas líneas, otro orden</text>
+
+  <rect x="40" y="326" width="820" height="46" rx="6" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+  <text x="450" y="354" text-anchor="middle" fill="#cbd5e1" font-size="13">La cobertura dice qué código corrió. Solo las aserciones dicen qué comportamiento se comprobó.</text>
+</svg>
