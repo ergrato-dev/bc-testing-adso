@@ -54,7 +54,7 @@ Al finalizar, cada integrante del grupo, **no solo el grupo**, es capaz de:
 | Sem | Tema | Recetas |
 |:---:|---|---|
 | 1 | [Por qué probar + **primer E2E con Playwright** sobre tu proyecto](bootcamp/week-01-por_que_probar_y_primer_e2e/README.md) | Playwright |
-| 2 | Pruebas unitarias con AAA + **umbral de cobertura en CI** | React · FastAPI · Express · Spring Boot |
+| 2 | [Pruebas unitarias con AAA + **umbral de cobertura en CI**](bootcamp/week-02-pruebas_unitarias_y_ci/README.md) | React · FastAPI · Express · Spring Boot |
 | 3 | Componentes React con React Testing Library | React |
 | 4 | Pruebas de API: estados, validación y errores | FastAPI · Express · Spring Boot |
 | 5 | Dobles de prueba: mocks y stubs | React · FastAPI · Express · Spring Boot |

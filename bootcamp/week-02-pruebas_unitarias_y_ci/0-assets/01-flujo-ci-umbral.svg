@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" width="900" height="360" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  <rect width="900" height="360" fill="#0f172a"/>
+  <text x="450" y="36" text-anchor="middle" fill="#f1f5f9" font-size="20" font-weight="700">Cada PR pasa por el CI antes de llegar a main</text>
+
+  <!-- PR -->
+  <rect x="30" y="140" width="140" height="70" rx="8" fill="#1e293b" stroke="#6366f1" stroke-width="2"/>
+  <text x="100" y="170" text-anchor="middle" fill="#f1f5f9" font-size="15" font-weight="700">Pull request</text>
+  <text x="100" y="192" text-anchor="middle" fill="#94a3b8" font-size="12">tu rama</text>
+
+  <line x1="172" y1="175" x2="228" y2="175" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- CI box -->
+  <rect x="232" y="70" width="330" height="210" rx="10" fill="#1e293b" stroke="#6366f1" stroke-width="2"/>
+  <text x="397" y="98" text-anchor="middle" fill="#f1f5f9" font-size="15" font-weight="700">GitHub Actions</text>
+
+  <rect x="252" y="115" width="140" height="70" rx="6" fill="#0f172a"/>
+  <text x="322" y="142" text-anchor="middle" fill="#f1f5f9" font-size="13" font-weight="700">job: frontend</text>
+  <text x="322" y="164" text-anchor="middle" fill="#94a3b8" font-size="12">pnpm test</text>
+
+  <rect x="402" y="115" width="140" height="70" rx="6" fill="#0f172a"/>
+  <text x="472" y="142" text-anchor="middle" fill="#f1f5f9" font-size="13" font-weight="700">job: backend</text>
+  <text x="472" y="164" text-anchor="middle" fill="#94a3b8" font-size="11">pytest · pnpm test · mvnw verify</text>
+
+  <text x="397" y="215" text-anchor="middle" fill="#f1f5f9" font-size="13">1. ¿Pasan todos los tests?</text>
+  <text x="397" y="240" text-anchor="middle" fill="#f1f5f9" font-size="13">2. ¿Cobertura ≥ umbral de la semana?</text>
+  <text x="397" y="264" text-anchor="middle" fill="#94a3b8" font-size="11">(el umbral vive en la configuración del proyecto)</text>
+
+  <!-- outcomes -->
+  <line x1="564" y1="140" x2="640" y2="105" stroke="#22c55e" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="564" y1="210" x2="640" y2="245" stroke="#ef4444" stroke-width="2" marker-end="url(#arr)"/>
+
+  <rect x="645" y="65" width="225" height="75" rx="8" fill="#14532d"/>
+  <text x="757" y="95" text-anchor="middle" fill="#f1f5f9" font-size="15" font-weight="700">✅ Sí a las dos</text>
+  <text x="757" y="120" text-anchor="middle" fill="#bbf7d0" font-size="12">Se puede fusionar en main</text>
+
+  <rect x="645" y="210" width="225" height="75" rx="8" fill="#7f1d1d"/>
+  <text x="757" y="240" text-anchor="middle" fill="#f1f5f9" font-size="15" font-weight="700">❌ Falla una</text>
+  <text x="757" y="265" text-anchor="middle" fill="#fecaca" font-size="12">Merge bloqueado: corrige y haz push</text>
+
+  <text x="450" y="330" text-anchor="middle" fill="#94a3b8" font-size="12">El umbral sube cada semana por PR (30% → 80%) y nunca baja.</text>
+</svg>

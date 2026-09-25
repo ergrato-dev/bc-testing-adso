@@ -1,6 +1,7 @@
 import { useState } from 'react';
+import { validatePieceForm } from './validate-piece-form.js';
 
-// Formulario de registro de piezas. Valida en el cliente y delega el envío en onSubmit.
+// Formulario de registro de piezas. Valida con validatePieceForm y delega el envío en onSubmit.
 export default function PieceForm({ onSubmit }) {
   const [error, setError] = useState('');
 
@@ -13,10 +14,10 @@ export default function PieceForm({ onSubmit }) {
       year: Number(form.get('year')),
     };
 
-    if (!piece.name) return setError('El nombre es obligatorio');
-    if (!piece.artist) return setError('El artista es obligatorio');
+    const validationError = validatePieceForm(piece);
+    setError(validationError);
+    if (validationError) return;
 
-    setError('');
     try {
       await onSubmit(piece);
       event.target.reset();

@@ -127,5 +127,5 @@ Frontend y backend tienen su propio umbral y **ambos** deben cumplir el piso de 
 
 | Sem | Estado |
 |:---:|---|
-| 1 | ✅ Publicada |
-| 2–10 | ⏳ Pendiente |
+| 1–2 | ✅ Publicada |
+| 3–10 | ⏳ Pendiente |
