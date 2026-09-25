@@ -1,0 +1,143 @@
+# ============================================================
+# BOOTCAMP TESTING ADSO — .gitignore
+# Cubre: React/Express (Vitest), FastAPI (pytest), Spring Boot (JUnit 5)
+# ============================================================
+
+# ════════════════════════════════════════════════════════════
+# JAVASCRIPT / NODE.JS
+# ════════════════════════════════════════════════════════════
+
+node_modules/
+dist/
+build/
+.cache/
+
+# Coverage
+coverage/
+.nyc_output/
+
+# Reportes JUnit
+junit.xml
+
+# pnpm
+.pnpm-store/
+.pnpm-debug.log
+pnpm-lock.yaml
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ════════════════════════════════════════════════════════════
+# PYTHON
+# ════════════════════════════════════════════════════════════
+
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+
+# Virtual environments
+.venv/
+uv.lock
+venv/
+env/
+.env/
+ENV/
+
+# uv
+.uv/
+
+# pytest
+.pytest_cache/
+.cache/
+
+# Coverage
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# mutmut
+.mutmut-cache
+
+# hypothesis
+.hypothesis/
+
+# Distribución / packaging
+*.egg-info/
+dist/
+build/
+*.egg
+
+# ════════════════════════════════════════════════════════════
+# JAVA / MAVEN
+# ════════════════════════════════════════════════════════════
+
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+
+# Maven wrapper
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# JaCoCo
+jacoco.exec
+jacoco/
+
+# Surefire reports
+surefire-reports/
+
+# ════════════════════════════════════════════════════════════
+# PLAYWRIGHT
+# ════════════════════════════════════════════════════════════
+
+/test-results/
+/playwright-report/
+/playwright/.cache/
+/blob-report/
+
+# ════════════════════════════════════════════════════════════
+# IDEs Y EDITORES
+# ════════════════════════════════════════════════════════════
+
+# VS Code (mantener .vscode/ raíz, ignorar configuraciones personales)
+.vscode/launch.json
+.vscode/*.log
+
+# IntelliJ IDEA / Eclipse (para Java)
+.idea/
+*.iml
+*.iws
+*.ipr
+.classpath
+.project
+.settings/
+*.factorypath
+
+# ════════════════════════════════════════════════════════════
+# SISTEMA OPERATIVO
+# ════════════════════════════════════════════════════════════
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ════════════════════════════════════════════════════════════
+# VARIABLES DE ENTORNO Y SECRETOS
+# ════════════════════════════════════════════════════════════
+
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+secrets/
