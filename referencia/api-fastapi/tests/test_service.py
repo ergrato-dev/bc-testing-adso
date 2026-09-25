@@ -29,14 +29,14 @@ def test_validate_piece_raises_error_when_data_is_invalid(data, message):
 
 
 def test_get_raises_not_found_when_piece_does_not_exist():
-    service = PiecesService(MemoryRepository())
+    service = PiecesService(MemoryRepository(), notifier=None)  # dummy: este test no crea piezas
 
     with pytest.raises(NotFoundError):
         service.get(99)
 
 
 def test_remove_raises_not_found_when_piece_does_not_exist():
-    service = PiecesService(MemoryRepository())
+    service = PiecesService(MemoryRepository(), notifier=None)  # dummy: este test no crea piezas
 
     with pytest.raises(NotFoundError):
         service.remove(99)

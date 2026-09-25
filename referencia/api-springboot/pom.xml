@@ -59,9 +59,11 @@
 				<artifactId>jacoco-maven-plugin</artifactId>
 				<version>0.8.15</version>
 				<configuration>
-					<!-- Se mide la lógica de negocio: queda fuera la clase de arranque -->
+					<!-- Se mide la lógica de negocio: quedan fuera la clase de arranque y el
+					     notificador, que representa un servicio externo -->
 					<excludes>
 						<exclude>**/MuseoApiApplication.class</exclude>
+						<exclude>**/LogNotifier.class</exclude>
 					</excludes>
 				</configuration>
 				<executions>

@@ -6,6 +6,7 @@ from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 from sqlalchemy.orm import Session
 
+from app.notifier import LogNotifier
 from app.repository import SqlRepository, get_engine
 from app.service import NotFoundError, PiecesService, ValidationError
 
@@ -24,8 +25,16 @@ def get_repository() -> Iterator[SqlRepository]:
         yield SqlRepository(session)
 
 
-def get_service(repository: Annotated[object, Depends(get_repository)]) -> PiecesService:
-    return PiecesService(repository)
+def get_notifier() -> LogNotifier:
+    # En los tests se reemplaza con app.dependency_overrides[get_notifier]
+    return LogNotifier()
+
+
+def get_service(
+    repository: Annotated[object, Depends(get_repository)],
+    notifier: Annotated[object, Depends(get_notifier)],
+) -> PiecesService:
+    return PiecesService(repository, notifier)
 
 
 Service = Annotated[PiecesService, Depends(get_service)]

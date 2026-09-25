@@ -1,9 +1,12 @@
 import express from 'express';
 import { createPiecesService, NotFoundError, ValidationError } from './pieces-service.js';
 
-// La app recibe el repositorio: en producción el de BD, en los tests uno en memoria.
-export function createApp(repository) {
-  const service = createPiecesService(repository);
+// Dummy: los tests que no tratan de notificaciones no necesitan un notificador real
+const silentNotifier = { pieceCreated: async () => {} };
+
+// La app recibe sus dependencias: en producción las reales, en los tests dobles de prueba.
+export function createApp(repository, notifier = silentNotifier) {
+  const service = createPiecesService(repository, notifier);
   const app = express();
   app.use(express.json());
 

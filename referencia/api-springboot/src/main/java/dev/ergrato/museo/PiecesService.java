@@ -3,6 +3,8 @@ package dev.ergrato.museo;
 import java.time.Year;
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 /**
@@ -20,10 +22,14 @@ public class PiecesService {
         public NotFoundException(String message) { super(message); }
     }
 
-    private final PieceRepository repository;
+    private static final Logger log = LoggerFactory.getLogger(PiecesService.class);
 
-    public PiecesService(PieceRepository repository) {
+    private final PieceRepository repository;
+    private final Notifier notifier;
+
+    public PiecesService(PieceRepository repository, Notifier notifier) {
         this.repository = repository;
+        this.notifier = notifier;
     }
 
     public static Piece validate(PieceRequest request, int currentYear) {
@@ -51,7 +57,14 @@ public class PiecesService {
     }
 
     public Piece create(PieceRequest request) {
-        return repository.save(validate(request, Year.now().getValue()));
+        Piece piece = repository.save(validate(request, Year.now().getValue()));
+        // Si la notificación falla, la pieza ya quedó guardada: se registra el error y se sigue
+        try {
+            notifier.pieceCreated(piece);
+        } catch (RuntimeException ex) {
+            log.warn("No se pudo notificar la pieza {}: {}", piece.getId(), ex.getMessage());
+        }
+        return piece;
     }
 
     public void remove(long id) {

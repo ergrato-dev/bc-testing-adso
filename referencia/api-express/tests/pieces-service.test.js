@@ -26,13 +26,13 @@ describe('validatePiece', () => {
 
 describe('createPiecesService', () => {
   it('should throw NotFoundError when getting a missing piece', async () => {
-    const service = createPiecesService(createMemoryRepository());
+    const service = createPiecesService(createMemoryRepository(), null); // dummy: este test no crea piezas
 
     await expect(service.get(99)).rejects.toThrow(NotFoundError);
   });
 
   it('should throw NotFoundError when removing a missing piece', async () => {
-    const service = createPiecesService(createMemoryRepository());
+    const service = createPiecesService(createMemoryRepository(), null); // dummy: este test no crea piezas
 
     await expect(service.remove(99)).rejects.toThrow(NotFoundError);
   });

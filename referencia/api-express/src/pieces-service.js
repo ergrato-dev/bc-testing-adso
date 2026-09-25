@@ -1,6 +1,6 @@
 // Reglas de negocio de las piezas del museo.
-// No sabe nada de HTTP ni de la BD: recibe un repositorio por parámetro,
-// así se puede probar con un repositorio en memoria (semanas 2 y 5).
+// No sabe nada de HTTP ni de la BD: recibe el repositorio y el notificador por
+// parámetro, así se pueden reemplazar por dobles de prueba (semanas 2 y 5).
 
 export class ValidationError extends Error {}
 export class NotFoundError extends Error {}
@@ -21,7 +21,7 @@ export function validatePiece(data, currentYear = new Date().getFullYear()) {
   return { name: data.name.trim(), artist: data.artist.trim(), year: data.year };
 }
 
-export function createPiecesService(repository) {
+export function createPiecesService(repository, notifier) {
   return {
     list: () => repository.findAll(),
 
@@ -31,7 +31,16 @@ export function createPiecesService(repository) {
       return piece;
     },
 
-    create: (data) => repository.create(validatePiece(data)),
+    async create(data) {
+      const piece = await repository.create(validatePiece(data));
+      // Si la notificación falla, la pieza ya quedó guardada: se registra el error y se sigue
+      try {
+        await notifier.pieceCreated(piece);
+      } catch (err) {
+        console.error(`No se pudo notificar la pieza ${piece.id}: ${err.message}`);
+      }
+      return piece;
+    },
 
     async remove(id) {
       const deleted = await repository.delete(id);

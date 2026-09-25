@@ -1,10 +1,13 @@
 """Reglas de negocio de las piezas del museo.
 
-No sabe nada de HTTP ni de la BD: recibe un repositorio por parámetro,
-así se puede probar con un repositorio en memoria (semanas 2 y 5).
+No sabe nada de HTTP ni de la BD: recibe el repositorio y el notificador por
+parámetro, así se pueden reemplazar por dobles de prueba (semanas 2 y 5).
 """
 
+import logging
 from datetime import date
+
+logger = logging.getLogger(__name__)
 
 
 class ValidationError(Exception):
@@ -29,8 +32,9 @@ def validate_piece(data: dict, current_year: int | None = None) -> dict:
 
 
 class PiecesService:
-    def __init__(self, repository):
+    def __init__(self, repository, notifier):
         self.repository = repository
+        self.notifier = notifier
 
     def list(self) -> list[dict]:
         return self.repository.find_all()
@@ -42,7 +46,13 @@ class PiecesService:
         return piece
 
     def create(self, data: dict) -> dict:
-        return self.repository.create(validate_piece(data))
+        piece = self.repository.create(validate_piece(data))
+        # Si la notificación falla, la pieza ya quedó guardada: se registra el error y se sigue
+        try:
+            self.notifier.piece_created(piece)
+        except Exception as error:
+            logger.warning("No se pudo notificar la pieza %s: %s", piece["id"], error)
+        return piece
 
     def remove(self, piece_id: int) -> None:
         if not self.repository.delete(piece_id):
