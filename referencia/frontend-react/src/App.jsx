@@ -4,10 +4,13 @@ import PieceForm from './PieceForm.jsx';
 
 export default function App() {
   const [pieces, setPieces] = useState([]);
+  const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
 
   useEffect(() => {
-    fetchPieces().then(setPieces, (err) => setError(err.message));
+    fetchPieces()
+      .then(setPieces, (err) => setError(err.message))
+      .finally(() => setLoading(false));
   }, []);
 
   async function handleCreate(piece) {
@@ -19,13 +22,17 @@ export default function App() {
     <main>
       <h1>Museo</h1>
       {error && <p role="alert">{error}</p>}
-      <ul aria-label="Piezas">
-        {pieces.map((piece) => (
-          <li key={piece.id}>
-            {piece.name} — {piece.artist} ({piece.year})
-          </li>
-        ))}
-      </ul>
+      {loading && <p>Cargando piezas…</p>}
+      {!loading && !error && pieces.length === 0 && <p>Aún no hay piezas registradas.</p>}
+      {pieces.length > 0 && (
+        <ul aria-label="Piezas">
+          {pieces.map((piece) => (
+            <li key={piece.id}>
+              {piece.name} — {piece.artist} ({piece.year})
+            </li>
+          ))}
+        </ul>
+      )}
       <PieceForm onSubmit={handleCreate} />
     </main>
   );

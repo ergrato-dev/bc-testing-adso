@@ -15,8 +15,11 @@ export default defineConfig({
   retries: process.env.CI ? 1 : 0,
   projects: [{ name: 'chromium', use: { ...devices['Desktop Chrome'] } }],
   // Playwright levanta el frontend. El backend y la BD los levantas tú antes (ver README).
+  // Se lanza vite con node, sin pnpm de por medio, para que Playwright pueda
+  // detenerlo al terminar (con "pnpm exec" el proceso a veces queda vivo).
   webServer: {
-    command: `pnpm --dir ../frontend-react exec vite --port ${port} --strictPort`,
+    command: `node node_modules/vite/bin/vite.js --port ${port} --strictPort`,
+    cwd: '../frontend-react',
     url: `http://localhost:${port}`,
     reuseExistingServer: !process.env.CI,
   },

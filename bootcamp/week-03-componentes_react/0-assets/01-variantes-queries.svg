@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 380" width="900" height="380" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
+  <rect width="900" height="380" fill="#0f172a"/>
+  <text x="450" y="36" text-anchor="middle" fill="#f1f5f9" font-size="20" font-weight="700">¿Qué variante de query uso?</text>
+
+  <!-- Pregunta raíz -->
+  <rect x="300" y="60" width="300" height="56" rx="8" fill="#1e293b" stroke="#6366f1" stroke-width="2"/>
+  <text x="450" y="93" text-anchor="middle" fill="#f1f5f9" font-size="15" font-weight="700">¿Qué quiero verificar?</text>
+
+  <line x1="360" y1="116" x2="160" y2="170" stroke="#94a3b8" stroke-width="2"/>
+  <line x1="450" y1="116" x2="450" y2="170" stroke="#94a3b8" stroke-width="2"/>
+  <line x1="540" y1="116" x2="740" y2="170" stroke="#94a3b8" stroke-width="2"/>
+
+  <!-- getBy -->
+  <rect x="40" y="170" width="240" height="170" rx="8" fill="#1e293b"/>
+  <text x="160" y="198" text-anchor="middle" fill="#94a3b8" font-size="13">Que el elemento ya está</text>
+  <text x="160" y="236" text-anchor="middle" fill="#22c55e" font-size="22" font-weight="700">getBy…</text>
+  <text x="160" y="270" text-anchor="middle" fill="#f1f5f9" font-size="12">Si no está: error inmediato</text>
+  <text x="160" y="310" text-anchor="middle" fill="#94a3b8" font-size="12">getByRole('button',</text>
+  <text x="160" y="326" text-anchor="middle" fill="#94a3b8" font-size="12">{ name: 'Guardar' })</text>
+
+  <!-- findBy -->
+  <rect x="330" y="170" width="240" height="170" rx="8" fill="#1e293b"/>
+  <text x="450" y="198" text-anchor="middle" fill="#94a3b8" font-size="13">Que aparecerá después</text>
+  <text x="450" y="236" text-anchor="middle" fill="#6366f1" font-size="22" font-weight="700">await findBy…</text>
+  <text x="450" y="270" text-anchor="middle" fill="#f1f5f9" font-size="12">Espera hasta 1 s y luego falla</text>
+  <text x="450" y="310" text-anchor="middle" fill="#94a3b8" font-size="12">await findByText(</text>
+  <text x="450" y="326" text-anchor="middle" fill="#94a3b8" font-size="12">'Guernica — Picasso (1937)')</text>
+
+  <!-- queryBy -->
+  <rect x="620" y="170" width="240" height="170" rx="8" fill="#1e293b"/>
+  <text x="740" y="198" text-anchor="middle" fill="#94a3b8" font-size="13">Que el elemento NO está</text>
+  <text x="740" y="236" text-anchor="middle" fill="#ef4444" font-size="22" font-weight="700">queryBy…</text>
+  <text x="740" y="270" text-anchor="middle" fill="#f1f5f9" font-size="12">Si no está: devuelve null</text>
+  <text x="740" y="310" text-anchor="middle" fill="#94a3b8" font-size="12">expect(queryByRole('alert'))</text>
+  <text x="740" y="326" text-anchor="middle" fill="#94a3b8" font-size="12">.not.toBeInTheDocument()</text>
+
+  <text x="450" y="366" text-anchor="middle" fill="#94a3b8" font-size="12">Dentro de cada variante, elige la query por prioridad: Role → LabelText → Text → … → TestId</text>
+</svg>

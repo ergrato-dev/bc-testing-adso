@@ -16,7 +16,8 @@ Esta guía resuelve el problema clásico del proyecto en grupo: los integrantes 
 - Cada semana, cada integrante trabaja en una capa distinta a la de la semana anterior. Nadie repite capa hasta haber pasado por todas.
 - El grupo llena la matriz al inicio de la semana. Tú solo la revisas.
 - En grupos de 5, dos integrantes pueden compartir capa esa semana.
-- Las semanas de un solo tema (1, 3 y 7) también se registran: en la 3 quien no tiene la capa Front hace de revisor, y en la 7 cada integrante cubre un flujo distinto.
+- Las semanas de tema común (1: E2E, 3: Front, 7: E2E) **no cuentan para la rotación**: todo el grupo trabaja esa capa, cada integrante sobre un flujo o componente distinto. Se registran en la matriz igual.
+- El umbral de cobertura aplica a frontend y backend todas las semanas. En la semana 3, que es solo de frontend, una persona del grupo se encarga además de llevar el backend al piso (ver el reto de la semana).
 
 ## Mecanismo 2: evidencia por commits
 

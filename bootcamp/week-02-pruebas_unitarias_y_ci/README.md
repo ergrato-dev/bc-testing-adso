@@ -74,4 +74,4 @@ Cada integrante hace la receta de **su capa de esta semana** (ver la matriz de r
 
 | ← Anterior | Inicio | Siguiente → |
 |---|---|---|
-| [Semana 1 — Por qué probar y primer E2E](../week-01-por_que_probar_y_primer_e2e/README.md) | [README del bootcamp](../../README.md) | Semana 3 — Componentes React *(pendiente)* |
+| [Semana 1 — Por qué probar y primer E2E](../week-01-por_que_probar_y_primer_e2e/README.md) | [README del bootcamp](../../README.md) | [Semana 3 — Componentes React](../week-03-componentes_react/README.md) |
