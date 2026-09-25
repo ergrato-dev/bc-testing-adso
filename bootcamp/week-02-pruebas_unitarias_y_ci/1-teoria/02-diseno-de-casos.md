@@ -31,6 +31,8 @@ Divide los valores de entrada en grupos que el código trata igual. Basta un rep
 
 Los defectos se esconden en los **bordes** entre particiones: un `>` que debía ser `>=`, un `<` que debía ser `<=`. Prueba justo en el borde y a cada lado:
 
+![Particiones y valores límite de la regla del año](../0-assets/02-valores-limite.svg)
+
 | Valor | Esperado | Por qué |
 |---|---|---|
 | 2025 | Válido | Justo antes del borde |
@@ -96,6 +98,8 @@ void shouldThrowWhenDataIsInvalid(String name, String artist, Integer year, Stri
 ## Mutación manual: tu mejor detector de tests débiles
 
 El experimento del inicio tiene nombre: **prueba de mutación**. Consiste en introducir un defecto pequeño a propósito y comprobar que algún test lo detecta:
+
+![Ciclo de mutación manual](../0-assets/03-ciclo-mutacion.svg)
 
 1. Cambia un operador (`>` por `>=`, `&&` por `||`) o borra una línea de validación.
 2. Corre los tests.

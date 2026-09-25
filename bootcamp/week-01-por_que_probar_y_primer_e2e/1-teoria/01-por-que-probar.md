@@ -30,6 +30,8 @@ Las pruebas buscan **defectos** antes de que se conviertan en **fallas** frente 
 
 Mientras más tarde aparece un defecto, más caro es corregirlo:
 
+![Costo de corregir un defecto según cuándo se detecta](../0-assets/03-costo-defecto.svg)
+
 | Momento en que se detecta | Qué implica corregirlo |
 |---|---|
 | Mientras escribes el código | Segundos: el test falla y lo corriges |

@@ -35,11 +35,11 @@
   <line x1="564" y1="210" x2="640" y2="245" stroke="#ef4444" stroke-width="2" marker-end="url(#arr)"/>
 
   <rect x="645" y="65" width="225" height="75" rx="8" fill="#14532d"/>
-  <text x="757" y="95" text-anchor="middle" fill="#f1f5f9" font-size="15" font-weight="700">✅ Sí a las dos</text>
+  <text x="757" y="95" text-anchor="middle" fill="#f1f5f9" font-size="15" font-weight="700">✓ Sí a las dos</text>
   <text x="757" y="120" text-anchor="middle" fill="#bbf7d0" font-size="12">Se puede fusionar en main</text>
 
   <rect x="645" y="210" width="225" height="75" rx="8" fill="#7f1d1d"/>
-  <text x="757" y="240" text-anchor="middle" fill="#f1f5f9" font-size="15" font-weight="700">❌ Falla una</text>
+  <text x="757" y="240" text-anchor="middle" fill="#f1f5f9" font-size="15" font-weight="700">✗ Falla una</text>
   <text x="757" y="265" text-anchor="middle" fill="#fecaca" font-size="12">Merge bloqueado: corrige y haz push</text>
 
   <text x="450" y="330" text-anchor="middle" fill="#94a3b8" font-size="12">El umbral sube cada semana por PR (30% → 80%) y nunca baja.</text>

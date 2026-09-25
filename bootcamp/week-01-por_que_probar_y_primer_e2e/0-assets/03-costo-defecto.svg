@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" width="900" height="400" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
+  <rect width="900" height="400" fill="#0f172a"/>
+  <text x="450" y="36" text-anchor="middle" fill="#f1f5f9" font-size="20" font-weight="700">Mientras más tarde aparece un defecto, más cuesta corregirlo</text>
+
+  <!-- Ejes -->
+  <line x1="90" y1="320" x2="850" y2="320" stroke="#475569" stroke-width="2"/>
+  <line x1="90" y1="320" x2="90" y2="70" stroke="#475569" stroke-width="2"/>
+  <text x="40" y="195" fill="#94a3b8" font-size="13" transform="rotate(-90 40 195)" text-anchor="middle">Costo de corregir</text>
+
+  <!-- Barras -->
+  <rect x="130" y="300" width="130" height="20" fill="#15803d"/>
+  <rect x="310" y="270" width="130" height="50" fill="#65a30d"/>
+  <rect x="490" y="200" width="130" height="120" fill="#d97706"/>
+  <rect x="670" y="80" width="130" height="240" fill="#b91c1c"/>
+
+  <text x="195" y="290" text-anchor="middle" fill="#bbf7d0" font-size="13" font-weight="700">Segundos</text>
+  <text x="375" y="260" text-anchor="middle" fill="#d9f99d" font-size="13" font-weight="700">Minutos</text>
+  <text x="555" y="190" text-anchor="middle" fill="#fde68a" font-size="13" font-weight="700">Horas</text>
+  <text x="735" y="112" text-anchor="middle" fill="#f1f5f9" font-size="13" font-weight="700">Días y reputación</text>
+
+  <!-- Etiquetas eje X -->
+  <text x="195" y="344" text-anchor="middle" fill="#f1f5f9" font-size="13">Al escribir el código</text>
+  <text x="195" y="362" text-anchor="middle" fill="#94a3b8" font-size="11">el test falla en tu equipo</text>
+  <text x="375" y="344" text-anchor="middle" fill="#f1f5f9" font-size="13">En la revisión del PR</text>
+  <text x="375" y="362" text-anchor="middle" fill="#94a3b8" font-size="11">el CI o un compañero lo ve</text>
+  <text x="555" y="344" text-anchor="middle" fill="#f1f5f9" font-size="13">Al integrar el grupo</text>
+  <text x="555" y="362" text-anchor="middle" fill="#94a3b8" font-size="11">¿qué cambio lo rompió?</text>
+  <text x="735" y="344" text-anchor="middle" fill="#f1f5f9" font-size="13">En la sustentación</text>
+  <text x="735" y="362" text-anchor="middle" fill="#94a3b8" font-size="11">o en producción</text>
+
+  <text x="450" y="392" text-anchor="middle" fill="#94a3b8" font-size="12">Las pruebas automatizadas mueven la detección hacia la izquierda.</text>
+</svg>

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" width="900" height="420" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
+  <rect width="900" height="420" fill="#0f172a"/>
+  <text x="450" y="36" text-anchor="middle" fill="#f1f5f9" font-size="20" font-weight="700">Prioridad de queries: usa la primera que funcione</text>
+
+  <!-- Escalera -->
+  <rect x="60" y="70" width="560" height="56" rx="8" fill="#14532d"/>
+  <text x="80" y="104" fill="#f1f5f9" font-size="17" font-weight="700">1. getByRole</text>
+  <text x="600" y="104" text-anchor="end" fill="#bbf7d0" font-size="13">('button', { name: 'Guardar' })</text>
+
+  <rect x="60" y="136" width="500" height="56" rx="8" fill="#166534"/>
+  <text x="80" y="170" fill="#f1f5f9" font-size="17" font-weight="700">2. getByLabelText</text>
+  <text x="540" y="170" text-anchor="end" fill="#bbf7d0" font-size="13">('Nombre')</text>
+
+  <rect x="60" y="202" width="440" height="56" rx="8" fill="#3f6212"/>
+  <text x="80" y="236" fill="#f1f5f9" font-size="17" font-weight="700">3. getByText / Placeholder</text>
+
+  <rect x="60" y="268" width="380" height="56" rx="8" fill="#854d0e"/>
+  <text x="80" y="302" fill="#f1f5f9" font-size="17" font-weight="700">4. getByAltText / Title</text>
+
+  <rect x="60" y="334" width="320" height="56" rx="8" fill="#7f1d1d"/>
+  <text x="80" y="368" fill="#f1f5f9" font-size="17" font-weight="700">5. getByTestId</text>
+
+  <!-- Explicación -->
+  <text x="660" y="100" fill="#f1f5f9" font-size="14" font-weight="700">Como la encuentra</text>
+  <text x="660" y="120" fill="#f1f5f9" font-size="14" font-weight="700">una persona</text>
+  <text x="660" y="142" fill="#94a3b8" font-size="12">y un lector de pantalla</text>
+
+  <line x1="760" y1="160" x2="760" y2="320" stroke="#475569" stroke-width="2"/>
+  <polygon points="752,318 768,318 760,334" fill="#475569"/>
+
+  <text x="660" y="360" fill="#f1f5f9" font-size="14" font-weight="700">Atributo invisible</text>
+  <text x="660" y="380" fill="#94a3b8" font-size="12">solo si nada más funciona,</text>
+  <text x="660" y="396" fill="#94a3b8" font-size="12">y con un comentario del porqué</text>
+</svg>

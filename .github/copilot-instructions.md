@@ -101,6 +101,7 @@ bootcamp/week-XX-slug/
 - [ ] README con objetivos, distribución del tiempo y navegación anterior/siguiente
 - [ ] Rúbrica sobre la base de `plantillas/rubrica-grupal.md`
 - [ ] Teoría común con stack indicado en cada bloque de código
+- [ ] Un SVG por archivo de teoría cuando el concepto es un proceso, un flujo o una relación espacial (no por cuota). Sin emojis dentro del SVG: usa ✓ y ✗
 - [ ] Recetas que corren contra `referencia/` (comandos verificados)
 - [ ] Referencia con cobertura ≥ 80% tras los cambios de la semana
 - [ ] Reto sobre el proyecto formativo, con la regla de grupo

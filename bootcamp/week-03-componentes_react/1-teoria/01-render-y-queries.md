@@ -34,6 +34,8 @@ it('should render the save button', () => {
 
 Usa la primera que funcione. Es el mismo criterio que usaste con Playwright en la semana 1:
 
+![Prioridad de queries de Testing Library](../0-assets/02-prioridad-queries.svg)
+
 | Prioridad | Query | Encuentra por… |
 |---|---|---|
 | 1 | `getByRole('button', { name: 'Guardar' })` | Rol accesible y nombre visible |

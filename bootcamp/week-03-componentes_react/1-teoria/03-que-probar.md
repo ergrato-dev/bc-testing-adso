@@ -18,6 +18,8 @@ Pregunta de control: **si refactorizo el componente sin cambiar lo que se ve, ¿
 
 Todo componente que carga datos tiene al menos cuatro estados. Pruébalos todos:
 
+![Los cuatro estados de un componente que carga datos](../0-assets/03-estados-componente.svg)
+
 | Estado | Ejemplo en la referencia | Qué verificar |
 |---|---|---|
 | Cargando | "Cargando piezas…" | Aparece al montar y desaparece al responder |

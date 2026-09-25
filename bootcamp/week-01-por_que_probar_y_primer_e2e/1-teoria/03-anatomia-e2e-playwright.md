@@ -8,6 +8,8 @@
 
 Como solo ve el navegador, **da igual si tu backend es FastAPI, Express o Spring Boot**: el mismo test sirve para cualquier grupo con frontend React.
 
+![Recorrido de un test E2E por todas las capas](../0-assets/02-recorrido-e2e.svg)
+
 ## Las piezas de un test
 
 ```javascript
