@@ -66,7 +66,7 @@ Al finalizar, cada integrante del grupo, **no solo el grupo**, es capaz de:
 | 7 | [Playwright a fondo: flujos críticos y datos de prueba](bootcamp/week-07-playwright_a_fondo/README.md) | Playwright |
 | 8 | [CI completo (BD, integración y E2E) y calidad de la suite](bootcamp/week-08-ci_completo/README.md) | Todos |
 | 9 | [**Integrador**: suite completa y sustentación](bootcamp/week-09-integrador/README.md) | — |
-| 10 | *(Opcional)* TDD sobre una historia de usuario nueva | Todos |
+| 10 | [*(Opcional)* TDD sobre una historia de usuario nueva](bootcamp/week-10-tdd/README.md) | Todos |
 
 Detalle en [docs/plan-estudios.md](docs/plan-estudios.md).
 

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" width="900" height="420" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  <rect width="900" height="420" fill="#0f172a"/>
+  <text x="450" y="36" text-anchor="middle" fill="#f1f5f9" font-size="20" font-weight="700">Red → Green → Refactor, de a un comportamiento por vez</text>
+
+  <!-- Red -->
+  <circle cx="450" cy="120" r="62" fill="#450a0a" stroke="#ef4444" stroke-width="3"/>
+  <text x="450" y="114" text-anchor="middle" fill="#fca5a5" font-size="20" font-weight="700">Red</text>
+  <text x="450" y="136" text-anchor="middle" fill="#fca5a5" font-size="12">un test que falla</text>
+
+  <!-- Green -->
+  <circle cx="640" cy="300" r="62" fill="#14532d" stroke="#22c55e" stroke-width="3"/>
+  <text x="640" y="294" text-anchor="middle" fill="#86efac" font-size="20" font-weight="700">Green</text>
+  <text x="640" y="316" text-anchor="middle" fill="#86efac" font-size="12">el código mínimo</text>
+
+  <!-- Refactor -->
+  <circle cx="260" cy="300" r="62" fill="#172554" stroke="#3b82f6" stroke-width="3"/>
+  <text x="260" y="294" text-anchor="middle" fill="#93c5fd" font-size="20" font-weight="700">Refactor</text>
+  <text x="260" y="316" text-anchor="middle" fill="#93c5fd" font-size="12">en verde</text>
+
+  <!-- Flechas -->
+  <path d="M 508 150 Q 600 180 618 238" fill="none" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#arr)"/>
+  <path d="M 578 318 Q 450 360 324 318" fill="none" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#arr)"/>
+  <path d="M 282 240 Q 300 180 392 150" fill="none" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#arr)"/>
+
+  <!-- Qué pasa en cada fase (ciclo 2 de la receta) -->
+  <text x="530" y="92" fill="#cbd5e1" font-size="12">list('picasso') devuelve [ ]</text>
+  <text x="530" y="108" fill="#94a3b8" font-size="11">falla por la razón correcta</text>
+
+  <text x="640" y="384" text-anchor="middle" fill="#cbd5e1" font-size="12">compara con toLowerCase()</text>
+
+  <text x="260" y="384" text-anchor="middle" fill="#cbd5e1" font-size="12">extrae normalize()</text>
+
+  <text x="450" y="410" text-anchor="middle" fill="#94a3b8" font-size="12">Cada vuelta dura minutos. Si llevas mucho tiempo en rojo, el paso era muy grande.</text>
+</svg>

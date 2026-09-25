@@ -68,4 +68,4 @@ Ejemplo terminado sobre la app de referencia: [`referencia/ESTRATEGIA.md`](../..
 
 | ← Anterior | Inicio | Siguiente → |
 |---|---|---|
-| [Semana 8 — CI completo y calidad de la suite](../week-08-ci_completo/README.md) | [README del bootcamp](../../README.md) | Semana 10 (opcional) — TDD *(pendiente)* |
+| [Semana 8 — CI completo y calidad de la suite](../week-08-ci_completo/README.md) | [README del bootcamp](../../README.md) | [Semana 10 (opcional) — TDD](../week-10-tdd/README.md) |

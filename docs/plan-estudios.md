@@ -124,6 +124,7 @@ Frontend y backend tienen su propio umbral y **ambos** deben cumplir el piso de 
 - **Teoría**: ciclo Red-Green-Refactor, pasos pequeños.
 - **Recetas**: Vitest, pytest y JUnit 5.
 - **Reto**: implementar una historia de usuario nueva del proyecto guiada por pruebas.
+- **Historia de las recetas**: filtrar la lista por artista (`GET /api/pieces?artist=picasso`), sin importar mayúsculas ni espacios, en cinco ciclos sobre el servicio y el API. La referencia no la trae: cada aprendiz la construye desde el primer Red.
 
 ---
 
@@ -131,5 +132,4 @@ Frontend y backend tienen su propio umbral y **ambos** deben cumplir el piso de 
 
 | Sem | Estado |
 |:---:|---|
-| 1–9 | ✅ Publicada |
-| 10 | ⏳ Pendiente |
+| 1–10 | ✅ Publicada |
