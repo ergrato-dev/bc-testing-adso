@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" width="900" height="400" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#94a3b8"/>
+    </marker>
+    <marker id="arr-bad" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#ef4444"/>
+    </marker>
+  </defs>
+  <rect width="900" height="400" fill="#0f172a"/>
+  <text x="450" y="36" text-anchor="middle" fill="#f1f5f9" font-size="20" font-weight="700">Una BD para desarrollar, otra para los tests</text>
+
+  <!-- Quien se conecta -->
+  <rect x="40" y="90" width="220" height="70" rx="8" fill="#1e293b"/>
+  <text x="150" y="120" text-anchor="middle" fill="#f1f5f9" font-size="14" font-weight="700">Tu app en desarrollo</text>
+  <text x="150" y="141" text-anchor="middle" fill="#94a3b8" font-size="11">pnpm dev · uvicorn · spring-boot:run</text>
+
+  <rect x="40" y="250" width="220" height="70" rx="8" fill="#1e293b"/>
+  <text x="150" y="280" text-anchor="middle" fill="#f1f5f9" font-size="14" font-weight="700">Tests de integración</text>
+  <text x="150" y="301" text-anchor="middle" fill="#94a3b8" font-size="11">leen DATABASE_URL</text>
+
+  <!-- BD de desarrollo -->
+  <rect x="580" y="80" width="280" height="90" rx="8" fill="#1e293b" stroke="#a78bfa" stroke-width="2"/>
+  <text x="720" y="108" text-anchor="middle" fill="#c4b5fd" font-size="14" font-weight="700">BD de desarrollo</text>
+  <text x="720" y="130" text-anchor="middle" fill="#94a3b8" font-size="12">puerto 5432 / 3306</text>
+  <text x="720" y="152" text-anchor="middle" fill="#94a3b8" font-size="12">tus datos de prueba manual: se conservan</text>
+
+  <!-- BD de pruebas -->
+  <rect x="580" y="240" width="280" height="90" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
+  <text x="720" y="268" text-anchor="middle" fill="#93c5fd" font-size="14" font-weight="700">BD de pruebas (Docker)</text>
+  <text x="720" y="290" text-anchor="middle" fill="#94a3b8" font-size="12">puerto 5433 / 3307 · museo_test</text>
+  <text x="720" y="312" text-anchor="middle" fill="#94a3b8" font-size="12">desechable: docker compose down -v</text>
+
+  <!-- Conexiones correctas -->
+  <line x1="262" y1="125" x2="576" y2="125" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="262" y1="285" x2="576" y2="285" stroke="#22c55e" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="420" y="275" text-anchor="middle" fill="#86efac" font-size="13" font-weight="700">✓ solo esta conexión</text>
+
+  <!-- Conexión prohibida -->
+  <line x1="262" y1="262" x2="576" y2="150" stroke="#ef4444" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#arr-bad)"/>
+  <rect x="380" y="190" width="80" height="26" rx="5" fill="#0f172a"/>
+  <text x="420" y="205" text-anchor="middle" fill="#fca5a5" font-size="13" font-weight="700">✗ nunca</text>
+
+  <text x="450" y="370" text-anchor="middle" fill="#cbd5e1" font-size="13">Puerto y nombre distintos: si un test apunta a la BD equivocada, se nota de inmediato.</text>
+</svg>

@@ -94,7 +94,7 @@ Frontend y backend tienen su propio umbral y **ambos** deben cumplir el piso de 
 - **Teoría**: diferencia entre prueba unitaria e integración, BD de pruebas desechable, datos semilla, limpieza entre tests (transacción con rollback o truncado).
 - **Recetas**: `docker-compose.yml` con servicios de prueba; conexión desde FastAPI (SQLAlchemy), Express y Spring Boot (JPA), para PostgreSQL y MySQL.
 - **Reto**: tests de integración de al menos un repositorio y un endpoint contra la BD del proyecto en Docker.
-- **Hallazgo preparado en la referencia**: `GET /api/pieces/abc` responde `404` con el repositorio falso (semana 4), pero `500` con la consulta SQL en el cuerpo contra PostgreSQL real (Express). Muestra lo que los dobles no ven.
+- **Hallazgos preparados en la referencia**: un `name` de 256 caracteres pasa con el repositorio falso y responde `500` contra la BD real en los tres backends (`VARCHAR(255)`). En Express, `GET /api/pieces/abc` responde `404` con el fake y `500` con la consulta SQL en el cuerpo contra PostgreSQL y MySQL. En Spring Boot, la lista no sale ordenada por id en PostgreSQL. Muestran lo que los dobles no ven, y que el motor importa.
 
 ## Semana 7 — Playwright a fondo
 
@@ -128,5 +128,5 @@ Frontend y backend tienen su propio umbral y **ambos** deben cumplir el piso de 
 
 | Sem | Estado |
 |:---:|---|
-| 1–5 | ✅ Publicada |
-| 6–10 | ⏳ Pendiente |
+| 1–6 | ✅ Publicada |
+| 7–10 | ⏳ Pendiente |

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" width="900" height="400" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  <rect width="900" height="400" fill="#0f172a"/>
+  <text x="450" y="36" text-anchor="middle" fill="#f1f5f9" font-size="20" font-weight="700">El mismo POST con un name de 300 caracteres</text>
+
+  <!-- Fila 1: repositorio falso -->
+  <text x="40" y="84" fill="#fde68a" font-size="14" font-weight="700">Test con repositorio falso (semana 4)</text>
+  <rect x="40" y="100" width="140" height="60" rx="8" fill="#1e293b"/>
+  <text x="110" y="135" text-anchor="middle" fill="#f1f5f9" font-size="14" font-weight="700">POST</text>
+  <rect x="220" y="100" width="140" height="60" rx="8" fill="#1e293b"/>
+  <text x="290" y="135" text-anchor="middle" fill="#f1f5f9" font-size="14" font-weight="700">Rutas</text>
+  <rect x="400" y="100" width="140" height="60" rx="8" fill="#1e293b"/>
+  <text x="470" y="135" text-anchor="middle" fill="#f1f5f9" font-size="14" font-weight="700">Servicio</text>
+  <rect x="580" y="100" width="150" height="60" rx="8" fill="#1e293b" stroke="#F7DF1E" stroke-width="2"/>
+  <text x="655" y="126" text-anchor="middle" fill="#fde68a" font-size="14" font-weight="700">Fake en memoria</text>
+  <text x="655" y="145" text-anchor="middle" fill="#94a3b8" font-size="11">Map o dict: sin límites</text>
+  <line x1="182" y1="130" x2="216" y2="130" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="362" y1="130" x2="396" y2="130" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="542" y1="130" x2="576" y2="130" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/>
+  <rect x="760" y="100" width="105" height="60" rx="8" fill="#14532d" stroke="#22c55e" stroke-width="2"/>
+  <text x="812" y="128" text-anchor="middle" fill="#86efac" font-size="16" font-weight="700">✓ 201</text>
+  <text x="812" y="147" text-anchor="middle" fill="#86efac" font-size="11">test en verde</text>
+
+  <!-- Fila 2: BD real -->
+  <text x="40" y="224" fill="#93c5fd" font-size="14" font-weight="700">Test de integración (semana 6)</text>
+  <rect x="40" y="240" width="140" height="60" rx="8" fill="#1e293b"/>
+  <text x="110" y="275" text-anchor="middle" fill="#f1f5f9" font-size="14" font-weight="700">POST</text>
+  <rect x="220" y="240" width="140" height="60" rx="8" fill="#1e293b"/>
+  <text x="290" y="275" text-anchor="middle" fill="#f1f5f9" font-size="14" font-weight="700">Rutas</text>
+  <rect x="400" y="240" width="140" height="60" rx="8" fill="#1e293b"/>
+  <text x="470" y="275" text-anchor="middle" fill="#f1f5f9" font-size="14" font-weight="700">Servicio</text>
+  <rect x="580" y="240" width="150" height="60" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
+  <text x="655" y="266" text-anchor="middle" fill="#93c5fd" font-size="12" font-weight="700">PostgreSQL · MySQL</text>
+  <text x="655" y="285" text-anchor="middle" fill="#94a3b8" font-size="11">name VARCHAR(255)</text>
+  <line x1="182" y1="270" x2="216" y2="270" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="362" y1="270" x2="396" y2="270" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="542" y1="270" x2="576" y2="270" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/>
+  <rect x="760" y="240" width="105" height="60" rx="8" fill="#450a0a" stroke="#ef4444" stroke-width="2"/>
+  <text x="812" y="268" text-anchor="middle" fill="#fca5a5" font-size="16" font-weight="700">✗ 500</text>
+  <text x="812" y="287" text-anchor="middle" fill="#fca5a5" font-size="11">rompe el contrato</text>
+
+  <!-- Conclusión -->
+  <rect x="40" y="330" width="825" height="46" rx="6" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+  <text x="452" y="358" text-anchor="middle" fill="#cbd5e1" font-size="13">El fake cumple los métodos del repositorio, pero no las reglas de la tabla. Solo la BD real las aplica.</text>
+</svg>

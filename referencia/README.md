@@ -37,7 +37,7 @@ Controlador / rutas  ──>  Servicio (reglas)  ──>  Repositorio  ──>  
 
 ## Huecos a propósito
 
-La referencia deja algunos defectos y comportamientos sin probar **a propósito**, para que las recetas los descubran. Por ejemplo, ante un JSON mal formado ninguno de los tres backends responde con el formato del contrato (semana 4). No los corrijas aquí: la receta de cada semana muestra cómo encontrarlos y arreglarlos.
+La referencia deja algunos defectos y comportamientos sin probar **a propósito**, para que las recetas los descubran. Por ejemplo, ante un JSON mal formado ninguno de los tres backends responde con el formato del contrato (semana 4), y contra la BD real un `name` de 256 caracteres responde `500` en los tres (semana 6). No los corrijas aquí: la receta de cada semana muestra cómo encontrarlos y arreglarlos.
 
 ## 1. Levantar la base de datos de prueba
 
