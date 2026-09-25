@@ -35,6 +35,10 @@ Controlador / rutas  ──>  Servicio (reglas)  ──>  Repositorio  ──>  
 - El **repositorio** tiene dos versiones: la real (BD) y una **en memoria** para tests sin Docker (Express y FastAPI). En Spring Boot el servicio se reemplaza con `@MockitoBean`.
 - La **app** recibe sus dependencias: `createApp(repository)` en Express, `app.dependency_overrides` en FastAPI y `@WebMvcTest` en Spring Boot.
 
+## Huecos a propósito
+
+La referencia deja algunos defectos y comportamientos sin probar **a propósito**, para que las recetas los descubran. Por ejemplo, ante un JSON mal formado ninguno de los tres backends responde con el formato del contrato (semana 4). No los corrijas aquí: la receta de cada semana muestra cómo encontrarlos y arreglarlos.
+
 ## 1. Levantar la base de datos de prueba
 
 ```bash

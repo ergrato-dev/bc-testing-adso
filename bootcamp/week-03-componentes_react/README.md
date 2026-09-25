@@ -66,4 +66,4 @@ Al finalizar esta semana serás capaz de:
 
 | ← Anterior | Inicio | Siguiente → |
 |---|---|---|
-| [Semana 2 — Pruebas unitarias y CI](../week-02-pruebas_unitarias_y_ci/README.md) | [README del bootcamp](../../README.md) | Semana 4 — Pruebas de API *(pendiente)* |
+| [Semana 2 — Pruebas unitarias y CI](../week-02-pruebas_unitarias_y_ci/README.md) | [README del bootcamp](../../README.md) | [Semana 4 — Pruebas de API](../week-04-pruebas_de_api/README.md) |

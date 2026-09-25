@@ -38,6 +38,7 @@ bootcamp/week-XX-slug/
 - Dominio genérico **Museo**, recurso `pieces` (`/api/pieces`, puerto 8000): CRUD mínimo idéntico en los 3 backends.
 - `frontend-react/` (Vite + React), `api-fastapi/`, `api-express/`, `api-springboot/`, `docker-compose.yml` (postgres y mysql de prueba).
 - Todo su código debe ejecutarse y sus tests deben pasar. Es el código que usan las recetas.
+- Deja **huecos a propósito** (defectos o comportamientos sin test) cuando una receta los descubre. Antes de escribir la receta, verifica que el test nuevo falla sin la corrección y pasa con ella; después devuelve la referencia al estado con el hueco.
 
 ## Retos (`3-reto/`)
 

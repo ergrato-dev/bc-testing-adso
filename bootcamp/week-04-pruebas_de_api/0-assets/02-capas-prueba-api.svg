@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" width="900" height="420" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
+  <rect width="900" height="420" fill="#0f172a"/>
+  <text x="450" y="36" text-anchor="middle" fill="#f1f5f9" font-size="20" font-weight="700">Qué ejecuta de verdad una prueba de API</text>
+
+  <!-- Columnas de capas -->
+  <text x="140" y="76" text-anchor="middle" fill="#94a3b8" font-size="13" font-weight="700">Capa</text>
+  <text x="385" y="76" text-anchor="middle" fill="#009688" font-size="13" font-weight="700">FastAPI</text>
+  <text x="580" y="76" text-anchor="middle" fill="#f1f5f9" font-size="13" font-weight="700">Express</text>
+  <text x="775" y="76" text-anchor="middle" fill="#6DB33F" font-size="13" font-weight="700">Spring Boot</text>
+
+  <!-- Fila: cliente -->
+  <text x="140" y="116" text-anchor="middle" fill="#f1f5f9" font-size="13">Cliente de prueba</text>
+  <rect x="300" y="96" width="170" height="32" rx="5" fill="#312e81"/><text x="385" y="117" text-anchor="middle" fill="#f1f5f9" font-size="12">TestClient</text>
+  <rect x="495" y="96" width="170" height="32" rx="5" fill="#312e81"/><text x="580" y="117" text-anchor="middle" fill="#f1f5f9" font-size="12">supertest</text>
+  <rect x="690" y="96" width="170" height="32" rx="5" fill="#312e81"/><text x="775" y="117" text-anchor="middle" fill="#f1f5f9" font-size="12">MockMvc</text>
+
+  <!-- Fila: rutas y validación -->
+  <text x="140" y="164" text-anchor="middle" fill="#f1f5f9" font-size="13">Rutas + JSON + validación</text>
+  <rect x="300" y="144" width="170" height="32" rx="5" fill="#14532d"/><text x="385" y="165" text-anchor="middle" fill="#bbf7d0" font-size="12">real</text>
+  <rect x="495" y="144" width="170" height="32" rx="5" fill="#14532d"/><text x="580" y="165" text-anchor="middle" fill="#bbf7d0" font-size="12">real</text>
+  <rect x="690" y="144" width="170" height="32" rx="5" fill="#14532d"/><text x="775" y="165" text-anchor="middle" fill="#bbf7d0" font-size="12">real</text>
+
+  <!-- Fila: manejo de errores -->
+  <text x="140" y="212" text-anchor="middle" fill="#f1f5f9" font-size="13">Errores → código HTTP</text>
+  <rect x="300" y="192" width="170" height="32" rx="5" fill="#14532d"/><text x="385" y="213" text-anchor="middle" fill="#bbf7d0" font-size="12">real</text>
+  <rect x="495" y="192" width="170" height="32" rx="5" fill="#14532d"/><text x="580" y="213" text-anchor="middle" fill="#bbf7d0" font-size="12">real</text>
+  <rect x="690" y="192" width="170" height="32" rx="5" fill="#14532d"/><text x="775" y="213" text-anchor="middle" fill="#bbf7d0" font-size="12">real</text>
+
+  <!-- Fila: servicio -->
+  <text x="140" y="260" text-anchor="middle" fill="#f1f5f9" font-size="13">Servicio (reglas)</text>
+  <rect x="300" y="240" width="170" height="32" rx="5" fill="#14532d"/><text x="385" y="261" text-anchor="middle" fill="#bbf7d0" font-size="12">real</text>
+  <rect x="495" y="240" width="170" height="32" rx="5" fill="#14532d"/><text x="580" y="261" text-anchor="middle" fill="#bbf7d0" font-size="12">real</text>
+  <rect x="690" y="240" width="170" height="32" rx="5" fill="#854d0e"/><text x="775" y="261" text-anchor="middle" fill="#fde68a" font-size="12">@MockitoBean</text>
+
+  <!-- Fila: repositorio -->
+  <text x="140" y="308" text-anchor="middle" fill="#f1f5f9" font-size="13">Repositorio</text>
+  <rect x="300" y="288" width="170" height="32" rx="5" fill="#854d0e"/><text x="385" y="309" text-anchor="middle" fill="#fde68a" font-size="12">falso (overrides)</text>
+  <rect x="495" y="288" width="170" height="32" rx="5" fill="#854d0e"/><text x="580" y="309" text-anchor="middle" fill="#fde68a" font-size="12">falso (createApp)</text>
+  <rect x="690" y="288" width="170" height="32" rx="5" fill="#334155"/><text x="775" y="309" text-anchor="middle" fill="#94a3b8" font-size="12">no se crea</text>
+
+  <!-- Fila: BD -->
+  <text x="140" y="356" text-anchor="middle" fill="#f1f5f9" font-size="13">Base de datos</text>
+  <rect x="300" y="336" width="170" height="32" rx="5" fill="#334155"/><text x="385" y="357" text-anchor="middle" fill="#94a3b8" font-size="12">no se usa</text>
+  <rect x="495" y="336" width="170" height="32" rx="5" fill="#334155"/><text x="580" y="357" text-anchor="middle" fill="#94a3b8" font-size="12">no se usa</text>
+  <rect x="690" y="336" width="170" height="32" rx="5" fill="#334155"/><text x="775" y="357" text-anchor="middle" fill="#94a3b8" font-size="12">no se usa</text>
+
+  <!-- Leyenda -->
+  <rect x="250" y="388" width="14" height="14" fill="#14532d"/><text x="270" y="400" fill="#94a3b8" font-size="12">código real</text>
+  <rect x="380" y="388" width="14" height="14" fill="#854d0e"/><text x="400" y="400" fill="#94a3b8" font-size="12">doble de prueba</text>
+  <rect x="530" y="388" width="14" height="14" fill="#334155"/><text x="550" y="400" fill="#94a3b8" font-size="12">no interviene (semana 6)</text>
+</svg>

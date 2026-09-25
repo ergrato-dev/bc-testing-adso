@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" width="900" height="400" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
+  <rect width="900" height="400" fill="#0f172a"/>
+  <text x="450" y="36" text-anchor="middle" fill="#f1f5f9" font-size="20" font-weight="700">POST /api/pieces: un test por escenario</text>
+
+  <!-- Encabezados -->
+  <text x="60" y="80" fill="#94a3b8" font-size="13" font-weight="700">Petición</text>
+  <text x="445" y="80" fill="#94a3b8" font-size="13" font-weight="700">Código</text>
+  <text x="545" y="80" fill="#94a3b8" font-size="13" font-weight="700">Cuerpo esperado</text>
+  <line x1="50" y1="92" x2="850" y2="92" stroke="#475569" stroke-width="1"/>
+
+  <!-- Filas -->
+  <rect x="50" y="102" width="800" height="50" rx="6" fill="#14532d"/>
+  <text x="60" y="132" fill="#f1f5f9" font-size="13">{"name":"Guernica","artist":"Picasso","year":1937}</text>
+  <text x="445" y="132" fill="#bbf7d0" font-size="15" font-weight="700">201</text>
+  <text x="545" y="132" fill="#bbf7d0" font-size="13">{"id": 1, "name": "Guernica", …}</text>
+
+  <rect x="50" y="160" width="800" height="50" rx="6" fill="#1e293b"/>
+  <text x="60" y="190" fill="#f1f5f9" font-size="13">{"name":"Futuro","artist":"X","year":2999}</text>
+  <text x="445" y="190" fill="#fde68a" font-size="15" font-weight="700">422</text>
+  <text x="545" y="190" fill="#f1f5f9" font-size="13">{"detail": "year cannot be in the future"}</text>
+
+  <rect x="50" y="218" width="800" height="50" rx="6" fill="#1e293b"/>
+  <text x="60" y="248" fill="#f1f5f9" font-size="13">{"artist":"X","year":1990}   (sin name)</text>
+  <text x="445" y="248" fill="#fde68a" font-size="15" font-weight="700">422</text>
+  <text x="545" y="248" fill="#f1f5f9" font-size="13">{"detail": "name is required"}</text>
+
+  <rect x="50" y="276" width="800" height="50" rx="6" fill="#1e293b" stroke="#ef4444" stroke-width="2"/>
+  <text x="60" y="306" fill="#f1f5f9" font-size="13">{"name":     (JSON mal formado)</text>
+  <text x="445" y="306" fill="#fca5a5" font-size="15" font-weight="700">400</text>
+  <text x="545" y="306" fill="#f1f5f9" font-size="13">{"detail": "malformed request body"}</text>
+
+  <text x="450" y="358" text-anchor="middle" fill="#fca5a5" font-size="13">La fila roja es la que nadie prueba… y la que suele devolver HTML o un stack trace.</text>
+  <text x="450" y="382" text-anchor="middle" fill="#94a3b8" font-size="12">Cada fila verifica código, cuerpo y Content-Type: application/json.</text>
+</svg>

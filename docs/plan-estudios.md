@@ -79,7 +79,7 @@ Frontend y backend tienen su propio umbral y **ambos** deben cumplir el piso de 
 - **Objetivo**: verificar el contrato HTTP del backend.
 - **Teoría**: estados HTTP por escenario, forma del JSON, validación de entrada, errores 4xx y 5xx.
 - **Recetas**: FastAPI `TestClient`, Express + supertest, Spring Boot MockMvc (`@WebMvcTest`).
-- **Reto**: happy path + validación + recurso inexistente para dos endpoints del proyecto.
+- **Reto**: cada capa prueba el API desde un ángulo (recurso principal, datos, contrato del frontend, seguridad y errores); los hallazgos de contrato se corrigen en la semana.
 
 ## Semana 5 — Dobles de prueba
 
@@ -94,6 +94,7 @@ Frontend y backend tienen su propio umbral y **ambos** deben cumplir el piso de 
 - **Teoría**: diferencia entre prueba unitaria e integración, BD de pruebas desechable, datos semilla, limpieza entre tests (transacción con rollback o truncado).
 - **Recetas**: `docker-compose.yml` con servicios de prueba; conexión desde FastAPI (SQLAlchemy), Express y Spring Boot (JPA), para PostgreSQL y MySQL.
 - **Reto**: tests de integración de al menos un repositorio y un endpoint contra la BD del proyecto en Docker.
+- **Hallazgo preparado en la referencia**: `GET /api/pieces/abc` responde `404` con el repositorio falso (semana 4), pero `500` con la consulta SQL en el cuerpo contra PostgreSQL real (Express). Muestra lo que los dobles no ven.
 
 ## Semana 7 — Playwright a fondo
 
@@ -127,5 +128,5 @@ Frontend y backend tienen su propio umbral y **ambos** deben cumplir el piso de 
 
 | Sem | Estado |
 |:---:|---|
-| 1–3 | ✅ Publicada |
-| 4–10 | ⏳ Pendiente |
+| 1–4 | ✅ Publicada |
+| 5–10 | ⏳ Pendiente |

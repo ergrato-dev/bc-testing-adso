@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 380" width="900" height="380" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  <rect width="900" height="380" fill="#0f172a"/>
+  <text x="450" y="36" text-anchor="middle" fill="#f1f5f9" font-size="20" font-weight="700">DELETE /api/users/1: tres tests, tres caminos</text>
+
+  <rect x="30" y="150" width="150" height="70" rx="8" fill="#1e293b" stroke="#6366f1" stroke-width="2"/>
+  <text x="105" y="182" text-anchor="middle" fill="#f1f5f9" font-size="14" font-weight="700">Petición</text>
+  <text x="105" y="204" text-anchor="middle" fill="#94a3b8" font-size="12">DELETE /api/users/1</text>
+
+  <polygon points="310,125 400,185 310,245 220,185" fill="#1e293b" stroke="#94a3b8" stroke-width="2"/>
+  <text x="310" y="180" text-anchor="middle" fill="#f1f5f9" font-size="13" font-weight="700">¿Token</text>
+  <text x="310" y="198" text-anchor="middle" fill="#f1f5f9" font-size="13" font-weight="700">válido?</text>
+
+  <polygon points="560,125 650,185 560,245 470,185" fill="#1e293b" stroke="#94a3b8" stroke-width="2"/>
+  <text x="560" y="180" text-anchor="middle" fill="#f1f5f9" font-size="13" font-weight="700">¿Rol con</text>
+  <text x="560" y="198" text-anchor="middle" fill="#f1f5f9" font-size="13" font-weight="700">permiso?</text>
+
+  <line x1="182" y1="185" x2="216" y2="185" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="402" y1="185" x2="466" y2="185" stroke="#22c55e" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="434" y="176" text-anchor="middle" fill="#86efac" font-size="12">sí</text>
+  <line x1="652" y1="185" x2="716" y2="185" stroke="#22c55e" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="684" y="176" text-anchor="middle" fill="#86efac" font-size="12">sí</text>
+
+  <line x1="310" y1="247" x2="310" y2="286" stroke="#ef4444" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="322" y="272" fill="#fca5a5" font-size="12">no</text>
+  <line x1="560" y1="247" x2="560" y2="286" stroke="#ef4444" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="572" y="272" fill="#fca5a5" font-size="12">no</text>
+
+  <rect x="230" y="290" width="160" height="60" rx="8" fill="#7f1d1d"/>
+  <text x="310" y="318" text-anchor="middle" fill="#f1f5f9" font-size="17" font-weight="700">401</text>
+  <text x="310" y="338" text-anchor="middle" fill="#fecaca" font-size="11">test: sin token</text>
+
+  <rect x="480" y="290" width="160" height="60" rx="8" fill="#7f1d1d"/>
+  <text x="560" y="318" text-anchor="middle" fill="#f1f5f9" font-size="17" font-weight="700">403</text>
+  <text x="560" y="338" text-anchor="middle" fill="#fecaca" font-size="11">test: rol aprendiz</text>
+
+  <rect x="720" y="155" width="150" height="60" rx="8" fill="#14532d"/>
+  <text x="795" y="183" text-anchor="middle" fill="#f1f5f9" font-size="17" font-weight="700">204</text>
+  <text x="795" y="203" text-anchor="middle" fill="#bbf7d0" font-size="11">test: rol admin</text>
+
+  <text x="450" y="80" text-anchor="middle" fill="#94a3b8" font-size="13">El 403 es el test que más se olvida: sin él, un cambio puede dejar</text>
+  <text x="450" y="100" text-anchor="middle" fill="#94a3b8" font-size="13">que cualquier usuario autenticado borre datos de otros.</text>
+</svg>
