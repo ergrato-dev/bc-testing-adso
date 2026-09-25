@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" width="900" height="400" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  <rect width="900" height="400" fill="#0f172a"/>
+  <text x="450" y="36" text-anchor="middle" fill="#f1f5f9" font-size="20" font-weight="700">¿A qué altura reemplazas el backend?</text>
+
+  <!-- Cadena -->
+  <rect x="40" y="80" width="170" height="60" rx="8" fill="#1e293b" stroke="#61DAFB" stroke-width="2"/>
+  <text x="125" y="115" text-anchor="middle" fill="#f1f5f9" font-size="14" font-weight="700">Componente</text>
+  <rect x="265" y="80" width="170" height="60" rx="8" fill="#1e293b"/>
+  <text x="350" y="108" text-anchor="middle" fill="#f1f5f9" font-size="14" font-weight="700">api.js</text>
+  <text x="350" y="126" text-anchor="middle" fill="#94a3b8" font-size="11">fetch + manejo de errores</text>
+  <rect x="490" y="80" width="170" height="60" rx="8" fill="#1e293b"/>
+  <text x="575" y="115" text-anchor="middle" fill="#f1f5f9" font-size="14" font-weight="700">Red (HTTP)</text>
+  <rect x="715" y="80" width="150" height="60" rx="8" fill="#1e293b" stroke="#6366f1" stroke-width="2"/>
+  <text x="790" y="115" text-anchor="middle" fill="#f1f5f9" font-size="14" font-weight="700">Backend</text>
+
+  <line x1="212" y1="110" x2="261" y2="110" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="437" y1="110" x2="486" y2="110" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="662" y1="110" x2="711" y2="110" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- vi.mock -->
+  <line x1="238" y1="150" x2="238" y2="175" stroke="#F7DF1E" stroke-width="3"/>
+  <rect x="40" y="180" width="395" height="50" rx="6" fill="#1e293b" stroke="#F7DF1E" stroke-width="1"/>
+  <text x="55" y="202" fill="#fde68a" font-size="14" font-weight="700">vi.mock('api.js')</text>
+  <text x="55" y="221" fill="#94a3b8" font-size="12">se ejecuta solo el componente · el más rápido</text>
+
+  <!-- MSW -->
+  <line x1="463" y1="150" x2="463" y2="245" stroke="#22c55e" stroke-width="3"/>
+  <rect x="40" y="250" width="620" height="50" rx="6" fill="#1e293b" stroke="#22c55e" stroke-width="1"/>
+  <text x="55" y="272" fill="#86efac" font-size="14" font-weight="700">MSW (en Vitest)</text>
+  <text x="55" y="291" fill="#94a3b8" font-size="12">componente + api.js reales · detecta errores del cliente HTTP</text>
+
+  <!-- page.route -->
+  <line x1="688" y1="150" x2="688" y2="315" stroke="#2EAD33" stroke-width="3"/>
+  <rect x="40" y="320" width="660" height="50" rx="6" fill="#1e293b" stroke="#2EAD33" stroke-width="1"/>
+  <text x="55" y="342" fill="#86efac" font-size="14" font-weight="700">Playwright page.route (E2E)</text>
+  <text x="55" y="361" fill="#94a3b8" font-size="12">toda la app en un navegador real · el más lento, para estados difíciles de provocar</text>
+
+  <text x="790" y="200" text-anchor="middle" fill="#94a3b8" font-size="12">La línea marca</text>
+  <text x="790" y="216" text-anchor="middle" fill="#94a3b8" font-size="12">dónde se corta</text>
+  <text x="790" y="232" text-anchor="middle" fill="#94a3b8" font-size="12">la cadena</text>
+</svg>

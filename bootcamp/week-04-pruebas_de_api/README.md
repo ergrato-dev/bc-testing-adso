@@ -70,4 +70,4 @@ Agrupa la ficha en mesas por backend. Todos los integrantes de un grupo hacen la
 
 | ← Anterior | Inicio | Siguiente → |
 |---|---|---|
-| [Semana 3 — Componentes React](../week-03-componentes_react/README.md) | [README del bootcamp](../../README.md) | Semana 5 — Dobles de prueba *(pendiente)* |
+| [Semana 3 — Componentes React](../week-03-componentes_react/README.md) | [README del bootcamp](../../README.md) | [Semana 5 — Dobles de prueba](../week-05-dobles_de_prueba/README.md) |

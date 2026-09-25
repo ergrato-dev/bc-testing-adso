@@ -85,8 +85,8 @@ Frontend y backend tienen su propio umbral y **ambos** deben cumplir el piso de 
 
 - **Objetivo**: aislar lo que no controlas (API externa, reloj, correo, BD en tests unitarios).
 - **Teoría**: dummy, stub, mock, spy y fake; cuándo un mock es una mala señal.
-- **Recetas**: `vi.mock` y MSW para aislar React del API, `vi.mock` en Express, pytest-mock / `dependency_overrides` en FastAPI, Mockito en Spring Boot.
-- **Reto**: probar una pieza del proyecto que dependa de un servicio externo o de otra capa.
+- **Recetas**: MSW para el cliente HTTP de React; `vi.fn`/`vi.spyOn`, pytest-mock y Mockito sobre el notificador de la referencia (se llama bien, no se llama cuando no debe, y la pieza se crea aunque falle).
+- **Reto**: inventario de dependencias externas del proyecto; cada capa las prueba desde un ángulo, con `page.route` de Playwright para la capa E2E.
 
 ## Semana 6 — Integración con BD real
 
@@ -128,5 +128,5 @@ Frontend y backend tienen su propio umbral y **ambos** deben cumplir el piso de 
 
 | Sem | Estado |
 |:---:|---|
-| 1–4 | ✅ Publicada |
-| 5–10 | ⏳ Pendiente |
+| 1–5 | ✅ Publicada |
+| 6–10 | ⏳ Pendiente |
