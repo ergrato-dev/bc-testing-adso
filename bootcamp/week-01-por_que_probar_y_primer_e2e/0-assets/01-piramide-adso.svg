@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 460" width="900" height="460" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
+  <rect width="900" height="460" fill="#0f172a"/>
+
+  <text x="450" y="38" text-anchor="middle" fill="#f1f5f9" font-size="20" font-weight="700">Pirámide de pruebas en un proyecto ADSO</text>
+
+  <!-- Pirámide -->
+  <polygon points="150,305 490,305 570,415 70,415" fill="#15803d"/>
+  <polygon points="230,195 410,195 490,305 150,305" fill="#4338ca"/>
+  <polygon points="320,70 230,195 410,195" fill="#b91c1c"/>
+  <line x1="230" y1="195" x2="410" y2="195" stroke="#0f172a" stroke-width="3"/>
+  <line x1="150" y1="305" x2="490" y2="305" stroke="#0f172a" stroke-width="3"/>
+
+  <text x="320" y="152" text-anchor="middle" fill="#f1f5f9" font-size="15" font-weight="700">E2E</text>
+  <text x="320" y="172" text-anchor="middle" fill="#fca5a5" font-size="11">Pocas · lentas</text>
+  <text x="320" y="247" text-anchor="middle" fill="#f1f5f9" font-size="15" font-weight="700">Integración</text>
+  <text x="320" y="267" text-anchor="middle" fill="#c7d2fe" font-size="11">API + BD</text>
+  <text x="320" y="357" text-anchor="middle" fill="#f1f5f9" font-size="15" font-weight="700">Unitarias</text>
+  <text x="320" y="377" text-anchor="middle" fill="#bbf7d0" font-size="11">Muchas · rápidas</text>
+
+  <!-- Herramientas por nivel -->
+  <rect x="600" y="100" width="280" height="70" rx="8" fill="#1e293b"/>
+  <text x="615" y="126" fill="#f1f5f9" font-size="14" font-weight="700">Playwright</text>
+  <text x="615" y="148" fill="#94a3b8" font-size="12">Común a todos · semanas 1 y 7</text>
+
+  <rect x="600" y="210" width="280" height="80" rx="8" fill="#1e293b"/>
+  <text x="615" y="234" fill="#f1f5f9" font-size="14" font-weight="700">TestClient · supertest · MockMvc</text>
+  <text x="615" y="254" fill="#94a3b8" font-size="12">+ PostgreSQL / MySQL en Docker</text>
+  <text x="615" y="274" fill="#94a3b8" font-size="12">Semanas 4 y 6</text>
+
+  <rect x="600" y="320" width="280" height="80" rx="8" fill="#1e293b"/>
+  <text x="615" y="344" fill="#f1f5f9" font-size="14" font-weight="700">Vitest · pytest · JUnit 5</text>
+  <text x="615" y="364" fill="#94a3b8" font-size="12">+ React Testing Library</text>
+  <text x="615" y="384" fill="#94a3b8" font-size="12">Semanas 2, 3 y 5</text>
+
+  <line x1="420" y1="140" x2="595" y2="135" stroke="#475569" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <line x1="495" y1="250" x2="595" y2="250" stroke="#475569" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <line x1="575" y1="360" x2="595" y2="360" stroke="#475569" stroke-width="1.5" stroke-dasharray="4 4"/>
+
+  <text x="450" y="445" text-anchor="middle" fill="#94a3b8" font-size="12">En la semana 1 empiezas por la cima: el E2E es el más fácil de entender.</text>
+</svg>

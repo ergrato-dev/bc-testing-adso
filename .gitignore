@@ -100,10 +100,10 @@ surefire-reports/
 # PLAYWRIGHT
 # ════════════════════════════════════════════════════════════
 
-/test-results/
-/playwright-report/
-/playwright/.cache/
-/blob-report/
+test-results/
+playwright-report/
+playwright/.cache/
+blob-report/
 
 # ════════════════════════════════════════════════════════════
 # IDEs Y EDITORES

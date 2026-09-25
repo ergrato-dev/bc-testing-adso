@@ -105,4 +105,5 @@
 
 | Sem | Estado |
 |:---:|---|
-| 1–10 | ⏳ Pendiente |
+| 1 | ✅ Publicada |
+| 2–10 | ⏳ Pendiente |

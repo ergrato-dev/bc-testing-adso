@@ -8,6 +8,7 @@ App mínima que usan todas las recetas del bootcamp. Tiene un frontend React y e
 | [`api-express/`](api-express/) | Express 5 + Knex | Vitest + supertest |
 | [`api-fastapi/`](api-fastapi/) | FastAPI + SQLAlchemy | pytest + `TestClient` |
 | [`api-springboot/`](api-springboot/) | Spring Boot 4 + JPA | JUnit 5 + MockMvc + AssertJ |
+| [`e2e/`](e2e/) | Playwright | Tests E2E contra front + cualquier backend |
 | [`docker-compose.yml`](docker-compose.yml) | PostgreSQL 18 y MySQL 8.4 **de prueba** | — |
 
 ## El API
@@ -93,5 +94,18 @@ pnpm dev
 ```
 
 Vite redirige `/api` al puerto 8000 (ver `vite.config.js`), así que el front funciona con cualquiera de los tres backends.
+
+## 4. Correr los E2E
+
+Con la BD y un backend corriendo:
+
+```bash
+cd e2e
+pnpm install
+pnpm exec playwright install chromium
+pnpm test
+```
+
+Playwright levanta el frontend por su cuenta (`webServer` en `playwright.config.js`). Si el puerto 5173 está ocupado, usa `FRONT_PORT=5199 pnpm test`.
 
 > Los tests unitarios y de API **no necesitan Docker**. La BD real solo se usa al correr la app y en los tests de integración de la semana 6.
