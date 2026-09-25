@@ -1,4 +1,8 @@
 <p align="center">
+  <img src="assets/bootcamp-header.svg" alt="ADSO Testing Bootcamp" width="800">
+</p>
+
+<p align="center">
   <a href="README.md"><img src="https://img.shields.io/badge/🇨🇴_Español-0969DA?style=for-the-badge&logoColor=white" alt="Versión en español"></a>
 </p>
 

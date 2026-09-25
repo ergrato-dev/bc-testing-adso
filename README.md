@@ -1,4 +1,8 @@
 <p align="center">
+  <img src="assets/bootcamp-header.svg" alt="Bootcamp Testing ADSO" width="800">
+</p>
+
+<p align="center">
   <a href="https://github.com/ergrato-dev/bc-testing-adso/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-CC_BY--NC--SA_4.0-green.svg" alt="License CC BY-NC-SA 4.0"></a>
   <a href="#"><img src="https://img.shields.io/badge/semanas-9%2B1-6366f1.svg" alt="9+1 Semanas"></a>
   <a href="#"><img src="https://img.shields.io/badge/horas-72-6366f1.svg" alt="72 Horas"></a>
