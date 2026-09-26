@@ -70,6 +70,20 @@ Todas las recetas funcionan con PostgreSQL y con MySQL. La capa Front hace la re
 
 ---
 
+## Demostración en proyecto real
+
+Los proyectos NN Auth son apps reales (registro, verificación de email por correo, login y dashboard) con los tres backends del bootcamp, React y PostgreSQL. Tienen aplicado lo que enseña cada semana y **defectos reales documentados a propósito** para descubrirlos en clase. Muéstralos en vivo después de la receta.
+
+| Stack | Qué mostrar | Cómo verlo |
+|---|---|---|
+| FastAPI | BD `db-test` en [`docker-compose.yml`](https://github.com/ergrato-dev/proyecto-be_fastapi-fe_react/blob/main/docker-compose.yml); [`conftest.py`](https://github.com/ergrato-dev/proyecto-be_fastapi-fe_react/blob/main/be/app/tests/conftest.py) exige `TEST_DATABASE_URL`, migra con Alembic y aísla cada test con rollback | `docker compose up -d --wait db-test` y `uv run pytest` |
+| Express | [`global-setup.ts`](https://github.com/ergrato-dev/proyecto-be_express-fe_react/blob/main/be/src/tests/global-setup.ts) se detiene si la BD no termina en `_test` y migra con Prisma; limpieza con `deleteMany` y archivos en serie ([`vitest.config.ts`](https://github.com/ergrato-dev/proyecto-be_express-fe_react/blob/main/be/vitest.config.ts)) | `pnpm test` (con `be/.env.test`) |
+| Spring Boot | [`application-test.yml`](https://github.com/ergrato-dev/proyecto-be_springboot_java-fe_react/blob/main/be/src/test/resources/application-test.yml) lee `TEST_DATABASE_URL`; `@Transactional` hace rollback por test | `./mvnw verify` |
+
+Hallazgo en los tres: **el token de verificación se puede usar dos veces** con dos peticiones simultáneas (ver hallazgos de [FastAPI](https://github.com/ergrato-dev/proyecto-be_fastapi-fe_react/blob/main/docs/testing/hallazgos.md), [Express](https://github.com/ergrato-dev/proyecto-be_express-fe_react/blob/main/docs/testing/hallazgos.md) y [Spring Boot](https://github.com/ergrato-dev/proyecto-be_springboot_java-fe_react/blob/main/docs/testing/hallazgos.md)). Ningún test lo ve: todos hacen una petición a la vez.
+
+---
+
 ## Navegación
 
 | ← Anterior | Inicio | Siguiente → |

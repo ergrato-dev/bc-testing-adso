@@ -66,6 +66,18 @@ Al finalizar esta semana serás capaz de:
 
 ---
 
+## Demostración en proyecto real
+
+Los proyectos NN Auth son apps reales (registro, verificación de email por correo, login y dashboard) con los tres backends del bootcamp, React y PostgreSQL. Tienen aplicado lo que enseña cada semana y **defectos reales documentados a propósito** para descubrirlos en clase. Muéstralos en vivo después de la receta.
+
+| Stack | Qué mostrar | Cómo verlo |
+|---|---|---|
+| FastAPI | [`playwright.config.js`](https://github.com/ergrato-dev/proyecto-be_fastapi-fe_react/blob/main/e2e/playwright.config.js) levanta backend y frontend; el enlace de verificación se lee desde Mailpit ([`mailpit.js`](https://github.com/ergrato-dev/proyecto-be_fastapi-fe_react/blob/main/e2e/tests/support/mailpit.js)); objeto de página [`auth-dialogs.js`](https://github.com/ergrato-dev/proyecto-be_fastapi-fe_react/blob/main/e2e/tests/support/auth-dialogs.js). Hallazgo: el navegador bloquea el `PATCH` del idioma por CORS ([hallazgos](https://github.com/ergrato-dev/proyecto-be_fastapi-fe_react/blob/main/docs/testing/hallazgos.md)) | `pnpm test --repeat-each=5` |
+| Express | El test espera la respuesta del API y no el texto de la página, por un defecto de tiempos ([`auth.spec.js`](https://github.com/ergrato-dev/proyecto-be_express-fe_react/blob/main/e2e/tests/auth.spec.js)). Hallazgos: tras un registro exitoso aparece un 403; la verificación se llama dos veces y dice "Enlace inválido" ([hallazgos](https://github.com/ergrato-dev/proyecto-be_express-fe_react/blob/main/docs/testing/hallazgos.md)) | `page.on('response')` para ver las dos llamadas |
+| Spring Boot | El mismo patrón con Spring Boot ([`auth.spec.js`](https://github.com/ergrato-dev/proyecto-be_springboot_java-fe_react/blob/main/e2e/tests/auth.spec.js)); el rate limit se apaga solo en el entorno E2E ([`playwright.config.js`](https://github.com/ergrato-dev/proyecto-be_springboot_java-fe_react/blob/main/e2e/playwright.config.js)) | `pnpm test --repeat-each=5 --workers=6` |
+
+---
+
 ## Navegación
 
 | ← Anterior | Inicio | Siguiente → |

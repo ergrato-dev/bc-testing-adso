@@ -62,6 +62,18 @@ Al finalizar esta semana serás capaz de:
 
 ---
 
+## Demostración en proyecto real
+
+Los proyectos NN Auth son apps reales (registro, verificación de email por correo, login y dashboard) con los tres backends del bootcamp, React y PostgreSQL. Tienen aplicado lo que enseña cada semana y **defectos reales documentados a propósito** para descubrirlos en clase. Muéstralos en vivo después de la receta.
+
+| Stack | Qué mostrar | Cómo verlo |
+|---|---|---|
+| FastAPI | 165 tests de componentes con `userEvent` y consultas por rol ([`__tests__`](https://github.com/ergrato-dev/proyecto-be_fastapi-fe_react/tree/main/fe/src/__tests__)) | `cd fe && pnpm test` |
+| Express | [`AuthContext.test.tsx`](https://github.com/ergrato-dev/proyecto-be_express-fe_react/blob/main/fe/src/__tests__/context/AuthContext.test.tsx) usa `data-testid` y `fireEvent`: buen ejercicio de refactor hacia consultas accesibles y `userEvent` | `cd fe && pnpm test` |
+| Spring Boot | Hallazgo: [`LoginPage.tsx`](https://github.com/ergrato-dev/proyecto-be_springboot_java-fe_react/blob/main/fe/src/pages/LoginPage.tsx) llama a `useState` después de un `return` condicional ([hallazgos](https://github.com/ergrato-dev/proyecto-be_springboot_java-fe_react/blob/main/docs/testing/hallazgos.md)) | `cd fe && pnpm lint` |
+
+---
+
 ## Navegación
 
 | ← Anterior | Inicio | Siguiente → |

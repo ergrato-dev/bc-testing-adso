@@ -68,6 +68,18 @@ El modelo verificado es el CI de este repo: [`.github/workflows/referencia.yml`]
 
 ---
 
+## Demostración en proyecto real
+
+Los proyectos NN Auth son apps reales (registro, verificación de email por correo, login y dashboard) con los tres backends del bootcamp, React y PostgreSQL. Tienen aplicado lo que enseña cada semana y **defectos reales documentados a propósito** para descubrirlos en clase. Muéstralos en vivo después de la receta.
+
+| Stack | Qué mostrar | Cómo verlo |
+|---|---|---|
+| FastAPI | [`ci.yml`](https://github.com/ergrato-dev/proyecto-be_fastapi-fe_react/blob/main/.github/workflows/ci.yml): backend y frontend con umbral, y E2E con PostgreSQL y Mailpit como servicios; reportes como artefactos | Pestaña Actions del repo |
+| Express | [`tests.yml`](https://github.com/ergrato-dev/proyecto-be_express-fe_react/blob/main/.github/workflows/tests.yml): los mismos tres jobs; el umbral del frontend quedó en la cobertura real porque el anterior nunca se cumplió | Pestaña Actions del repo |
+| Spring Boot | [`tests.yml`](https://github.com/ergrato-dev/proyecto-be_springboot_java-fe_react/blob/main/.github/workflows/tests.yml): `./mvnw verify` con `jacoco:check`, frontend y E2E | Pestaña Actions del repo |
+
+---
+
 ## Navegación
 
 | ← Anterior | Inicio | Siguiente → |

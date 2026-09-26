@@ -71,6 +71,18 @@ La capa E2E hace la receta de su backend y además la parte de `page.route` del 
 
 ---
 
+## Demostración en proyecto real
+
+Los proyectos NN Auth son apps reales (registro, verificación de email por correo, login y dashboard) con los tres backends del bootcamp, React y PostgreSQL. Tienen aplicado lo que enseña cada semana y **defectos reales documentados a propósito** para descubrirlos en clase. Muéstralos en vivo después de la receta.
+
+| Stack | Qué mostrar | Cómo verlo |
+|---|---|---|
+| FastAPI | Fixture `sent_emails`: reemplaza el envío **donde se usa** (`auth_service`), no donde se define ([`conftest.py`](https://github.com/ergrato-dev/proyecto-be_fastapi-fe_react/blob/main/be/app/tests/conftest.py)). Con el SMTP caído, el registro **resiste** (201) | Compáralo con Express |
+| Express | `vi.mock` del módulo de email en [`setup.ts`](https://github.com/ergrato-dev/proyecto-be_express-fe_react/blob/main/be/src/tests/setup.ts). Hallazgos: con el SMTP caído, el registro responde 500 **con el usuario ya guardado**; el frontend muestra el error crudo de axios ([hallazgos](https://github.com/ergrato-dev/proyecto-be_express-fe_react/blob/main/docs/testing/hallazgos.md)) | Un stub con `mockRejectedValue` lo demuestra |
+| Spring Boot | `@MockitoBean` sobre `EmailService` ([`AuthControllerTest.java`](https://github.com/ergrato-dev/proyecto-be_springboot_java-fe_react/blob/main/be/src/test/java/com/nn/auth/controller/AuthControllerTest.java)). Hallazgo: el login no muestra el `detail` del API ([hallazgos](https://github.com/ergrato-dev/proyecto-be_springboot_java-fe_react/blob/main/docs/testing/hallazgos.md)), un caso para MSW | Handler de MSW con el mismo ProblemDetail |
+
+---
+
 ## Navegación
 
 | ← Anterior | Inicio | Siguiente → |

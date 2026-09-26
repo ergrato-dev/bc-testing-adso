@@ -70,6 +70,18 @@ Cada integrante hace la receta de **su capa de esta semana** (ver la matriz de r
 
 ---
 
+## Demostración en proyecto real
+
+Los proyectos NN Auth son apps reales (registro, verificación de email por correo, login y dashboard) con los tres backends del bootcamp, React y PostgreSQL. Tienen aplicado lo que enseña cada semana y **defectos reales documentados a propósito** para descubrirlos en clase. Muéstralos en vivo después de la receta.
+
+| Stack | Qué mostrar | Cómo verlo |
+|---|---|---|
+| FastAPI | Tests unitarios AAA de hashing y JWT, con el token vencido creado por parámetro ([`test_security.py`](https://github.com/ergrato-dev/proyecto-be_fastapi-fe_react/blob/main/be/app/tests/test_security.py)); umbral `fail_under` en [`pyproject.toml`](https://github.com/ergrato-dev/proyecto-be_fastapi-fe_react/blob/main/be/pyproject.toml) | `uv run pytest app/tests/test_security.py --no-cov` |
+| Express | Tests unitarios de `utils/security.ts` ([`security.test.ts`](https://github.com/ergrato-dev/proyecto-be_express-fe_react/blob/main/be/src/tests/security.test.ts)); thresholds con la regla de trinquete en ramas (72%) en [`vitest.config.ts`](https://github.com/ergrato-dev/proyecto-be_express-fe_react/blob/main/be/vitest.config.ts) | `pnpm exec vitest run src/tests/security.test.ts` |
+| Spring Boot | `JwtService` creado con `new`, sin levantar Spring ([`JwtServiceTest.java`](https://github.com/ergrato-dev/proyecto-be_springboot_java-fe_react/blob/main/be/src/test/java/com/nn/auth/security/JwtServiceTest.java)); `jacoco:check` en [`pom.xml`](https://github.com/ergrato-dev/proyecto-be_springboot_java-fe_react/blob/main/be/pom.xml) | `./mvnw test -Dtest=JwtServiceTest` |
+
+---
+
 ## Navegación
 
 | ← Anterior | Inicio | Siguiente → |

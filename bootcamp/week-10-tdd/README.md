@@ -66,6 +66,20 @@ Al finalizar esta semana serás capaz de:
 
 ---
 
+## Demostración en proyecto real
+
+Los proyectos NN Auth son apps reales (registro, verificación de email por correo, login y dashboard) con los tres backends del bootcamp, React y PostgreSQL. Tienen aplicado lo que enseña cada semana y **defectos reales documentados a propósito** para descubrirlos en clase. Muéstralos en vivo después de la receta.
+
+Los hallazgos de los proyectos son historias listas para TDD: primero el test que los reproduce (Red), después la corrección mínima (Green) y el refactor. Por ejemplo:
+
+| Stack | Qué mostrar | Cómo verlo |
+|---|---|---|
+| FastAPI | CORS del `PATCH` del idioma o el token reutilizable ([hallazgos](https://github.com/ergrato-dev/proyecto-be_fastapi-fe_react/blob/main/docs/testing/hallazgos.md)) | Test del preflight con `TestClient` y `OPTIONS` |
+| Express | JSON mal formado → 400, o registro que resiste la caída del SMTP ([hallazgos](https://github.com/ergrato-dev/proyecto-be_express-fe_react/blob/main/docs/testing/hallazgos.md)) | Test con supertest; stub que falla |
+| Spring Boot | JSON mal formado → 400, o 401 con cuerpo ProblemDetail ([hallazgos](https://github.com/ergrato-dev/proyecto-be_springboot_java-fe_react/blob/main/docs/testing/hallazgos.md)) | Test con MockMvc |
+
+---
+
 ## Navegación
 
 | ← Anterior | Inicio | Siguiente → |

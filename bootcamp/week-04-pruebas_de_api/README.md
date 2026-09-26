@@ -66,6 +66,18 @@ Agrupa la ficha en mesas por backend. Todos los integrantes de un grupo hacen la
 
 ---
 
+## Demostración en proyecto real
+
+Los proyectos NN Auth son apps reales (registro, verificación de email por correo, login y dashboard) con los tres backends del bootcamp, React y PostgreSQL. Tienen aplicado lo que enseña cada semana y **defectos reales documentados a propósito** para descubrirlos en clase. Muéstralos en vivo después de la receta.
+
+| Stack | Qué mostrar | Cómo verlo |
+|---|---|---|
+| FastAPI | Tests de API con `TestClient` ([`test_auth.py`](https://github.com/ergrato-dev/proyecto-be_fastapi-fe_react/blob/main/be/app/tests/test_auth.py)). Hallazgos: el CORS bloquea el `PATCH` del idioma en el navegador, pero los tests pasan porque `TestClient` no aplica CORS; el JSON mal formado responde 422 con otro formato de `detail` ([hallazgos](https://github.com/ergrato-dev/proyecto-be_fastapi-fe_react/blob/main/docs/testing/hallazgos.md)) | `curl -X OPTIONS` con `Access-Control-Request-Method: PATCH` (ver hallazgos) |
+| Express | Tests con supertest ([`auth.test.ts`](https://github.com/ergrato-dev/proyecto-be_express-fe_react/blob/main/be/src/tests/auth.test.ts)). Hallazgo: JSON mal formado → **500** ([hallazgos](https://github.com/ergrato-dev/proyecto-be_express-fe_react/blob/main/docs/testing/hallazgos.md)) | `curl -d '{"email":' …/auth/login` |
+| Spring Boot | Tests con MockMvc ([`AuthControllerTest.java`](https://github.com/ergrato-dev/proyecto-be_springboot_java-fe_react/blob/main/be/src/test/java/com/nn/auth/controller/AuthControllerTest.java)). Hallazgos: JSON mal formado → **500**; 401 sin cuerpo, fuera del contrato ProblemDetail ([hallazgos](https://github.com/ergrato-dev/proyecto-be_springboot_java-fe_react/blob/main/docs/testing/hallazgos.md)) | `curl -i …/api/v1/users/me` |
+
+---
+
 ## Navegación
 
 | ← Anterior | Inicio | Siguiente → |

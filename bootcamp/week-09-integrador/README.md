@@ -64,6 +64,14 @@ Ejemplo terminado sobre la app de referencia: [`referencia/ESTRATEGIA.md`](../..
 
 ---
 
+## Demostración en proyecto real
+
+Los proyectos NN Auth son apps reales (registro, verificación de email por correo, login y dashboard) con los tres backends del bootcamp, React y PostgreSQL. Tienen aplicado lo que enseña cada semana y **defectos reales documentados a propósito** para descubrirlos en clase. Muéstralos en vivo después de la receta.
+
+Cada proyecto tiene un documento de hallazgos que sirve de insumo para el informe de estrategia: qué encontró cada capa, por qué los tests anteriores no lo veían y qué ya se corrigió ([FastAPI](https://github.com/ergrato-dev/proyecto-be_fastapi-fe_react/blob/main/docs/testing/hallazgos.md), [Express](https://github.com/ergrato-dev/proyecto-be_express-fe_react/blob/main/docs/testing/hallazgos.md), [Spring Boot](https://github.com/ergrato-dev/proyecto-be_springboot_java-fe_react/blob/main/docs/testing/hallazgos.md)). Úsalo en la sustentación de ejemplo: muestra un hallazgo y pide al vocero que diga qué capa lo encuentra.
+
+---
+
 ## Navegación
 
 | ← Anterior | Inicio | Siguiente → |

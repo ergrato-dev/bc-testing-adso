@@ -74,6 +74,20 @@ Detalle en [docs/plan-estudios.md](docs/plan-estudios.md).
 
 ---
 
+## 🎬 Proyectos de demostración
+
+Además de la app de referencia (`referencia/`), cada semana se demuestra en vivo sobre un proyecto real, uno por stack, con registro, verificación de email, login y dashboard:
+
+| Stack | Proyecto | Hallazgos documentados |
+|---|---|---|
+| FastAPI + React | [proyecto-be_fastapi-fe_react](https://github.com/ergrato-dev/proyecto-be_fastapi-fe_react) | [hallazgos](https://github.com/ergrato-dev/proyecto-be_fastapi-fe_react/blob/main/docs/testing/hallazgos.md) |
+| Express + React | [proyecto-be_express-fe_react](https://github.com/ergrato-dev/proyecto-be_express-fe_react) | [hallazgos](https://github.com/ergrato-dev/proyecto-be_express-fe_react/blob/main/docs/testing/hallazgos.md) |
+| Spring Boot + React | [proyecto-be_springboot_java-fe_react](https://github.com/ergrato-dev/proyecto-be_springboot_java-fe_react) | [hallazgos](https://github.com/ergrato-dev/proyecto-be_springboot_java-fe_react/blob/main/docs/testing/hallazgos.md) |
+
+Los tres tienen BD de pruebas en Docker, cobertura exigida en CI, E2E con Playwright y **defectos reales que se dejan sin corregir a propósito** para descubrirlos en clase. Cada semana indica qué mostrar en su sección "Demostración en proyecto real".
+
+---
+
 ## 👥 Trabajo en grupo: todos aprenden todo
 
 Los proyectos formativos se hacen en grupos de 3 a 5 aprendices, y es común que cada uno se quede con "su parte". Este bootcamp lo evita con cuatro mecanismos:

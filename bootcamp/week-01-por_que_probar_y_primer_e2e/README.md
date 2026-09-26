@@ -72,6 +72,20 @@ Al finalizar esta semana serás capaz de:
 
 ---
 
+## Demostración en proyecto real
+
+Los proyectos NN Auth son apps reales (registro, verificación de email por correo, login y dashboard) con los tres backends del bootcamp, React y PostgreSQL. Tienen aplicado lo que enseña cada semana y **defectos reales documentados a propósito** para descubrirlos en clase. Muéstralos en vivo después de la receta.
+
+| Stack | Qué mostrar | Cómo verlo |
+|---|---|---|
+| FastAPI | E2E del flujo completo: registro → correo en Mailpit → login → dashboard ([`auth.spec.js`](https://github.com/ergrato-dev/proyecto-be_fastapi-fe_react/blob/main/e2e/tests/auth.spec.js)) | `docker compose up -d --wait db-test mailpit` y `cd e2e && pnpm test:ui` |
+| Express | El mismo flujo en otra UI ([`auth.spec.js`](https://github.com/ergrato-dev/proyecto-be_express-fe_react/blob/main/e2e/tests/auth.spec.js)) | Igual; `pnpm test:ui` muestra cada paso |
+| Spring Boot | El mismo flujo con Spring Boot ([`auth.spec.js`](https://github.com/ergrato-dev/proyecto-be_springboot_java-fe_react/blob/main/e2e/tests/auth.spec.js)) | Igual; Playwright compila y arranca el backend |
+
+Línea base de cobertura: `uv run pytest` (FastAPI), `pnpm test:coverage` (Express y frontends) y `./mvnw verify` (Spring Boot) imprimen la cobertura real.
+
+---
+
 ## Navegación
 
 | ← Anterior | Inicio | Siguiente → |
