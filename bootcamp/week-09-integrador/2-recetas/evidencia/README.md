@@ -92,6 +92,8 @@ git shortlog -sn --since="AAAA-MM-DD" HEAD -- '*tests/*' '*.test.*' '*Test.java'
 
 Cambia la fecha por el inicio de la semana 1 y ajusta las rutas a tu repo. Cruza el resultado con la matriz de rotación: cada integrante debe aparecer y haber pasado por las cuatro capas.
 
+> Si tu workflow tiene el job `evidencia-individual` de la semana 2, ya tienes este resultado semana a semana en el resumen de cada run (Actions → run → arriba). Este paso solo lo repite una vez, sobre todo el histórico, para el informe final.
+
 ## Paso 6: Escribir el informe
 
 1. Copia [`plantillas/estrategia-pruebas.md`](../../../../plantillas/estrategia-pruebas.md) en tu repo como `docs/estrategia-pruebas.md`.

@@ -12,7 +12,7 @@ Cada semana combina evidencia individual y grupal. La `rubrica-evaluacion.md` de
 
 ## Conocimiento 🧠 (30%, individual)
 
-Se evalúa en la revisión con vocero aleatorio y con preguntas cortas de la teoría.
+Se evalúa con vocero aleatorio: el vocero sorteado escribe su respuesta en `docs/matriz-rotacion.md` antes de que el instructor llegue a la mesa, y el instructor la verifica con una pregunta corta.
 
 - **Alto (27–30)**: explica qué verifica un test de una capa que no trabajó y predice por qué fallaría.
 - **Medio (21–26)**: explica el test con apoyo o con imprecisiones menores.
@@ -36,7 +36,7 @@ Se evalúa en la revisión con vocero aleatorio y con preguntas cortas de la teo
 
 - Mínimo 70% en cada evidencia.
 - Desde la semana 2, el umbral de cobertura de la semana es **obligatorio**: sin él, el Producto es Bajo. En las semanas 8 y 9 el umbral es 80%.
-- Evidencia individual verificable con `git shortlog` (ver [guía del instructor](../docs/guia-instructor.md)).
+- Evidencia individual verificable en el resumen del job `evidencia-individual` (Actions), o con `git shortlog` si el repo aún no tiene ese job (ver [guía del instructor](../docs/guia-instructor.md)).
 
 ---
 

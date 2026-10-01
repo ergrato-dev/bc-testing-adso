@@ -88,9 +88,22 @@ jobs:
           distribution: temurin
           java-version: "21"
       - run: ./mvnw -B verify
+
+  evidencia-individual:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          fetch-depth: 0
+      - name: Commits de test por autor esta semana
+        run: |
+          echo "### Commits de test por autor desde el lunes" >> "$GITHUB_STEP_SUMMARY"
+          git shortlog -sn --since="last Monday" HEAD -- '*tests/*' '*.test.*' '*Test.java' '*e2e/*' >> "$GITHUB_STEP_SUMMARY"
 ```
 
 **Si frontend y backend están en repos separados**, crea el workflow en cada repo, con su job y sin `working-directory` (o con `.`).
+
+El job `evidencia-individual` no construye ni testea nada: solo deja en el **resumen** del run (pestaña Actions → el run → arriba del todo) la lista de quién hizo commits de test esta semana, el mismo criterio del Mecanismo 2 de la [guía del instructor](../../../../docs/guia-instructor.md). `fetch-depth: 0` es necesario porque el checkout por defecto no trae el historial completo y `--since` lo necesita.
 
 ## Paso 3: Probarlo con un PR
 
@@ -138,6 +151,7 @@ Desde ahora, el botón de merge queda deshabilitado mientras un check esté en r
 ## Checklist
 
 - [ ] `.github/workflows/tests.yml` con un job de frontend y uno de backend
+- [ ] El job `evidencia-individual` aparece en el resumen del run con los commits de test por autor
 - [ ] El workflow está en verde en un PR
 - [ ] Comprobé que un umbral incumplido pone el job en rojo
 - [ ] La regla de rama bloquea el merge en rojo (o el grupo acordó la regla manual si el repo es privado)

@@ -30,6 +30,8 @@ Anota la cobertura real al cerrar cada semana. El umbral de la semana siguiente 
 
 ## Registro de vocero aleatorio
 
-| Semana | Vocero | Capa preguntada | Resultado (Alto / Medio / Bajo) |
-|---|---|---|---|
-| S1 | | | |
+El vocero escribe su respuesta **antes** de que el instructor llegue a la mesa; el instructor la verifica con una pregunta corta y anota el resultado.
+
+| Semana | Vocero | Capa preguntada | Respuesta escrita | Resultado (Alto / Medio / Bajo) |
+|---|---|---|---|---|
+| S1 | | | | |

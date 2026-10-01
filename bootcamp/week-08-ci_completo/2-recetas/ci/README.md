@@ -6,6 +6,8 @@ Vas a ampliar el workflow `.github/workflows/tests.yml` que creaste en la semana
 
 Las plantillas suponen un repo con las carpetas `frontend/`, `backend/` y `e2e/`, PostgreSQL y las variables de la referencia. Ajusta rutas, puertos, nombres de BD y comandos a tu proyecto.
 
+El job `evidencia-individual` de la semana 2 no cambia: sigue en el workflow tal cual, sin tocarlo.
+
 ---
 
 ## Paso 1: Ver el CI de la referencia (todo el grupo, 15 min)

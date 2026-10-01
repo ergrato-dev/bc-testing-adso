@@ -24,7 +24,9 @@ Esta guía resuelve el problema clásico del proyecto en grupo: los integrantes 
 
 Regla: **mínimo 1 commit de test por aprendiz por semana** en el repo del grupo, con su propio usuario de Git.
 
-Verificación en segundos, desde el repo del grupo:
+Desde la semana 2, el grupo tiene en su workflow el job `evidencia-individual` (receta de CI de la [semana 2](../bootcamp/week-02-pruebas_unitarias_y_ci/2-recetas/ci/README.md)): corre solo el mismo filtro de rutas y lo deja en el **resumen** del último run de `main` (pestaña Actions → el run → arriba del todo). No hace falta correr nada a mano: abres esa pestaña igual que para revisar el umbral de cobertura, y ahí mismo ves quién hizo commits de test esa semana.
+
+Si un grupo todavía no tiene ese job (por ejemplo, antes de la semana 2), corre el comando a mano desde el repo del grupo:
 
 ```bash
 # Commits por autor que tocaron tests desde el inicio de la semana
@@ -37,16 +39,14 @@ Quien no aparece en la lista no cumplió la evidencia individual de esa semana. 
 
 ## Mecanismo 3: vocero aleatorio
 
-Revisión semanal de unos 10 minutos por grupo:
+Revisión semanal de unos 3 minutos por grupo, con el sorteo y la escritura separados de tu verificación:
 
-1. Escoge a un integrante **al azar** (sorteo, dado, lista aleatoria). El grupo no sabe de antemano quién será.
-2. Pídele una de estas tres cosas, siempre sobre una capa que **no** trabajó esa semana:
-   - Explicar qué verifica un test del grupo y por qué fallaría.
-   - Romper el código a propósito y mostrar qué test falla.
-   - Escribir en vivo un test pequeño, con ayuda de la receta.
-3. El resultado cuenta para la **nota grupal** de la semana.
+1. Al empezar la sesión (mientras revisas otro grupo), cada grupo sortea a un integrante **al azar** (sorteo, dado, lista aleatoria) y lo anota en `docs/matriz-rotacion.md`, columna "Vocero". El grupo no sabe de antemano quién será.
+2. El vocero escribe de una vez, en la columna **"Respuesta escrita"** de esa misma tabla, su explicación sobre una capa que **no** trabajó esa semana, usando los criterios de Conocimiento de la `rubrica-evaluacion.md` de la semana (no hay que inventar preguntas).
+3. Cuando llegas a la mesa, lees lo escrito y haces **una** pregunta corta de verificación (pedir que rompa el código y muestre qué test falla, o que amplíe un punto impreciso). No repites la explicación completa desde cero.
+4. El resultado cuenta para la **nota grupal** de la semana.
 
-Efecto buscado: al grupo le conviene enseñarse entre sí, porque cualquiera puede responder por todos.
+Efecto buscado: al grupo le conviene enseñarse entre sí, porque cualquiera puede responder por todos. Separar la escritura de tu verificación no baja la exigencia — mismos criterios, mismo peso, misma aleatoriedad — solo mueve el trabajo de "generar y escuchar la respuesta completa en vivo" a "leer y verificar", que es más corto y no se desgasta al repetirlo por cada grupo de cada ficha.
 
 ## Mecanismo 4: revisión cruzada de PR
 
@@ -74,8 +74,8 @@ Verificación en la revisión semanal (menos de un minuto):
 
 | Evidencia | Peso | Tipo | Cómo se verifica |
 |---|---:|---|---|
-| Conocimiento | 30% | Individual | Vocero aleatorio + preguntas cortas de la teoría |
-| Desempeño | 40% | Individual | Commits de test propios + capa cumplida en la matriz |
+| Conocimiento | 30% | Individual | Vocero aleatorio: respuesta escrita en la matriz + verificación breve tuya |
+| Desempeño | 40% | Individual | Resumen del job `evidencia-individual` en Actions (o `git shortlog` si aún no hay CI) + capa cumplida en la matriz |
 | Producto | 30% | Grupal | Reto de la semana en el repo del grupo, CI en verde y umbral de cobertura de la semana |
 
 Detalle y niveles en [`plantillas/rubrica-grupal.md`](../plantillas/rubrica-grupal.md). Cada semana trae además su `rubrica-evaluacion.md` con los criterios del tema.
