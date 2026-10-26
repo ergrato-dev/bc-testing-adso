@@ -141,3 +141,9 @@ desktop.ini
 *.pem
 *.key
 secrets/
+
+# ════════════════════════════════════════════════════════════
+# MATERIAL PRIVADO DEL INSTRUCTOR (soluciones y guiones)
+# ════════════════════════════════════════════════════════════
+
+instructor/
