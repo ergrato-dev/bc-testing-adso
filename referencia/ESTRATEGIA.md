@@ -59,13 +59,18 @@ La referencia deja defectos **a propósito** para que las recetas los descubran.
 | Defecto | Capa que lo encuentra | Semana |
 |---|---|---|
 | JSON mal formado responde fuera del contrato | API | 4 |
+| Una ruta inexistente responde `404` en HTML (Express) | API | 4 |
+| Un error inesperado, como la BD caída, responde `500` en HTML con el stack trace (Express) | API | 4 |
 | `name` de más de 255 caracteres responde `500` contra la BD real | Integración | 6 |
+| `artist` de más de 255 caracteres responde `500` contra la BD real (Express) | Integración | 6 |
+| Un `year` fuera del rango de `INTEGER` responde `500` contra la BD real (Express) | Integración | 6 |
 | `GET /api/pieces/abc` responde `500` con el SQL (Express) | Integración | 6 |
 | La lista no sale ordenada por id en PostgreSQL (Spring Boot) | Integración | 6 |
 | Doble clic en **Guardar** registra la pieza dos veces | E2E | 7 |
 | Una pieza guardada mientras la lista carga desaparece de la pantalla | E2E | 7 |
+| Sin red, la persona lee `Failed to fetch`, el mensaje interno del navegador | E2E | 7 |
 
-Todos viven en código con cobertura: la cobertura del frontend es 100% y aun así contiene los dos últimos.
+Todos viven en código con cobertura: la cobertura del frontend es 100% y aun así contiene los tres últimos.
 
 ---
 
