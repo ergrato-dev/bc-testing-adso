@@ -148,3 +148,6 @@ secrets/
 
 instructor/
 **/3-reto/solution/
+
+# PDFs generados por export-pdf.sh
+*_pdf

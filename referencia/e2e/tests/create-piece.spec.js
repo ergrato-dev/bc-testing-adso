@@ -24,3 +24,13 @@ test('should show an error when name is empty', async ({ page }) => {
 
   await expect(page.getByRole('alert')).toHaveText('El nombre es obligatorio');
 });
+
+test('should show an error when artist is empty', async ({ page }) => {
+  await page.goto('/');
+
+  await page.getByLabel('Nombre').fill('Pieza sin artista');
+  await page.getByLabel('Año').fill('1990');
+  await page.getByRole('button', { name: 'Guardar' }).click();
+
+  await expect(page.getByRole('alert')).toHaveText('El artista es obligatorio');
+});
