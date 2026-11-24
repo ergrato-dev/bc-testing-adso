@@ -155,6 +155,9 @@ jobs:
       # Espera a que el API responda (máximo 60 s), sin sleeps fijos
       - name: Wait for the API
         run: curl --silent --fail --retry 30 --retry-delay 2 --retry-all-errors http://localhost:8000/api/pieces
+      # Smoke de carga (semana 11): 1 usuario, 30 s; un umbral roto pone el job en rojo
+      - name: Load smoke
+        run: docker run --rm -i --network host grafana/k6:2.3.0 run - < referencia/carga/smoke.js
 
       - run: pnpm test
         working-directory: referencia/e2e

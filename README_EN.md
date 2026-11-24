@@ -8,7 +8,7 @@
 
 # ADSO Testing Bootcamp
 
-A software testing bootcamp built around the **capstone project** of SENA's **Software Analysis and Development (ADSO)** program in Colombia. It targets 6th-term apprentices who already have a project in progress and have **one term (9–10 weeks, 8 h/week)** to give it a real test suite.
+A software testing bootcamp built around the **capstone project** of SENA's **Software Analysis and Development (ADSO)** program in Colombia. It targets 6th-term apprentices who already have a project in progress and have **one term (9–11 weeks, 8 h/week)** to give it a real test suite.
 
 Each week covers **one shared topic** with **recipes per stack**, so every team applies it to its own project:
 
@@ -35,6 +35,7 @@ Each week covers **one shared topic** with **recipes per stack**, so every team 
 | 8 | Full CI (DB, integration, E2E) and suite quality |
 | 9 | **Capstone**: full suite and oral defense |
 | 10 | *(Optional)* TDD on a new user story |
+| 11 | *(Optional)* Load and stress testing with k6 |
 
 ## Quality is mandatory
 

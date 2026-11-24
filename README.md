@@ -21,7 +21,7 @@
 
 # Bootcamp Testing ADSO
 
-Bootcamp de **testing de software aplicado al proyecto formativo** del programa **Análisis y Desarrollo de Software (ADSO) del SENA**. Está pensado para aprendices de VI trimestre que ya tienen un proyecto en curso y cuentan con **un trimestre (9–10 semanas, 8 h/semana)** para darle una suite de pruebas real.
+Bootcamp de **testing de software aplicado al proyecto formativo** del programa **Análisis y Desarrollo de Software (ADSO) del SENA**. Está pensado para aprendices de VI trimestre que ya tienen un proyecto en curso y cuentan con **un trimestre (9–11 semanas, 8 h/semana)** para darle una suite de pruebas real.
 
 No es un curso de un lenguaje: cada semana trata **un tema común** y ofrece **recetas por stack**, para que cada grupo lo aplique a su propio proyecto.
 
@@ -67,6 +67,7 @@ Al finalizar, cada integrante del grupo, **no solo el grupo**, es capaz de:
 | 8 | [CI completo (BD, integración y E2E) y calidad de la suite](bootcamp/week-08-ci_completo/README.md) | Todos |
 | 9 | [**Integrador**: suite completa y sustentación](bootcamp/week-09-integrador/README.md) | — |
 | 10 | [*(Opcional)* TDD sobre una historia de usuario nueva](bootcamp/week-10-tdd/README.md) | Todos |
+| 11 | [*(Opcional)* Pruebas de carga y estrés con k6](bootcamp/week-11-pruebas_de_carga/README.md) | k6 (todos) |
 
 Detalle en [docs/plan-estudios.md](docs/plan-estudios.md).
 

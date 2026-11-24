@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" width="900" height="400" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
+  <rect width="900" height="400" fill="#0f172a"/>
+  <text x="450" y="36" text-anchor="middle" fill="#f1f5f9" font-size="20" font-weight="700">Cuatro formas de cargar un API: usuarios virtuales en el tiempo</text>
+
+  <!-- Ejes: cada panel mide 190 x 200, base en y=300 -->
+  <g stroke="#475569" stroke-width="1.5" fill="none">
+    <path d="M 30 100 V 300 H 220"/>
+    <path d="M 250 100 V 300 H 440"/>
+    <path d="M 470 100 V 300 H 660"/>
+    <path d="M 690 100 V 300 H 880"/>
+  </g>
+
+  <!-- Smoke: 1 usuario, plano -->
+  <path d="M 30 290 H 215" stroke="#22c55e" stroke-width="3" fill="none"/>
+  <text x="125" y="80" text-anchor="middle" fill="#86efac" font-size="18" font-weight="700">Smoke</text>
+
+  <!-- Carga: rampa, meseta, bajada -->
+  <path d="M 250 300 L 300 200 H 390 L 435 300" stroke="#3b82f6" stroke-width="3" fill="none"/>
+  <text x="345" y="80" text-anchor="middle" fill="#93c5fd" font-size="18" font-weight="700">Carga</text>
+
+  <!-- Estrés: escalones hasta romper -->
+  <path d="M 470 300 V 260 H 505 V 220 H 540 V 170 H 575 V 115 H 615 L 655 300" stroke="#f59e0b" stroke-width="3" fill="none"/>
+  <text x="595" y="108" fill="#fcd34d" font-size="16">✕</text>
+  <text x="565" y="80" text-anchor="middle" fill="#fcd34d" font-size="18" font-weight="700">Estrés</text>
+
+  <!-- Pico: subida brusca -->
+  <path d="M 690 290 H 750 L 760 115 H 790 L 800 290 H 875" stroke="#ef4444" stroke-width="3" fill="none"/>
+  <text x="785" y="80" text-anchor="middle" fill="#fca5a5" font-size="18" font-weight="700">Pico</text>
+
+  <!-- Preguntas -->
+  <g font-size="13" fill="#cbd5e1" text-anchor="middle">
+    <text x="125" y="330">¿Responde bien</text>
+    <text x="125" y="348">con carga mínima?</text>
+    <text x="345" y="330">¿Aguanta la carga</text>
+    <text x="345" y="348">que esperamos?</text>
+    <text x="565" y="330">¿Dónde se rompe</text>
+    <text x="565" y="348">y cómo falla?</text>
+    <text x="785" y="330">¿Sobrevive a una</text>
+    <text x="785" y="348">avalancha repentina?</text>
+  </g>
+  <text x="450" y="385" text-anchor="middle" fill="#64748b" font-size="12">eje vertical: usuarios virtuales (VUs) · eje horizontal: tiempo</text>
+</svg>

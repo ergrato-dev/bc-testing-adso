@@ -32,7 +32,8 @@ Registro de piezas de un museo: listar, ver, crear y borrar, con un frontend Rea
 | Arranque (`server.js`, `main`, `*Application`) | Solo conecta piezas; si falla, la app no arranca y los E2E lo muestran |
 | Notificador real (`LogNotifier`) | Representa un servicio externo; se reemplaza por dobles |
 | Adaptadores de BD en la medición de cobertura | Se prueban con integración, no con unitarias |
-| Rendimiento y seguridad | Fuera del alcance de este bootcamp |
+| Rendimiento bajo carga | Solo un smoke de 30 s en el CI (`carga/smoke.js`); la carga y el estrés se corren a mano (semana 11, opcional) |
+| Seguridad | Fuera del alcance de este bootcamp |
 
 ## 4. Datos y entornos
 
@@ -69,6 +70,7 @@ La referencia deja defectos **a propósito** para que las recetas los descubran.
 | Doble clic en **Guardar** registra la pieza dos veces | E2E | 7 |
 | Una pieza guardada mientras la lista carga desaparece de la pantalla | E2E | 7 |
 | Sin red, la persona lee `Failed to fetch`, el mensaje interno del navegador | E2E | 7 |
+| `GET /api/pieces` no tiene paginación: con unas 1 800 piezas atiende diez veces menos peticiones por segundo | Carga | 11 |
 
 Todos viven en código con cobertura: la cobertura del frontend es 100% y aun así contiene los tres últimos.
 

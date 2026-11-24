@@ -5,8 +5,8 @@
 | Dato | Valor |
 |---|---|
 | Público | Aprendices ADSO SENA de VI trimestre, con proyecto formativo en curso |
-| Duración | 9 semanas núcleo + 1 opcional (un trimestre) |
-| Dedicación | 8 h/semana (72 h núcleo, 80 h con la semana opcional) |
+| Duración | 9 semanas núcleo + 2 opcionales (un trimestre) |
+| Dedicación | 8 h/semana (72 h núcleo, 88 h con las semanas opcionales) |
 | Modalidad | Grupos de 3 a 5 aprendices sobre su propio proyecto formativo |
 | Stacks | React + (FastAPI \| Express \| Spring Boot) + (PostgreSQL \| MySQL) |
 | Nivel de entrada | Sabe programar en el stack de su proyecto; sin experiencia en testing |
@@ -18,7 +18,7 @@
 3. **Todos aprenden todo.** La rotación de capas y el vocero aleatorio garantizan que cada aprendiz pase por front, API, BD y E2E (ver [guia-instructor.md](guia-instructor.md)).
 4. **Resultado visible desde el día 1.** Playwright abre la semana 1: ver el navegador llenando un formulario solo engancha a la ficha antes de entrar en la teoría.
 5. **La calidad es una exigencia, no una opción.** La cobertura se mide desde la semana 1 y, desde la semana 2, un umbral en CI bloquea cualquier PR que la haga bajar. El umbral sube cada semana hasta el **80%** (ver [Umbral de cobertura](#umbral-de-cobertura)).
-6. **Si la ficha llega solo a la semana 9, el cierre está completo.** La semana 10 es extensión.
+6. **Si la ficha llega solo a la semana 9, el cierre está completo.** Las semanas 10 y 11 son extensión.
 
 ## Umbral de cobertura
 
@@ -132,7 +132,15 @@ Frontend y backend tienen su propio umbral y **ambos** deben cumplir el piso de 
 
 | Sem | Estado |
 |:---:|---|
-| 1–10 | ✅ Publicada |
+| 1–11 | ✅ Publicada |
+
+## Semana 11 (opcional) — Pruebas de carga y estrés
+
+- **Objetivo**: medir cómo responde el API con muchas peticiones a la vez y encontrar dónde se rompe.
+- **Teoría**: smoke, carga, estrés, pico y resistencia; usuarios virtuales y rampas; p95 y p99 frente al promedio; umbrales que aprueban o reprueban; punto de quiebre y su causa. Nunca contra producción ni contra servidores ajenos.
+- **Receta**: una sola, con k6 (no depende del backend): smoke, carga con `stages` y umbrales por endpoint, estrés por escalones y smoke en el CI.
+- **Reto**: los dos endpoints más usados del proyecto, con la carga esperada calculada, umbrales justificados, punto de quiebre explicado y smoke en el CI.
+- **Evidencia en la referencia**: la propia prueba de carga llena la tabla, y como `GET /api/pieces` no tiene paginación, con unas 1 800 piezas la lista atiende diez veces menos peticiones por segundo (Express y FastAPI). Ningún test anterior lo ve porque todos corren con pocas filas.
 
 ---
 

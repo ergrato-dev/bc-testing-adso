@@ -67,4 +67,4 @@ Aplica la [rúbrica base](../../plantillas/rubrica-grupal.md) con estos criterio
 
 | ← Anterior | Inicio | Siguiente → |
 |---|---|---|
-| [Glosario — Semana 10](5-glosario/README.md) | [Semana 10 (opcional)](README.md) | — |
+| [Glosario — Semana 10](5-glosario/README.md) | [Semana 10 (opcional)](README.md) | [Semana 11 (opcional) — Pruebas de carga y estrés](../week-11-pruebas_de_carga/README.md) |

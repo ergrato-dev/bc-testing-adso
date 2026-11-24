@@ -9,6 +9,7 @@ App mínima que usan todas las recetas del bootcamp. Tiene un frontend React y e
 | [`api-fastapi/`](api-fastapi/) | FastAPI + SQLAlchemy | pytest + `TestClient` |
 | [`api-springboot/`](api-springboot/) | Spring Boot 4 + JPA | JUnit 5 + MockMvc + AssertJ |
 | [`e2e/`](e2e/) | Playwright | Tests E2E contra front + cualquier backend |
+| [`carga/`](carga/) | k6 | Smoke, carga y estrés contra cualquier backend (semana 11) |
 | [`docker-compose.yml`](docker-compose.yml) | PostgreSQL 18 y MySQL 8.4 **de prueba** | — |
 
 ## El API

@@ -12,13 +12,13 @@ Reglas:
 - En la columna escribe la capa y, al cerrar la semana, el enlace a tu PR de tests.
 - Quien revisa tu PR debe haber trabajado en otra capa esa semana.
 
-| Integrante (usuario GitHub) | S1 | S2 | S3 | S4 | S5 | S6 | S7 | S8 | S9 |
-|---|---|---|---|---|---|---|---|---|---|
-| @integrante-1 | E2E | Front | | | | | | | |
-| @integrante-2 | E2E | API | | | | | | | |
-| @integrante-3 | E2E | BD | | | | | | | |
-| @integrante-4 | E2E | | | | | | | | |
-| @integrante-5 | E2E | | | | | | | | |
+| Integrante (usuario GitHub) | S1 | S2 | S3 | S4 | S5 | S6 | S7 | S8 | S9 | S10 | S11 |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| @integrante-1 | E2E | Front | | | | | | | | | |
+| @integrante-2 | E2E | API | | | | | | | | | |
+| @integrante-3 | E2E | BD | | | | | | | | | |
+| @integrante-4 | E2E | | | | | | | | | | |
+| @integrante-5 | E2E | | | | | | | | | | |
 
 ## Cobertura semanal
 
